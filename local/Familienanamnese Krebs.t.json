@@ -1,0 +1,2079 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "4aa6f168-0c56-4b38-a289-cbac28728be4",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-02-05"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "published"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "notes" : "Generated automatically by Adl Designer",
+      "licence" : "This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.",
+      "custodian_organisation" : "openEHR Foundation",
+      "original_namespace" : "org.openehr",
+      "original_publisher" : "openEHR Foundation",
+      "custodian_namespace" : "org.openehr",
+      "MD5-CAM-1.0.1" : "0f4a28aaa034be87a474587396e8a902",
+      "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
+      "original_language" : "ISO_639-1::de",
+      "sem_ver" : "2.1.0",
+      "build_uid" : ""
+    },
+    "details" : {
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "purpose" : "Zur Repräsentation von Familienanamnesedaten bei Patienten mit einer onkologischen Diagnose im HiGHmed Projekt.",
+        "keywords" : [ "Anamnese, Onkologie, Tumor, Diagnose, Familienanamnese, Familie, genetisch, Stammbaum, Verwandter, erblich, vererbt, familär, Vererbung" ],
+        "use" : "Dieses Template wird verwendet, um Familienanamnesedaten von Patienten mit einer onkologischen Diagnose zu repräsentieren. Es sollen Familienerkrankungsdaten zu Tumordiagnosen von dem Patienten erfasst werden.",
+        "misuse" : "Dieses Template soll nicht verwendet werden, um Familienanamnese außerhalb des onkologischen Anwendungsbereichs darzustellen.",
+        "copyright" : "HiGHmed",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_report.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0005.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "Zwischenbericht", "Endbericht" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0006.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-absence-001.v2",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-002.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.3",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-family_history-003.v2",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        }
+      },
+      "zh" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Familienanamnese Krebs",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "e220b2b0-5307-3fe5-bdae-103e44d26da1",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Familienanamnese Krebs",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b5bfd7b0-eb33-4b1a-86a4-eedd5b44e41a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D94F932D76D2D0389D242063ED336124"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.case_identification.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004", "at0005" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "ar-sy" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "76b9367d-f26d-4d22-a79d-d02cffa0dda5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Michael Lieser",
+        "organisation" : "University of Heidelberg, Department of Infectious Diseases",
+        "email" : "michael.lieser@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f5adea69-7b6c-4f99-968d-a8e33a7e2f63",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7CD5D4B56F1AAC4BF3DFF1AB6120FCD0"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.absence.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-absence-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "Keine Informationen über Krebserkrankungen in der Familie" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0005.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0003",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "pt-br" : { },
+        "de" : { },
+        "fr" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "ee743f5f-d87c-496d-8fb7-074143be959f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sirio Libanes, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Bassem Khouzam, Vanessa Pereira",
+        "organisation" : "Medtronic, Better - Pathfinder",
+        "email" : "bassem.khouzam@medtronic.com, vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d99024d9-35e2-4d70-90ac-ec2e5bb8ced2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "FD31B6A3D7C0FE6280E39084A789BA00"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "Keine bekannte Vorgeschichte über ..." ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0005" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "Krebserkrankungen" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Familiäre Krankengeschichte",
+            "description" : "Identification of the specific concept which has been excluded.",
+            "comment" : "Use this data element in one of two ways. Firstly, exclusion of family history of diabetes can be expressed by using 'Family problem/diagnosis' as the run-time name constraint and 'diabetes' as the value for this data point. Alternatively the value could contain precoordinated terms such as 'No past family history of diabetes'.\r\n\r\nCoding of the value for 'Excluded concept', either as a simple or precoordinated term, with a terminology is desirable where possible.\r\n\r\nIf a precoordinated term is used with this data element the 'Exclusion statement' becomes redundant."
+          }
+        },
+        "nb" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Familiäre Krankengeschichte",
+            "description" : "Navngiving av det spesifikke konseptet som ekskluderes.",
+            "comment" : "Dette dataelementet kan brukes på to forskjellige måter. For det første kan eksklusjon av familiær diabetes uttrykkes ved å bruke runtime name constraint'en \"Familiær sykdom\", og \"diabetes\" som elementets verdi. Alternativt kan verdien være et prekoordinert uttrykk som \"Ingen kjent diabetes i familien\". Der det er mulig er det ønskelig å kode verdien av \"Ekskludert konsept\" med en terminologi, enten med enkle eller prekoordinerte termer.\r\n\r\nDersom en prekoordinert term brukes i dette dataelementet blir elementet \"Eksklusjonsutsagn\" overflødig."
+          }
+        },
+        "de" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Familiäre Krankengeschichte",
+            "description" : "Benennung der Kategorie, des ausgeschlossenen Sachverhalts.",
+            "comment" : "Dieses Item kann unterschiedlich genutzt werden. Zum Beispiel: \"Familiäre Vorgeschichte Diabetes\":\r\n\r\n(1) Einschränkung des Namens der \"ausgeschlossenen Kategorie\" zur Laufzeit über einen \"Name constraint\" (in diesem Fall \"familiäre Probleme/Diagnosen\") und Speicherung von \"Diabetes\" als Wert dieses Datenelements. \r\noder\r\n(2) Belegung des Wertes mit Hilfe von präkoordinierten Benennungen, z.B. \"keine familiäre Diabetes-Vorgeschichte\".\r\n\r\nDie Kodierung des Datenelements \"ausgeschlossene Kategorie\", z.B. durch präkoordinierte Benennungen oder Terminologien, ist wünschenswert.\r\n\r\nWird das Datenelement wie in Beispiel (2) kodiert, ist eine weitere Spezifikation im Feld \"Aussage über den Ausschluss\" nicht notwendig."
+          }
+        },
+        "sv" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Familiäre Krankengeschichte",
+            "description" : "Identifiering av det som specifikt har uteslutits.",
+            "comment" : "Kan användas på två sätt."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6297929d-1789-4731-90a8-03a061405761",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Åsa Skagerhult",
+        "organisation" : "Region Östergötland",
+        "email" : "asa.skagerhult@regionostergotland.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "12e8fcc3-a17b-45ad-a7dd-6e8ec78d60a4",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8E5ACDDB8A76628F09300293319E87D6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.family_history.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-family_history-003.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "1..1",
+              "nodeId" : "at0028.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
+                  "nodeId" : "at0029.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Krebs" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0030.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0003",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0004.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0020.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0060.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0016.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Mutter", "Vater", "Schwester", "Bruder", "Tochter", "Sohn", "Großmutter", "Großvater", "Tante", "Onkel", "Nichte", "Neffe", "Enkeltochter", "Enkelsohn", "Halbschwester", "Halbbruder", "Urgroßmutter", "Urgroßvater", "Großtante", "Großonkel", "Cousine", "Cousin", "Kind von Nichte", "Kind von Neffen", "Urenkelin", "Urenkel" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0005.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0023.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_BOOLEAN",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_BOOLEAN",
+                          "rmTypeName" : "Boolean",
+                          "occurrences" : "1..1",
+                          "constraint" : [ true ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0011.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0058.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "nodeId" : "at0008",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0009.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0012.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0010.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_DURATION",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "existence" : "0..1",
+                            "children" : [ {
+                              "@type" : "C_DURATION",
+                              "patternedConstraint" : "PY",
+                              "constraint" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0014.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "existence" : "0..1",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "< 50 Jahre", "50 - 59 Jahre", "60 - 69 Jahre", "70 - 80 Jahre", "> 80 Jahre" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0046.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "nodeId" : "at0024.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "defaultValue" : {
+                            "@type" : "DV_TEXT",
+                            "value" : "Nein"
+                          },
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "existence" : "0..1",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "constraint" : [ "Ja", "Nein", "Unbekannt" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0027.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-genetic_variant_presence-004.v0",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Summary information about the significant health-related problems found in family members."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "An alternative name or label to uniquely identify a family member, without using a personal name which might publicly identify the individual.",
+            "comment" : "To be used to assist in distinguishing one individual from multiple family members with identical relationships. For example, the label to distinguish one specific sister from three known sisters might be 'eldest sister' 'sister with the red hair' or 'sister #1'."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "Identification of the significant problem or diagnosis in the identified family member.",
+            "comment" : "Coding of the family member's problem or diagnosis with a terminology is preferred, where possible. May link from this data element to a detailed record of a Problem/Diagnosis using the EVALUATION.problem_diagnosis archetype with the Subject of Care set to the family member, not to the patient."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Narrative description or comments about clinical aspects of the family member's problem/diagnosis."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Estimated or actual age of the family member when the problem/diagnosis was clinically recognised.",
+            "comment" : "For health problems with multiple occurrences, this describes the first nown occurrence."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "Relationship of the problem/diagnosis to the death of this family member."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Additional narrative about the family member not captured in other fields."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "Detailed information about measurable indicators of a biological state or condition of the family member.",
+            "comment" : "For example: detailed information on BRCA mutations in family members. \r\nNote: More data elements will be needed in future to record detailed genetic marker information."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Description of risk-related biological markers identified in this family member."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Resumo dos problemas significativos, relacionados à saúde, encontrados nos membros da família."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "Um nome ou rótulo alternativo que identifica unicamente um membro da família sem utilizar uma denominação pessoal que possa identificar publicamente o indivíduo.",
+            "comment" : "Para seu usado para auxiliar na distinção de um indivíduo de múltiplos membros da família com relacionamentos idênticos. Por exemplo, um rótulo para distinguir uma irmã específica das outras três irmãs pode ser: 'irmã mai velha', 'irmã ruiva' ou 'irmã # 1'."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "*Identification of the significant problem or diagnosis in the identified family member.(en)",
+            "comment" : "*Coding of the family member's problem or diagnosis with a terminology is preferred, where possible. May link from this data element to a detailed record of a Problem/Diagnosis using the EVALUATION.problem_diagnosis archetype with the Subject of Care set to the family member, not to the patient.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Descrição narrativa ou comentários sobre aspectos clínicos dos problemas/diagnósticos do membro da família."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Idade (real ou estimada) do membro da família quando o problema/diagnóstico foi reconhecido clinicamente.",
+            "comment" : "Para problemas de saúde com múltiplas ocorrências, este descreve a primeira ocorrência conhecida."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "*Relationship of the problem/diagnosis to the death of this family member.(en)"
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Narrativa adicional sobre membro da família não contemplado em outro campo."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "*Detailed information about measurable indicators of a biological state or condition of the family member.(en)",
+            "comment" : "*For example: detailed information on BRCA mutations in family members. \r\nNote: More data elements will be needed in future to record detailed genetic marker information.(en)"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Descrição de marcadores biológicos relacionados a riscos identificados neste membro da família."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Sammenfattet informasjon om helserelaterte forhold hos familiemedlemmer."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "Et alternativt navn eller merkelapp slik at man uten å bruke navn entydig kan identifisere familiemedlemmet.",
+            "comment" : "For å kunne finne et spesifikt individ blant flere familiemedlemmer med likt slektsforhold. For eksempel kan et alias skille ut en søster blant tre søstre ved å skrive \"eldste søster\", \"søster med rødt hår\" eller \"søster nr. 1\"."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "Identifisering av et viktig problem eller diagnose identifisert hos familiemedlemmet.",
+            "comment" : "Koding av familiemedlemmets problem eller diagnose med en terminologi er ønskelig, der dette er mulig. En kan lenke fra dette datalementet til en detaljert registrering av et problem eller diagnose ved å bruke EVALUATION.problem_diagnosis-arketypen hvor Subject of Care settes til familiemedlemmet, ikke til helsetjenestemottakeren."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Friktekstbeskrivelse eller kommentarer om kliniske aspekter ved familiemedlemmets problem eller diagnose."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Familiemedlemmets estimerte eller faktiske alder da problemet eller diagnosen ble satt.",
+            "comment" : "For helseproblemer som har oppstått flere ganger, beskriver dette første kjente forekomst."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "Forholdet mellom problemet/diagnosen og familiemedlemmets død."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Ytterligere fritekstbeskrivelse om familiemedlemmet som ikke er registrert i andre felt."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "Detaljert informasjon om helsetjenestemottakerens målbare indikatorer for en biologisk tilstand eller lidelse.",
+            "comment" : "For eksempel: Detaljert informasjon om BRCA-mutasjoner hos familiemedlemmer. Merk: Flere dataelementer vil bli påkrevd i framtiden for en detaljert registrering av genetiske markører."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Beskrivelse av risikorelaterte biologiske markører som er identifisert hos dette familiemedlemmet."
+          }
+        },
+        "zh-cn" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "关于家族成员当中所发现的重要健康问题的摘要信息。"
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "用于对家族成员加以唯一身份标识的别名或标签，而不是采用可能会公开标识个人身份的人员姓名。",
+            "comment" : "用于帮助区分与多个家族成员具有相同关系的个人。例如，用于将特定姐/妹区别于三位已知姐/妹的标签可能会是“大姐”、“红头发姐/妹”或“1号姐妹”。"
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "对于当前所标识家族成员的这一重要问题或诊断的标识。",
+            "comment" : "最好尽可能采用术语集对当前家族成员的问题或诊断加以编码。可以采用原始型EVALUATION.problem_diagnosis（评价类原始型“问题诊断”）将此数据元链接到问题/诊断的详细记录之上，并将照护服务对象设置为该家族成员，而不是当前患者。"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "对于当前家族成员的这一问题或诊断的临床方面/特点的叙述型描述或注释。"
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "临床确认当前家族成员存在这一问题或诊断时的估计年龄或实际年龄。",
+            "comment" : "对于多次出现的健康问题，此数据元描述的是已知的首次出现。"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "这一问题/诊断与该家族成员死亡的关系。"
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "其他字段之中并未体现的，额外关于当前家族成员的叙述型信息。"
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "关于当前家族成员生物学状态或状况的可测量指标的详情。",
+            "comment" : "例如：关于家族成员之中BRCA突变的详情。\r\n注：将来需要更多的数据元来记录详细的遗传标记信息。\r\n"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "对于在当前家族成员身上所确定出的风险相关生物标记物的描述。"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Zusammenfassende Angaben zu den klinisch signifikanten, gesundheitlichen Problemen von Familienmitgliedern."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "Ein alternativer Name oder eine alternative Bezeichnung zur eindeutigen Identifizierung eines Familienmitglieds, ohne einen persönlichen Namen zu verwenden, der die Person öffentlich identifizieren könnte.",
+            "comment" : "Dient zur Differenzierung einer Person von mehreren Familienmitgliedern mit identischen Beziehungen. So könnte beispielsweise die Bezeichnung zur Abgrenzung einer bestimmten Schwester von drei bekannten Schwestern \"älteste Schwester\", \"Schwester mit den roten Haaren\" oder \"Schwester #1\" sein."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "Benennung des Problems oder Diagnose bei einem bestimmten Familienmitglied.",
+            "comment" : "Die Kodierung des Problems oder der Diagnose des Familienmitglieds mit einer Terminologie wird nach Möglichkeit bevorzugt. Kann eine Verknüpfung von diesem Datenelement zu einem ausführlichen Datensatz eines Problems/einer Diagnose mit Hilfe des Archetyps EVALUATION.problem_diagnosis herstellen, wobei die Pflegeperson \"Subject of Care\" das Familienmitglied und nicht der Patient ist."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Beschreibung oder Kommentare zu klinischen Aspekten des Problems/der Diagnose eines Familienmitglieds."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Geschätztes oder tatsächliches Alter des Familienmitglieds, als das Problem/die Diagnose klinisch erkannt wurde.",
+            "comment" : "Bei mehrfach vorkommenden gesundheitlichen Problemen, beschreibt dies das erstmalige Auftreten des Problems."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "Zusammenhang des Problems/der Diagnose mit dem Tod dieses Familienmitglieds."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Zusätzliche Informationen über das Familienmitglied, welche nicht bereits an anderen Stellen dokumentiert wurden.\r\n"
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "Ausführliche Information über messbare Indikatoren für einen gesundheitlichen Zustand oder körperliche Verfassung des Familienmitglieds.",
+            "comment" : "Zum Beispiel: Ausführliche Informationen über BRCA-Mutationen bei Familienmitgliedern. \r\nHinweis: Künftig werden weitere Datenelemente benötigt, um detaillierte genetische Markerinformationen zu erheben."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Beschreibung der in diesem Familienmitglied ermittelten risikobasierten biologischen Marker."
+          }
+        },
+        "fr" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Informations sommaires sur les problèmes de santé importants rencontrés chez les membres de la famille."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "Un autre nom ou étiquette permettant d'identifier de manière unique un membre de la famille, sans utiliser un nom personnel qui pourrait identifier publiquement l'individu.",
+            "comment" : "A utiliser pour aider à distinguer une personne de plusieurs membres de la famille ayant des relations identiques. Par exemple, l'étiquette permettant de distinguer une sœur spécifique de trois sœurs connues peut être \"sœur aînée\", \"sœur aux cheveux roux\" ou \"sœur n°1\"."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "Identification du problème ou du diagnostic important chez le membre de la famille identifié.Il est préférable, dans la mesure du possible, de coder le problème ou le diagnostic du membre de la famille avec une terminologie. Cet élément de données peut être lié à un enregistrement détaillé d'un problème/diagnostic en utilisant l'archétype EVALUATION.problem_diagnosis, le sujet des soins étant le membre de la famille et non le patient.",
+            "comment" : "Il est préférable, dans la mesure du possible, de coder le problème ou le diagnostic du membre de la famille avec une terminologie. Cet élément de données peut être lié à un enregistrement détaillé d'un problème/diagnostic en utilisant l'archétype EVALUATION.problem_diagnosis, le sujet des soins étant le membre de la famille et non le patient."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Description narrative ou commentaires sur les aspects cliniques du problème/diagnostic du membre de la famille."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Âge estimé ou réel du membre de la famille au moment où le problème/diagnostic a été cliniquement reconnu.",
+            "comment" : "Pour les problèmes de santé à occurrences multiples, cela décrit la première occurrence connue."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "Lien entre le problème/diagnostic et le décès de ce membre de la famille."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Description supplémentaire du membre de la famille non saisie dans d'autres champs."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "Informations détaillées sur les indicateurs mesurables d'un état ou d'une condition biologique du membre de la famille.",
+            "comment" : "Par exemple : informations détaillées sur les mutations du gène BRCA chez les membres de la famille. \r\nNote : D'autres éléments de données seront nécessaires à l'avenir pour enregistrer des informations détaillées sur les marqueurs génétiques."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Description des marqueurs biologiques liés au risque identifiés chez ce membre de la famille."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Familienanamnese Krebs",
+            "description" : "Samlad information om de hälsorelaterade problemen som familjemedlemmarna har."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Kennung des Familienmitglieds (ID)",
+            "description" : "Ett alternativt namn eller beteckning för identifiering av en specifik familjemedlem. Detta alias ersätter det personliga namnet som kan identifiera individen offentligt.",
+            "comment" : "Används för att underlätta urskiljning mellan familjemedlemmar med samma släktskapsrelation gentemot vårdtagaren. Exempelvis kan alias användas för att särskilja en specifik syster från 3 systrar genom benämna denne som \"äldsta syster\", \"syster med rött hår\" eller \"syster #1\"."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Tumordiagnose (ICD 10)",
+            "description" : "Identifiering av hälsoproblem eller diagnos för familjemedlemmen.",
+            "comment" : "Om möjligt, benämn hälsoproblemet eller diagnosen med en terminologi. Detta dataelement kan kopplas till en mer detaljerad beskrivning av hälsoproblemet eller diagnosen i arketypen EVALUATION.problem_diagnosis. Ange då familjemedlemmen som vårdtagare."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Tumordiagnose Beschreibung",
+            "description" : "Beskrivning eller kommentarer om kliniska aspekter av familjemedlemmens hälsoproblem/diagnos."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Alter bei Erstdiagnose (Y)",
+            "description" : "Uppskattad eller exakt ålder för familjemedlemmen när hälsoproblemet/diagnosen kliniskt påträffades.",
+            "comment" : "För hälsoproblem med flera förekomster, beskriver den första av dem."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Altersgruppe bei Erstdiagnose",
+            "description" : "Förhållandet mellan hälsoproblemet och diagnosen till familjemedlems död."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Assoziierte Erkrankung/Krebsrisiko Syndrom",
+            "description" : "Kommentarer avseende familjemedlemmen som inte beskrivs i övriga fält."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Pathogene Keimbahnvariante",
+            "description" : "Information om mätbara indikatorer för familjemedlemmens biologiska tillstånd.",
+            "comment" : "Exempelvis detaljerad information om BRCA-mutationer hos familjemedlemmar. Obs! Fler dataelement kommer att behövas i framtiden för att registrera detaljerad genetisk markörinformation."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pathogene Keimbahnvariante?",
+            "description" : "Beskrivning av riskrelaterade biologiska markörer som identifierats i familjemedlemmen."
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT(20160131)::57177007"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "815e371a-208d-45c8-b3c3-4198554e67d1",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sarah Ballout, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "ballout.sarah@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Emma Malm",
+        "organisation" : "Karolinska Universitetssjukhuset",
+        "email" : "emma.malm@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Micaela Thierley, Einar Fosse, John Tore Valand, Silje Ljosland Bakke"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sirio Libanes - Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Better - Pathfinder",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Taikang Insurance Group",
+        "email" : "linforest@163.com"
+      },
+      "accreditation" : "TBD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2d7ac39c-147d-4672-bd08-b55372b9631e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "FA49B7ED2418260198D18D3F69CEABD7"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.genetic_variant_presence.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-genetic_variant_presence-004.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004", "at0005", "at0006", "at0007" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Variante Name",
+            "description" : "The name of the variant."
+          }
+        },
+        "de" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Variante Name",
+            "description" : "The name of the variant."
+          }
+        }
+      },
+      "termBindings" : {
+        "LOINC" : {
+          "at0002.1" : "term:LOINC(2.65)::69548-6"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "910a57d6-f968-4529-baa6-0c92301be861",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Ramona Wellmann, Natalia Strauch",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "email" : "Strauch.Natalia@mh-hannover.de"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Sofia Janstad, Åsa Skagerhult",
+      "organisation" : "SLL, Region Östergötland",
+      "email" : "sofia.lang-janstad@sll.se, asa.skagerhult@regionostergotland.se"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Alan March",
+      "organisation" : "Hospital Universitario Austral - Buenos Aires - Argentina",
+      "email" : "alandmarch@gmail.com"
+    },
+    "accreditation" : "physician",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "John Tore Valand, Liv Laugen, Silje Ljosland Bakke",
+      "organisation" : "Helse Bergen, ​Oslo University Hospital, Norway, Helse Vest IKT AS",
+      "email" : "liv.laugen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : {
+      "name" : "Seung-Jong Yu",
+      "organisation" : "InfoClinic Co.,Ltd.",
+      "email" : "seungjong.yu@gmail.com"
+    },
+    "accreditation" : "Certified Board of Family Medicine in South Korea",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
+      "organisation" : "Core Consulting",
+      "email" : "contato@coreconsulting.com.br"
+    },
+    "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : {
+      "name" : "?"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : {
+      "name" : "Mona Saleh"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Francesca Frexia",
+      "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+      "email" : "francesca.frexia@crs4.it"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Pieter Bos, Jelte Zeilstra",
+      "organisation" : "Nedap Healthcare"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : {
+      "name" : "Yexuan Cheng",
+      "organisation" : "浙江大学",
+      "email" : "3160100913@zju.edu.cn"
+    },
+    "otherDetails" : { }
+  } ]
+}
