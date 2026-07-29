@@ -1,0 +1,3899 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "e1f263e1-2559-4109-bde8-2d5c097ee9ec",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-01-16"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "in_development"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "MetaDataSet:Sample Set " : "Template metadata sample set ",
+      "Acknowledgements" : "",
+      "Business Process Level" : "",
+      "Care setting" : "",
+      "Client group" : "",
+      "Clinical Record Element" : "",
+      "Copyright" : "",
+      "Issues" : "",
+      "Owner" : "",
+      "Sign off" : "",
+      "Speciality" : "",
+      "User roles" : "",
+      "MD5-CAM-1.0.1" : "72d53e2020bd26266ec2b5afa22497db",
+      "PARENT:MD5-CAM-1.0.1" : "006E9F209FD9F3691A5B9EFF0BAC3B5B",
+      "original_language" : "ISO_639-1::de",
+      "sem_ver" : "12.0.1",
+      "build_uid" : ""
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "purpose" : "Zur Repräsentation der Medikation, die für eine Person verordnet oder durch die Person angewendet wird. Das Template stellt Medikamente dar, die der Patient zurzeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt.",
+        "keywords" : [ "Medikation; Medikamentöse Behandlung; Arzneiliste; Medikamentenverordnung; Arzneiverordnung; Medikamentenanwendung; Arzneimittel; Medikamentenanamnese; Medikationsliste; Medikamentenliste; Arzneimittelverordnung; Medikationseintrag, Medikamentenplan, Medikationseintrag, Kerndatensatz, Medication Statement" ],
+        "use" : "Zur Repräsentation der Anwendung von Medikamenten, die für eine Person verordnet oder durch die Person angewendet werden.  Es kann sich dabei um eine aktuelle, frühere oder geplante Anwendung handeln. \nDas Template hat eher den Charakter eines Medikationsplans. Es ist nicht klar, ob der Patient diese Arzneimittel tatsächlich eingenommen hat oder diese verabreicht wurden.\nWenn ein Fallbezug oder eine Verbindung zu anderen Compositions (z.B. Prozeduren, Diagnose-Templates) hergestellt werden soll, bitte die LINK class aus dem Referenzmodell nutzen.",
+        "misuse" : "Nicht zur Repräsentation spezifischer Medikamententherapie oder Medikamentenklassen, die weitere Angaben erfordern (z. B. Protokoll bei Chemotherapie). Dafür bitte eigene Templates anlegen.\n\nNicht für die Darstellung der eigentlichen Medikamentenverabreichung, die auf vollständige Verabreichungsinformationen basieren, geeignet. Dafür wird das Template Medikamentenverabreichungen verwendet.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.medication_list.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_medication_list.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0005",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0006.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-medication_statement-001.v0",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "en" : { },
+      "es-ar" : { },
+      "ar-sy" : { },
+      "nb" : { },
+      "de" : { },
+      "sv" : { },
+      "nl" : { }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "6b4865bf-9ada-32e7-8b89-90eb3a9018b8",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "KDS_Medikationseintrag",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b5bfd7b0-eb33-4b1a-86a4-eedd5b44e41a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D94F932D76D2D0389D242063ED336124"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.case_identification.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004", "at0005" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "ar-sy" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "76b9367d-f26d-4d22-a79d-d02cffa0dda5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Michael Lieser",
+        "organisation" : "University of Heidelberg, Department of Infectious Diseases",
+        "email" : "michael.lieser@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "3c3cd4d6-8573-4376-b843-e9c0ab6ab74e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "E586ADBA402BACA9E6C3FF018CAF179E"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.medication_statement.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-medication_statement-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0009", "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0017" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0018.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_URI",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "1..1",
+                      "nodeId" : "at0019.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "attributeCustomizations" : {
+                        "null_flavour" : {
+                          "aliases" : {
+                            "en" : "null_flavour",
+                            "de" : "null_flavour",
+                            "nl" : "null_flavour",
+                            "nb" : "null_flavour"
+                          }
+                        }
+                      }
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0020.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "attributeCustomizations" : {
+                        "null_flavour" : {
+                          "aliases" : {
+                            "en" : "null_flavour",
+                            "de" : "null_flavour",
+                            "nl" : "null_flavour",
+                            "nb" : "null_flavour"
+                          }
+                        }
+                      }
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0021.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0031.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0023.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0030.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "0..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "0..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "//fhir.hl7.org/"
+                              },
+                              "constraint" : [ "ac0.1" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0024.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0025.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0026.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0027.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0028.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0029.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..*",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-dosage-002.v2",
+                      "referenceType" : "archetypeOverlay"
+                    }, {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "1..1",
+                      "nodeId" : "at0007.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-005.v2",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0004",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "1..1",
+              "nodeId" : "at0005.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication_status_fhir-008.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0005.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-entry_category-009.v0",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0005.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-identifier_fhir-010.v0",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Startzeitpunkt Einnahme",
+            "description" : "The valid start date/time for the Status."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Dauer der Einnahme",
+            "description" : "The valid duration for the Status.",
+            "comment" : "This data element can be combined with either the Status start time or the Status end time, but not both."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Endzeitpunkt Einnahme",
+            "description" : "The valid end date/time for the Status."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Behandlungsgrund",
+            "description" : "The clinical reason for use of the medication item.",
+            "comment" : "For example: 'Angina'. Coding of the clinical indication with a terminology is preferred, where possible. This data element allows multiple occurrences."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Hinweis",
+            "description" : "Additional narrative about the medication statement not captured in other fields."
+          }
+        },
+        "de" : {
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Startzeitpunkt Einnahme",
+            "description" : "Der gültige Zeitpunkt für den Statusbeginn."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Dauer der Einnahme",
+            "description" : "Die gültige Dauer für den Status.",
+            "comment" : "Dieses Datenelement kann entweder mit der Status Startzeit oder der Status Endzeit kombiniert werden, jedoch nicht mit beiden."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Endzeitpunkt Einnahme",
+            "description" : "Der gültige Zeitpunkt für das Statusende."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Behandlungsgrund",
+            "description" : "Der klinische Grund für die Anwendung des Medikaments.",
+            "comment" : "Zum Beispiel: \"Angina\". Die Codierung der klinischen Indikation mit einer Terminologie wird nach Möglichkeit bevorzugt. Dieses Datenelement kann mehrfach vorkommen."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Hinweis",
+            "description" : "Zusätzliche Kommentare über den Medikationseintrag, die nicht in anderen Feldern erfasst wurden."
+          }
+        },
+        "nl" : {
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Startzeitpunkt Einnahme",
+            "description" : "De datum/tijd vanaf waneer de status geldt."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Dauer der Einnahme",
+            "description" : "De duur wanneer de status geldt.",
+            "comment" : "*This data element can be combined with either the Status start time or the Status end time, but not both.(en)"
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Endzeitpunkt Einnahme",
+            "description" : "De datum/tijd waarop de status niet meer geldt."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Behandlungsgrund",
+            "description" : "De medische reden voor gebruik van het medicatie product.",
+            "comment" : "*For example: 'Angina'. Coding of the clinical indication with a terminology is preferred, where possible. This data element allows multiple occurrences. (en)"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Hinweis",
+            "description" : "Extra beschrijving over het medicatie gebruik dat niet past binnen andere velden."
+          }
+        },
+        "nb" : {
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Startzeitpunkt Einnahme",
+            "description" : "Den faktiske startdato/tid for \"Status\"."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Dauer der Einnahme",
+            "description" : "Den faktiske varigheten for \"Status\".",
+            "comment" : "Dette dataelementet kan kombineres med enten \"Status starttid\" eller \"Status sluttid\", men ikke begge."
+          },
+          "at0021.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021.1",
+            "text" : "Endzeitpunkt Einnahme",
+            "description" : "Den faktiske sluttdato/tid for Statusen."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Behandlungsgrund",
+            "description" : "Den kliniske årsaken for bruken av legemiddelet.",
+            "comment" : "For eksempel: \"Angina\". Der det er mulig foretrekkes at den den kliniske indikasjonen blir kodet med en terminologi. Dette dataelementet tillater flere forekomster."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Hinweis",
+            "description" : "Ytterligere fritekstbeskrivelse av legemiddelerklæringen som ikke er registrert i andre felt."
+          }
+        }
+      },
+      "termBindings" : {
+        "//fhir.hl7.org/" : {
+          "ac0.1" : "terminology://fhir.hl7.org//ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "eda073c1-2366-480e-9fe3-ebb51231ea68",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Marit Alice Venheim, John Tore Valand",
+        "organisation" : "Helse Vest IKT, Helse Bergen",
+        "email" : "marit.alice.venheim@helse-vest-ikt.no, john.tore.valand@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "938dd9db-f631-4df2-9221-07aeadac7917",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "926B8773E3FBB271F2820D4198B4F63E"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.dosage.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-dosage-002.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0135.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0178.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0134.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "126" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "l/h" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/min" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/s" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "ml/h" ]
+                  } ]
+                } ]
+              } ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0102.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "patternedConstraint" : "PDTHMS",
+                  "constraint" : [ {
+                    "lower" : "PT0S",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0176.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0037.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-timing_daily-003.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0037.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-timing_nondaily-004.v1",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dosierung Freitext",
+            "description" : "Text description of the dose.",
+            "comment" : "For example: \"Apply ointment to affected area until it glistens\". This element is intended to allow implementers to use the structures for increasing/tapering dosages without necessarily specifying the doses in a structured way."
+          }
+        },
+        "nb" : {
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dosierung Freitext",
+            "description" : "Tekstbeskrivelse av dosen.",
+            "comment" : "For eksempel \"Påfør salve på det affiserte området til det glinser\". Dette elementet har som hensikt å tillate implementasjoner å bruke strukturene for økende og avtagende dosering uten å nødvendigvis spesifisere dosene strukturert."
+          }
+        },
+        "pt-br" : {
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dosierung Freitext",
+            "description" : "Descrição textual da dose.",
+            "comment" : "Por exemplo: \"Aplicar pomada na área afetada até preenchê-la\". Este elemento pretende permitir aos implementadores o uso de estruturas para doses crescentes/decrescentes sem especificar necessariamente as doses de uma forma estruturada."
+          }
+        },
+        "de" : {
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dosierung Freitext",
+            "description" : "Textbeschreibung der Dosis.",
+            "comment" : "Zum Beispiel: \"Salbe auf die betroffene Stelle auftragen, bis sie glänzt\". Dieses Element soll den Entwicklern ermöglichen, die Strukturen zum Erhöhen / Verringern von Dosierungen zu verwenden, ohne die Dosierungen notwendigerweise auf strukturierte Weise spezifizieren zu müssen."
+          }
+        },
+        "sv" : {
+          "at0178.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0178.1",
+            "text" : "Dosierung Freitext",
+            "description" : "Textbeskrvining av dosen.",
+            "comment" : "Till exempel: \"Applicera salva på det drabbade området tills det glänser\". Detta element är avsett att tillåta implementerare att använda strukturerna för att öka/minska doser utan att nödvändigtvis specificera doserna på ett strukturerat sätt."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "54847bc3-76e5-48b9-831f-d3002ef5cf63",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Nazli Soltani, Natalia Strauch, Alexander Bachmeier",
+        "organisation" : "UMG, Medizinische Schule Hannover (MHH), Medizinische Hochschule Hannover, Heidelberg University Hospital",
+        "email" : "nazli.soltani@med.uni-goettingen.de, strauch.natalia@mh-hannover.de, Strauch.Natalia@mh-hannover.de, alexander.bachmeier@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Therese Lindberg",
+        "organisation" : "Cambio CDS",
+        "email" : "therese.lindberg@cambio.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Debora Farage, Fernanda Maia, Laíse Figueiredo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "09372f17-b21c-4110-b892-085e1c9ea04d",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "BBF04254F8BEA1421AF2CC97A0B64624"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-timing_daily-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/s" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/d" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/h" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/min" ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0014.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "patternedConstraint" : "PTHMS",
+                  "constraint" : [ {
+                    "lower" : "PT0H",
+                    "upper" : "PT24H",
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0004.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TIME",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_TIME>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0023.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0025.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0039",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0026.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0040.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "patternedConstraint" : "PTHMS",
+                      "constraint" : [ {
+                        "lower" : "-PT24H",
+                        "upper" : "PT24H",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0035.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tägliche Dosierung",
+            "description" : "Structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Periode",
+            "description" : "The time interval or minimum and maximum range of an interval between each scheduled activity.",
+            "comment" : "For example: \"Every 4 hours\" or \"Every 4 to 6 hours\"."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Zeitpunkt",
+            "description" : "A specific time or interval of time when the activity should occur.",
+            "comment" : "For example: \"08:00\" or \"15:00-16:00\"."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Ereignis",
+            "description" : "The name of the event that triggers the activity to take place.",
+            "comment" : "For example: \"Before each meal\", \"at bedtime\", \"in the morning\". It is understood that these event names may not equate to the same exact times in different cultures. Coding with a terminology, for example HL7 FHIR Named events, is recommended where appropriate."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Offset",
+            "description" : "The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should take place before the event.",
+            "comment" : "For example: '30 minutes after meal = meal + 30 minutes', '2 hours before bedtime = bedtime -2 hours'."
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tägliche Dosierung",
+            "description" : "*Structured information about the timing (intended or actual) of administration or use of a medicine, other therapeutic good or other intervention that is given on a scheduled basis.(en)"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Periode",
+            "description" : "*The time interval between each scheduled activity, limited to a single day.(en)",
+            "comment" : "*e.g. \"Every 4 hours\".(en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Zeitpunkt",
+            "description" : "*A specific time during a single day when the activity should occur.(en)",
+            "comment" : "*e.g \"at 0800, 1400, 15.25.\"(en)"
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Ereignis",
+            "description" : "*The name of the event that triggers the activity to take place.(en)",
+            "comment" : "*For example: \"Before each meal\", \"at bedtime\", \"in the morning\". It is understood that these event names may not equate to the same exact times in different cultures. Coding with a terminology, for example HL7 FHIR Named events, is recommended where appropriate.(en)"
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Offset",
+            "description" : "*The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should take place before the event.(en)",
+            "comment" : "*For example: '30 minutes after meal = meal + 30 minutes', '2 hours before bedtime = bedtime -2 hours'.(en)"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tägliche Dosierung",
+            "description" : "Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Periode",
+            "description" : "Tidsintervall eller minimums- og maksimumsintervall mellom hver planlagte aktivitet.",
+            "comment" : "For eksempel \"hver 4. time\" eller \"hver 4.-6. time\"."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Zeitpunkt",
+            "description" : "Et spesifikt tidspunkt eller tidsintervall når aktiviteten skal finne sted.",
+            "comment" : "For eksempel \"08:00\" eller \"15:00-16:00\"."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Ereignis",
+            "description" : "Navnet på hendelsen aktiviteten skal uføres i sammenheng med.",
+            "comment" : "For eksempel: Før hvert måltid, ved leggetid, om morgenen. Det er underforstått at disse termene ikke nødvendigvis tilsvarer de samme tidspunktene i forskjellige kulturer. Koding med en terminologi, for eksempel HL7 Named events, anbefales der det er passende."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Offset",
+            "description" : "Tidsintervallet før eller etter hendelsen når aktiviteten skal utføres. Negative intervaller kan benyttes for å spesifisere at aktiviteten skal utføres før den navngitte hendelsen.",
+            "comment" : "For eksempel \"30 minutter etter måltid = måltid + 30 minutter\" eller \"2 timer før sengetid = sengetid -2 timer\"."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tägliche Dosierung",
+            "description" : "Strukturierte Informationen über den geplanten Zeitablauf einer therapeutischen oder diagnostischen Aktivität innerhalb eines Zeitraums von 24 Stunden."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Periode",
+            "description" : "Das Zeitintervall oder der minimale und maximale Zeitspanne zwischen jeder geplanten Aktivität.",
+            "comment" : "Zum Beispiel: \"Alle 4 Stunden\" oder \"Alle 4 bis 6 Stunden\"."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Zeitpunkt",
+            "description" : "Eine bestimmte Uhrzeit oder ein bestimmtes Zeitintervall für das Stattfinden der Aktivität.",
+            "comment" : "Zum Beispiel: \"08:00\" oder \"15:00 - 16:00\"."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Ereignis",
+            "description" : "Der Name des Ereignisses, das die Aktivität auslöst.",
+            "comment" : "Zum Beispiel: \"Vor jeder Mahlzeit\", \"vor dem Schlafengehen\", \"am Morgen\". Es versteht sich, dass diese Begriffe in verschiedenen Kulturen möglicherweise nicht unbedingt den gleichen Zeiten entsprechen. Gegebenenfalls wird die Kodierung mit einer Terminologie empfohlen, z. B. mit HL7 Named Events."
+          },
+          "at0040.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040.1",
+            "text" : "Offset",
+            "description" : "Das Zeitintervall vor oder nach dem Ereignis, in dem die Aktivität ausgeführt werden soll. Negative Intervalle können verwendet werden, um anzugeben, dass die Aktivität vor dem genannten Ereignis ausgeführt werden soll.",
+            "comment" : "Zum Beispiel: \"30 Minuten nach dem Essen = Mahlzeit + 30 Minuten\", \"2 Stunden vor dem Schlafengehen = Schlafenszeit - 2 Stunden\"."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "319e2df4-1bec-49a3-bbab-6b8a0e5bc218",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Caroline Bönisch, Natalia Strauch",
+        "organisation" : "UMG, Medizinische Hochschule Hannover",
+        "email" : "Caroline.Thoms@med.uni-goettingen.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "30f325b6-e6cc-42c8-bcaf-df19bc486355",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "95309E1587F2F9A3D1845B07B1011799"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_nondaily.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-timing_nondaily-004.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DURATION",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_DURATION",
+                  "rmTypeName" : "DURATION",
+                  "occurrences" : "1..1",
+                  "patternedConstraint" : "PYMWD",
+                  "constraint" : [ {
+                    "lower" : "P0D",
+                    "lowerIncluded" : false,
+                    "upperIncluded" : false,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : true
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0014.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_QUANTITY",
+              "attributes" : [ ],
+              "attributeTuples" : [ {
+                "@type" : "C_ATTRIBUTE_TUPLE",
+                "members" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "magnitude",
+                  "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "units",
+                  "children" : [ ]
+                } ],
+                "tuples" : [ {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "upper" : 366.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/a" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "upper" : 7.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/wk" ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_REAL",
+                    "constraint" : [ {
+                      "lower" : 1.0,
+                      "upper" : 31.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_STRING",
+                    "constraint" : [ "1/mo" ]
+                  } ]
+                } ]
+              } ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_DATE",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_INTERVAL<DV_DATE>",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0007", "at0008", "at0016", "at0017", "at0018", "at0019", "at0020" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_COUNT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "magnitude",
+                "children" : [ {
+                  "@type" : "C_INTEGER",
+                  "rmTypeName" : "Integer",
+                  "occurrences" : "1..1",
+                  "constraint" : [ {
+                    "lower" : 1,
+                    "upper" : 31,
+                    "lowerIncluded" : true,
+                    "upperIncluded" : true,
+                    "lowerUnbounded" : false,
+                    "upperUnbounded" : false
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0009.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "patternedConstraint" : "PYMWD",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Nicht tägliche Dosierung",
+            "description" : "Structured information about the intended timing pattern for a therapeutic or diagnostic activity occurring over days, weeks, months or years."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Periode",
+            "description" : "The interval between repetitions of the activity.",
+            "comment" : "For example: 'Every 3 weeks'. If necessary, this element can be used to explicity specify that an activity is to take place every single day, by setting it to \"1 day\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Zeitpunkt",
+            "description" : "The activity should take place on a specific date or a specific range of dates.",
+            "comment" : "For example: 'on 12 Jan 2017' or 'on 30 Oct 2017 to 6 Nov 2017'."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Ereignis",
+            "description" : "The name of the event that triggers the activity to take place.",
+            "comment" : "This element is intended for events that can occur at variable dates, such as onset of menstruation, and not for doses or activities that are conditional on a different varable. If required, the event name can be coded using a terminology, which could potentially be used to trigger an application to set a concrete date for the activity."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Offset",
+            "description" : "The period of time before or after the named event when the activity should take place. Negative durations can be used to signify that the activity should be taken before a known event.",
+            "comment" : "For example: '3 days after onset of menstruation = menstrual onset + 3 days', '2 weeks prior to admission= admission -2 weeks'."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Nicht tägliche Dosierung",
+            "description" : "*Structured information about the intended timing pattern for a therapeutic activity occurring over days, weeks, months or years.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Periode",
+            "description" : "O intervalo de tempo entre repetições de atividades.",
+            "comment" : "por exemplo: \"Cada 3 semanas\""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Zeitpunkt",
+            "description" : "A atividade deve ocorrer em uma data específica.",
+            "comment" : "por exemplo: \"em 12 de janeiro de 2017\"."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Ereignis",
+            "description" : "O nome do evento que desencadeia a atividade para tomar o lugar."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Offset",
+            "description" : "O período de tempo antes ou depois o evento nomeado, quando a atividade deve ocorrer. Durações negativas podem ser utilizadas para indicar que a atividade deve ser realizada antes do evento conhecido.",
+            "comment" : "por exemplo: \"3 dias depois do início da menstruação = início da menstruação + 3 dias\", \"2 semanas antes da admissão = admissão - 2 semanas\"."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Nicht tägliche Dosierung",
+            "description" : "Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet som forekommer over dager, uker, måneder eller år."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Periode",
+            "description" : "Intervallene mellom repetisjoner av aktiviteten.",
+            "comment" : "For eksempel \"hver 3. uke\". Om nødvendig kan dette elementet brukes for å eksplisitt spesifisere at aktiviteten skal forekomme hver eneste dag, ved å sette elementet til \"1 dag\"."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Zeitpunkt",
+            "description" : "Aktiviteten skal utføres på en spesifikk dato eller i henhold til et spesifikt datointervall.",
+            "comment" : "For eksempel \"12. jan 2017\" eller \"30 okt 2017 til 6 nov 2017\"."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Ereignis",
+            "description" : "Navnet på hendelsen aktiviteten skal uføres i sammenheng med.",
+            "comment" : "Dette elementet er ment for hendelser som kan forekomme på varierende datoer, som for eksempel starten på menstruasjon, og ikke for doser og aktiviteter som er betinget av en annen variabel. Der det er påkrevd kan hendelsesnavnet kodes med en terminologi, som kan benyttes for å få en applikasjon til å sette en konkret dato for aktiviteten."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Offset",
+            "description" : "Tidsintervallet før eller etter hendelsen når aktiviteten skal utføres. Negative intervaller kan benyttes for å spesifisere at aktiviteten skal utføres før den navngitte hendelsen.",
+            "comment" : "For eksempel \"3 dager etter første menstruasjonsdag = første menstruasjonsdag + 3 dager\", \"2 uker før innleggelse = innleggelse - 2 uker\"."
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Nicht tägliche Dosierung",
+            "description" : "Strukturierte Informationen über das geplante Zeitablaufmuster für eine therapeutische oder diagnostische Aktivität, die sich über Tage, Wochen, Monate oder Jahre erstreckt."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Periode",
+            "description" : "Das Intervall zwischen den Wiederholungen der Aktivität.",
+            "comment" : "Zum Beispiel: \"Alle 3 Wochen\". Falls erforderlich, kann mit diesem Element explizit angegeben werden, dass eine Aktivität jeden einzelnen Tag stattfinden soll, indem es auf \"1 Tag\" gesetzt wird."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Zeitpunkt",
+            "description" : "Die Aktivität sollte an einem bestimmten Datum oder in einem bestimmten Datumsbereich stattfinden.",
+            "comment" : "Zum Beispiel: \"am 12. Januar 2017\" oder \"vom 30. Oktober 2017 bis 6. November 2017\""
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Ereignis",
+            "description" : "Der Name des Ereignisses, das die Aktivität auslöst.",
+            "comment" : "Dieses Element ist für Ereignisse gedacht, die zu verschiedenen Zeitpunkten auftreten können, wie z.B. Beginn der Menstruation, und nicht für Dosis oder Aktivitäten, die von einer anderen Variable abhängen. Bei Bedarf kann der Name des Ereignisses mit einer Terminologie kodiert werden, mit der die Anwendung ein bestimmtes Datum für die Aktivität festlegen kann."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Offset",
+            "description" : "Das Zeitintervall vor oder nach dem Ereignis, in dem die Aktivität stattfinden sollte. Negative Intervalle können verwendet werden, damit signalisiert werden kann, dass die Aktivität vor dem genannten Ereignis stattfinden soll.",
+            "comment" : "Zum Beispiel: \"3 Tage nach Beginn der Menstruation = Beginn der Menstruation + 3 Tage\", \"2 Wochen vor der Aufnahme = Aufnahme - 2 Wochen\"."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2ef82baf-6b4f-4485-9308-810aaae13914",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Caroline Bönisch, Natalia Strauch",
+        "organisation" : "UMG, Medizinische Hochschule Hannover",
+        "email" : "Caroline.Thoms@med.uni-goettingen.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b222a76b-6f91-4e78-b669-0d776747a789",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-medication-005.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0132.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0071.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "0..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "//fhir.hl7.org/"
+                  },
+                  "constraint" : [ "ac0.1" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0142.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0143", "at0146", "at0144", "at0145", "at0001" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..0",
+          "nodeId" : "at0152.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0115.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0151.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0150.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0139.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0148.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0127.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0080", "at0083", "at0084" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0133.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0138.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-006.v2",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "The name of the medication or medication component.",
+            "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "The strength of the medication or medication component, as a concentration.",
+            "comment" : "This element is used for liquid or semisolid medications, or medications intended to be diluted in a liquid before administration. For example: '10 mg/ml', '20 mg/g', '5 %', '10,000 SQ-U/ml'. If the 'Strength (presentation)' cluster is used, this element becomes redundant."
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements."
+          }
+        },
+        "nb" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "Navnet på legemiddelet eller legemiddelkomponenten.",
+            "comment" : "For eksempel \"Zinacef 750 mg pulver til infusjonsvæske\" eller \"cefuroxim\". Dette elementet bør kodes om mulig, for eksempel med FEST. Bruk av dette elementet vil variere med brukssammenhengen. For eksempel vil elementet ikke brukes dersom legemiddelnavnet er registrert i den overordnede INSTRUCTION- eller ACTION-arketypen, og denne arketypen kun brukes for å registrere at legemiddelformen må være eller var \"væske\"."
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "Styrken av legemiddelet eller legemiddelkomponenten, angitt som konsentrasjon.",
+            "comment" : "Dette elementet brukes for flytende eller halvfaste legemidler, eller legemidler som skal blandes ut til å bli flytende før administrering. For eksempel \"10 mg/ml\", \"20 mg/g\", \"5 %\" eller \"10 000 SQ-U/ml\". Dersom clusteret \"Styrke (presentasjon)\" brukes, er dette clusteret overflødig."
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "Fritekstbeskrivelse av legemiddelet eller legemiddelkomponenten, der det ikke lar seg gjøre å beskrive dette fullstendig ved hjelp av strukturerte elementer."
+          }
+        },
+        "pt" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "*The name of the medication or medication component.(en)",
+            "comment" : "*For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'.(en)"
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "*The strength of the medication or medication component, as a concentration.(en)",
+            "comment" : "*This element is used for liquid or semisolid medications, or medications intended to be diluted in a liquid before administration. For example: '10 mg/ml', '20 mg/g', '5 %', '10,000 SQ-U/ml'. If the 'Strength (presentation)' cluster is used, this element becomes redundant. (en)"
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "*Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements.(en)"
+          }
+        },
+        "de" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "Der Name des Arzneimittels oder der Arzneimittelkomponente.",
+            "comment" : "Zum Beispiel: \"Zinacef 750 mg Puder\" oder \"Cefuroxim\". Dieses Item sollte möglichst codiert werden, z.B. mittels RxNorm, DM+D, Australian Medicines Terminology oder FEST. Die Verwendung dieses Elements variiert je nach Anwendungskontext. Dieses Element kann weggelassen werden, wenn der Name des Arzneimittels in dem übergeordneten INSTRUCTION- oder ACTION-Archetyp vorhanden ist, und dieser Archetyp nur zur Darstellung der Darreichungsform genutzt wird, z.B. \"Flüssigkeit\"."
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "Die Wirkstärke eines Arzneimittels oder einer Arzneimittelkomponente als Konzentration.",
+            "comment" : "Dieses Element wird für Flüssigkeiten, halbfesten Arzneimitteln oder Arzneimitteln, die vor der Verabreichung in einer Flüssigkeit gelöst werden müssen, verwendet. Zum Beispiel: \"10 mg/ml\", \"20 mg/g\", \"5 %\", \"10,000 SQ-U/ml\". Wird der Cluster \"Wirkstärke (Darreichungsform)\" verwendet, wird dieses Element überflüssig."
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "Eine Möglichkeit zur Beschreibung des Arzneimittels oder der Arzneimittelkomponente, wenn dies nicht mit vollständig strukturierten Elementen möglich war."
+          }
+        },
+        "nl" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "De naam van het medicament of medicatie bestandsdeel.",
+            "comment" : "Bijvoorbeeld: 'Zinacef 750mg poeder' of 'cefuroxim'. Dit veld dient, indien mogelijk, gecodeerd te worden met behulp van bijvoorbeeld RxNorm, DM+D, Autralian Medicines Terminology, FEST of de G-Standaard. Gebruik van dit veld zal verschillen per gebruikscontext. Dit element can overgeslagen worden wanneer de naam van het medicament vastgelegd is in het bovenliggende INSTRUCTION of ACTION archetype en dit archetype zelf alleen gebruikt wordt voor het vastleggen dat de vorm 'vloeibaar' is, of dient te zijn."
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "*The strength of the medication or medication component, as a concentration. (en)",
+            "comment" : "*This element is used for liquid or semisolid medications, or medications intended to be diluted in a liquid before administration. For example: '10 mg/ml', '20 mg/g', '5 %', '10,000 SQ-U/ml'. If the 'Strength (presentation)' cluster is used, this element becomes redundant. (en)"
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "*Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements. (en)"
+          }
+        },
+        "sv" : {
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Arzneimittel-Name",
+            "description" : "Namnet på läkemedlet eller läkemedelskomponenten.",
+            "comment" : "Till exempel: 'Zinacef 750 mg pulver' eller 'cefuroxim'. Detta dataelement bör om möjligt kodas, med exempelvis RxNorm, DM + D, Australian Medicines Terminology eller FEST. Användningen av detta dataelement kommer att variera beroende på användningssammanhang. Detta dataelement kan utelämnas om läkemedlets namn registreras i föräldrarnas INSTRUKTION eller ÅTGÄRD, och denna arketyp endast används för att registrera att formen måste vara eller var \"flytande\"."
+          },
+          "at0115.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0115.1",
+            "text" : "Wirkstärke (Konzentration)",
+            "description" : "Styrkan hos läkemedlet eller läkemedelskomponenten, som koncentration.",
+            "comment" : "*This element is used for liquid or semisolid medications, or medications intended to be diluted in a liquid before administration. For example: '10 mg/ml', '20 mg/g', '5 %', '10,000 SQ-U/ml'. If the 'Strength (presentation)' cluster is used, this element becomes redundant. (en)"
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Rezeptur Freitextzeile",
+            "description" : "Utförlig beskrivning av läkemedlet eller läkemedelskomponenten där det inte är möjligt att beskriva detta fullständigt med hjälp av de strukturerade dataelementen."
+          }
+        }
+      },
+      "termBindings" : {
+        "//fhir.hl7.org/" : {
+          "ac0.1" : "terminology://fhir.hl7.org//ValueSet/$expand?url=http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "20797e3d-bdcd-4134-b39a-a923abbb968a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Sofia Janstad",
+        "organisation" : "SLL",
+        "email" : "sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt"
+      },
+      "author" : {
+        "name" : "Beatriz de Faria Leao",
+        "organisation" : "Bleao Informática em Saúde",
+        "email" : "bfleao@terra.com.br"
+      },
+      "accreditation" : "MD, PhD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b222a76b-6f91-4e78-b669-0d776747a789",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-medication-006.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0132.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0071.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0142.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0143", "at0146", "at0144", "at0145", "at0001" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0152.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0153.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0157.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0115.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0151.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0150.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0139.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0148.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0127.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "Ja", "Nein" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0133.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..1",
+          "nodeId" : "at0141.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-medication-007.v2",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "The name of the medication or medication component.",
+            "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "The category of the medication or medication component, with regard to manufacturing or preparation, and the number of ingredients.",
+            "comment" : "For example: 'Paracetamol/codeine' is a Multi-ingredient product, while 'Morphine 60 mg + Haloperidol 2 mg + Midazolam 5 mg' is an Ad-hoc mixture, whose composition is fully specified within the order."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "The strength of the medication or medication component, expressed as a ratio.",
+            "comment" : "In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of 'tablet'. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "The numerator of the strength fraction.",
+            "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "The denominator of the strength fraction.",
+            "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'."
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "The role of the medication or medication component within a mixture."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "Navnet på legemiddelet eller legemiddelkomponenten.",
+            "comment" : "For eksempel \"Zinacef 750 mg pulver til infusjonsvæske\" eller \"cefuroxim\". Dette elementet bør kodes om mulig, for eksempel med FEST. Bruk av dette elementet vil variere med brukssammenhengen. For eksempel vil elementet ikke brukes dersom legemiddelnavnet er registrert i den overordnede INSTRUCTION- eller ACTION-arketypen, og denne arketypen kun brukes for å registrere at legemiddelformen må være eller var \"væske\"."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "Legemiddelet eller legemiddelkomponentens kategori med tanke på tilvirkning eller tilberedning, og antall ingredienser.",
+            "comment" : "For eksempel er Paralgin Forte et kombinasjonsprodukt, mens \"Morfin 60 mg + Haloperidol 2 mg + Midazolam 5 mg\" er en magistrellforskrevet blanding, som er fullt spesifisert i ordineringen."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "Styrken av legemiddelet eller legemiddelkomponenten, angitt som en brøk.",
+            "comment" : "I noen tilfeller, som for flytende eller halvfaste legemidler, er nevneren i styrkebrøken en fysisk størrelse, for eksempel 2 mg/5 ml. I noen av disse tilfellene reflekterer nevneren også det faktiske volumet av komponenten: For det forrige eksempelet 5 ml. I dette tilfellet ville \"Styrke (konsentrasjon)\" vært 0,4 mg/ml. I andre tilfeller, der styrken involverer en nevner som ikke er en fysisk størrelse, for eksempel 4 mg/tablett, uttrykkes nevneren som verdien \"1\", med enheten \"tablett\". Dette mønsteret ble valgt som en tilpasning til ISO IDMP-standarden. For eksempel 4 mg/tablett, 2 mg/5 ml, 100 mg/dose. Dersom elementet \"Styrke (konsentrasjon)\" brukes, er dette clusteret overflødig."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "Telleren i styrkebrøken.",
+            "comment" : "For eksempel: For en presentasjonsstyrke på \"300 µg/0,3 ml\", er Styrketeller \"300 µg\". For en presentasjonsstyrke på \"100 mg/tablett\", er Styrketeller \"100 mg\"."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "Nevneren i styrkebrøken.",
+            "comment" : "For eksempel: For en presentasjonsstyrke på \"300 µg/0,3 ml\", er Styrkenevner \"0,3 ml\". For en presentasjonsstyrke på \"100 mg/tablett\", er Styrkenevner \"1 tablett\"."
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "Legemiddelet eller legemiddelkomponentens rolle i en blanding eller infusjon."
+          }
+        },
+        "pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)"
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "*The name of the medication or medication component.(en)",
+            "comment" : "*For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'.(en)"
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "*The category of the medication or medication component, with regard to manufacturing or preparation, and the number of ingredients.(en)",
+            "comment" : "*For example: 'Paracetamol/codeine' is a Multi-ingredient product, while 'Morphine 60 mg + Haloperidol 2 mg + Midazolam 5 mg' is an Ad-hoc mixture, whose composition is fully specified within the order.(en)"
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "*The strength of the medication or medication component, expressed as a ratio.(en)",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "*The role of the constituent within the mixture or infusion.(en)"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "Der Name des Arzneimittels oder der Arzneimittelkomponente.",
+            "comment" : "Zum Beispiel: \"Zinacef 750 mg Puder\" oder \"Cefuroxim\". Dieses Item sollte möglichst codiert werden, z.B. mittels RxNorm, DM+D, Australian Medicines Terminology oder FEST. Die Verwendung dieses Elements variiert je nach Anwendungskontext. Dieses Element kann weggelassen werden, wenn der Name des Arzneimittels in dem übergeordneten INSTRUCTION- oder ACTION-Archetyp vorhanden ist, und dieser Archetyp nur zur Darstellung der Darreichungsform genutzt wird, z.B. \"Flüssigkeit\"."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "Die Kategorie des Arzneimittels oder der Arzneimittelkomponente, hinsichtlich der Herstellung oder Zubereitung und der Anzahl der Inhaltsstoffe.",
+            "comment" : "Zum Beispiel: \"Paracetamol/Codein\" ist ein Produkt mit mehreren Inhaltsstoffen, im Gegensatz dazu ist \"Morphin 60 mg + Haloperidol 2 mg + Midazolam 5 mg\" eine Ad-hoc-Mixtur, deren Zusammensetzung innerhalb der Verordnung spezifiziert wird."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "Die Wirkstärke des Arzneimittels oder der Arzneimittelkomponente, ausgedrückt als Verhältniszahl.",
+            "comment" : "In einigen Fällen, wie bei flüssigen oder halbfesten Arzneimitteln, ist der Nenner des Stärkeverhältnisses eine physikalische Größe, zum Beispiel 2 mg/5 ml. In einigen dieser Fälle spiegelt der Nenner auch das tatsächliche Volumen der Komponente wider: 5 ml im vorherigen Beispiel. In diesem Fall würde die \"Wirkstoffkonzentration\" 0,4 mg/ml betragen. In anderen Fällen, wenn die Stärke einen Nenner betrifft, der keine physikalische Größe ist, z.B. 4 mg/Tablette, wird der Nenner als einheitlicher Wert \"1\" mit einer Einheit \"1\" ausgedrückt, und \"Tablette\" wird im Element \"Einheit der Darreichungsform\" geführt. Diese Regelung wurde gewählt, um dem Ansatz der ISO IDMP-Norm für Medikamentenkataloge gerecht zu werden. Wird das Element \"Wirkstoffkonzentration\" verwendet, wird dieser Cluster überflüssig."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "Der Wert des Zählers des Wirkstärkeanteils.",
+            "comment" : "Zum Beispiel: Lautet die Wirkstärke (Darreichungsform) \"300 µg/0,3 ml\", so beträgt die Wirkstärke (Zähler) \"300 µg\". Bei einer Wirkstärke (Darreichungsform) von \"100 mg/Tablette\" ist der Wirkstärke-Zähler \"100 mg\"."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "Der Wert des Nenners des Wirkstärkeanteils.",
+            "comment" : "Zum Beispiel: Der Wert des Nenners der Wirkstärke (Darreichungsform) \"300 µg/0,3 ml\" ist \"0,3 ml\". Der Wert des Nenners der Wirkstärke \"100 mg/Tablette\" ist \"1 Tablette\"."
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "Die Funktion eines Arzneimittels oder einer Arzneimittelkomponente innerhalb einer Mixtur."
+          }
+        },
+        "nl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "De naam van het medicament of medicatie bestandsdeel.",
+            "comment" : "Bijvoorbeeld: 'Zinacef 750mg poeder' of 'cefuroxim'. Dit veld dient, indien mogelijk, gecodeerd te worden met behulp van bijvoorbeeld RxNorm, DM+D, Autralian Medicines Terminology, FEST of de G-Standaard. Gebruik van dit veld zal verschillen per gebruikscontext. Dit element can overgeslagen worden wanneer de naam van het medicament vastgelegd is in het bovenliggende INSTRUCTION of ACTION archetype en dit archetype zelf alleen gebruikt wordt voor het vastleggen dat de vorm 'vloeibaar' is, of dient te zijn."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "De categorie van het medicament of het medicatie bestandsdeel, gerelateerd aan fabricage of bereiding en het aantal bestandsdelen.",
+            "comment" : "Bijvoorbeeld: 'Paracetamol/codeïne' is een combinatiepreparaat, terwijl 'Morphine 60mg + Haloperidol 2 mg +Midazolam 5 mg' een ad-hoc mix is waarvan de samenstelling in het recept wordt beschreven."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "De dosis van het medicament of medicatie bestanddeel, uitgedrukt als een ratio.",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "De rol van het medicament of het medicatie bestanddeel in een mengsel."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Bestandteil",
+            "description" : "Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Bestandteil",
+            "description" : "Namnet på läkemedlet eller läkemedelskomponenten.",
+            "comment" : "Till exempel: 'Zinacef 750 mg pulver' eller 'cefuroxim'. Detta dataelement bör om möjligt kodas, med exempelvis RxNorm, DM + D, Australian Medicines Terminology eller FEST. Användningen av detta dataelement kommer att variera beroende på användningssammanhang. Detta dataelement kan utelämnas om läkemedlets namn registreras i föräldrarnas INSTRUKTION eller ÅTGÄRD, och denna arketyp endast används för att registrera att formen måste vara eller var \"flytande\"."
+          },
+          "at0142.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0142.1",
+            "text" : "Wirkstofftyp",
+            "description" : "Kategori av läkemedels- eller läkemedelskomponenten, med avseende på tillverkning eller beredning, och antalet ingredienser.",
+            "comment" : "Till exempel: 'Paracetamol/codeine' är en produkt med flera ingredienser, medan 'Morfin 60 mg + Haloperidol 2 mg + Midazolam 5 mg' är en ad-hoc-blandning vars sammansättning är fullständigt specificerad i beställningen."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Bestandteil-Menge",
+            "description" : "Styrkan hos läkemedlet eller läkemedelskomponenten, uttryckt som ett förhållande.",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Ist aktiver Bestandteil?",
+            "description" : "Läkemedlets eller läkemedelskomponentens roll i en blandning."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "20797e3d-bdcd-4134-b39a-a923abbb968a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Sofia Janstad",
+        "organisation" : "SLL",
+        "email" : "sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt"
+      },
+      "author" : {
+        "name" : "Beatriz de Faria Leao",
+        "organisation" : "Bleao Informática em Saúde",
+        "email" : "bfleao@terra.com.br"
+      },
+      "accreditation" : "MD, PhD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b222a76b-6f91-4e78-b669-0d776747a789",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-medication-007.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0132.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0071.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0142.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0143", "at0146", "at0144", "at0145", "at0001" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0152.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0153.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0157.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "Details about a medication or component of a medication, including strength, form and details of any specific constituents."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "The name of the medication or medication component.",
+            "comment" : "For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "The strength of the medication or medication component, expressed as a ratio.",
+            "comment" : "In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of 'tablet'. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "The numerator of the strength fraction.",
+            "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "The denominator of the strength fraction.",
+            "comment" : "For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "Detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "Navnet på legemiddelet eller legemiddelkomponenten.",
+            "comment" : "For eksempel \"Zinacef 750 mg pulver til infusjonsvæske\" eller \"cefuroxim\". Dette elementet bør kodes om mulig, for eksempel med FEST. Bruk av dette elementet vil variere med brukssammenhengen. For eksempel vil elementet ikke brukes dersom legemiddelnavnet er registrert i den overordnede INSTRUCTION- eller ACTION-arketypen, og denne arketypen kun brukes for å registrere at legemiddelformen må være eller var \"væske\"."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "Styrken av legemiddelet eller legemiddelkomponenten, angitt som en brøk.",
+            "comment" : "I noen tilfeller, som for flytende eller halvfaste legemidler, er nevneren i styrkebrøken en fysisk størrelse, for eksempel 2 mg/5 ml. I noen av disse tilfellene reflekterer nevneren også det faktiske volumet av komponenten: For det forrige eksempelet 5 ml. I dette tilfellet ville \"Styrke (konsentrasjon)\" vært 0,4 mg/ml. I andre tilfeller, der styrken involverer en nevner som ikke er en fysisk størrelse, for eksempel 4 mg/tablett, uttrykkes nevneren som verdien \"1\", med enheten \"tablett\". Dette mønsteret ble valgt som en tilpasning til ISO IDMP-standarden. For eksempel 4 mg/tablett, 2 mg/5 ml, 100 mg/dose. Dersom elementet \"Styrke (konsentrasjon)\" brukes, er dette clusteret overflødig."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "Telleren i styrkebrøken.",
+            "comment" : "For eksempel: For en presentasjonsstyrke på \"300 µg/0,3 ml\", er Styrketeller \"300 µg\". For en presentasjonsstyrke på \"100 mg/tablett\", er Styrketeller \"100 mg\"."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "Nevneren i styrkebrøken.",
+            "comment" : "For eksempel: For en presentasjonsstyrke på \"300 µg/0,3 ml\", er Styrkenevner \"0,3 ml\". For en presentasjonsstyrke på \"100 mg/tablett\", er Styrkenevner \"1 tablett\"."
+          }
+        },
+        "pt" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "*Details about a medication or component of a medication, including strength, form, and details of any specific constituents.(en)"
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "*The name of the medication or medication component.(en)",
+            "comment" : "*For example: 'Zinacef 750 mg powder' or 'cefuroxim'. This item should be coded if possible, using for example, RxNorm, DM+D, Australian Medicines Terminology or FEST. Usage of this element will vary according to context of use. This element may be omitted where the name of the medication is recorded in the parent INSTRUCTION or ACTION archetype, and this archetype is only used to record that the form must be or was 'liquid'.(en)"
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "*The strength of the medication or medication component, expressed as a ratio.(en)",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "Angaben über ein Arzneimittel oder eine Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und Informationen über spezifische Bestandteile."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "Der Name des Arzneimittels oder der Arzneimittelkomponente.",
+            "comment" : "Zum Beispiel: \"Zinacef 750 mg Puder\" oder \"Cefuroxim\". Dieses Item sollte möglichst codiert werden, z.B. mittels RxNorm, DM+D, Australian Medicines Terminology oder FEST. Die Verwendung dieses Elements variiert je nach Anwendungskontext. Dieses Element kann weggelassen werden, wenn der Name des Arzneimittels in dem übergeordneten INSTRUCTION- oder ACTION-Archetyp vorhanden ist, und dieser Archetyp nur zur Darstellung der Darreichungsform genutzt wird, z.B. \"Flüssigkeit\"."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "Die Wirkstärke des Arzneimittels oder der Arzneimittelkomponente, ausgedrückt als Verhältniszahl.",
+            "comment" : "In einigen Fällen, wie bei flüssigen oder halbfesten Arzneimitteln, ist der Nenner des Stärkeverhältnisses eine physikalische Größe, zum Beispiel 2 mg/5 ml. In einigen dieser Fälle spiegelt der Nenner auch das tatsächliche Volumen der Komponente wider: 5 ml im vorherigen Beispiel. In diesem Fall würde die \"Wirkstoffkonzentration\" 0,4 mg/ml betragen. In anderen Fällen, wenn die Stärke einen Nenner betrifft, der keine physikalische Größe ist, z.B. 4 mg/Tablette, wird der Nenner als einheitlicher Wert \"1\" mit einer Einheit \"1\" ausgedrückt, und \"Tablette\" wird im Element \"Einheit der Darreichungsform\" geführt. Diese Regelung wurde gewählt, um dem Ansatz der ISO IDMP-Norm für Medikamentenkataloge gerecht zu werden. Wird das Element \"Wirkstoffkonzentration\" verwendet, wird dieser Cluster überflüssig."
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "Der Wert des Zählers des Wirkstärkeanteils.",
+            "comment" : "Zum Beispiel: Lautet die Wirkstärke (Darreichungsform) \"300 µg/0,3 ml\", so beträgt die Wirkstärke (Zähler) \"300 µg\". Bei einer Wirkstärke (Darreichungsform) von \"100 mg/Tablette\" ist der Wirkstärke-Zähler \"100 mg\"."
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "Der Wert des Nenners des Wirkstärkeanteils.",
+            "comment" : "Zum Beispiel: Der Wert des Nenners der Wirkstärke (Darreichungsform) \"300 µg/0,3 ml\" ist \"0,3 ml\". Der Wert des Nenners der Wirkstärke \"100 mg/Tablette\" ist \"1 Tablette\"."
+          }
+        },
+        "nl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "Gegevens over een medicament of onderdeel van een medicament, inclusief dosis, vorm en details over een specifiek bestandsdeel."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "De naam van het medicament of medicatie bestandsdeel.",
+            "comment" : "Bijvoorbeeld: 'Zinacef 750mg poeder' of 'cefuroxim'. Dit veld dient, indien mogelijk, gecodeerd te worden met behulp van bijvoorbeeld RxNorm, DM+D, Autralian Medicines Terminology, FEST of de G-Standaard. Gebruik van dit veld zal verschillen per gebruikscontext. Dit element can overgeslagen worden wanneer de naam van het medicament vastgelegd is in het bovenliggende INSTRUCTION of ACTION archetype en dit archetype zelf alleen gebruikt wordt voor het vastleggen dat de vorm 'vloeibaar' is, of dient te zijn."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "De dosis van het medicament of medicatie bestanddeel, uitgedrukt als een ratio.",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Wirkstoffrelation",
+            "description" : "Detaljer om ett läkemedel eller en läkemedelskomponent, inkluderat styrka, form och detaljer för alla specifika beståndsdelar."
+          },
+          "at0132.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0132.1",
+            "text" : "Allgemeiner Wirkstoff",
+            "description" : "Namnet på läkemedlet eller läkemedelskomponenten.",
+            "comment" : "Till exempel: 'Zinacef 750 mg pulver' eller 'cefuroxim'. Detta dataelement bör om möjligt kodas, med exempelvis RxNorm, DM + D, Australian Medicines Terminology eller FEST. Användningen av detta dataelement kommer att variera beroende på användningssammanhang. Detta dataelement kan utelämnas om läkemedlets namn registreras i föräldrarnas INSTRUKTION eller ÅTGÄRD, och denna arketyp endast används för att registrera att formen måste vara eller var \"flytande\"."
+          },
+          "at0152.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0152.1",
+            "text" : "Wirkstoffmenge",
+            "description" : "Styrkan hos läkemedlet eller läkemedelskomponenten, uttryckt som ett förhållande.",
+            "comment" : "*In some cases, as for liquid or semisolid medications, the denominator of the strength ratio is a physical quantity, for example 2 mg/5 ml. In some of these cases the denominator also reflects the actual volume of the component: 5 ml in the previous example. In this case the 'Strength (concentration)' would be 0.4 mg/ml. In other cases, where the strength involves a denominator which is not a physical quantity, for example 4 mg/tablet, the denominator is expressed as a unitary value '1' with a unit of '1', and 'tablet' is carried in the 'Unit of presentation' element. This arrangement was chosen to align with the approach adopted by the ISO IDMP standard for medication catalogues. If the 'Strength (concentration)' element is used, this cluster becomes redundant. (en)"
+          },
+          "at0153.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0153.1",
+            "text" : "Zähler",
+            "description" : "*The numerator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength numerator is '300 µg'. For a presentation strength of '100 mg/tablet', the strength numerator value is '100 mg'. (en)"
+          },
+          "at0157.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0157.1",
+            "text" : "Nenner",
+            "description" : "*The denominator of the strength fraction. (en)",
+            "comment" : "*For example: For a presentation strength of '300 µg/0.3 ml', the strength denominator value is '0.3 ml'. For a presentation strength of '100 mg/tablet', the strength denominator value is '1 tablet'. (en)"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "20797e3d-bdcd-4134-b39a-a923abbb968a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann, Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Sofia Janstad",
+        "organisation" : "SLL",
+        "email" : "sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
+        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt"
+      },
+      "author" : {
+        "name" : "Beatriz de Faria Leao",
+        "organisation" : "Bleao Informática em Saúde",
+        "email" : "bfleao@terra.com.br"
+      },
+      "accreditation" : "MD, PhD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "53b16273-51f2-4b36-875f-b62fbc992e0a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2707826AABBBC567CFA8708F294904ED"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_status_fhir.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-medication_status_fhir-008.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0014.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Status",
+            "description" : "Ein Code, der die Beurteilung des Patienten oder einer anderen Beurteilungsquelle über den Status des angewendeten Medikaments darstellt, mit dem sich diese Angabe befasst. Im Allgemeinen wird dies aktiv oder abgeschlossen sein."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Status Grund",
+            "description" : "Zusätzliche Informationen über die Medikation, die nicht in anderen Bereichen dargestellt wurden."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "fc08fc53-a372-4f4b-8d6e-b21dc30ebd43",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "da50064c-f62b-4444-98f5-f403b327e0d0",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "07559D9AA6F76784AE95ADE028603EC0"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.entry_category.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-entry_category-009.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "0..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "//fhir.hl7.org/"
+                  },
+                  "constraint" : [ "ac0.1" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "de" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Kategorie der Medikation",
+            "description" : "Kategorie des Eintrags.",
+            "comment" : "Belassen Sie als Freitext oder beschränken Sie sich auf eine interne oder externe Codeliste."
+          }
+        }
+      },
+      "termBindings" : {
+        "//fhir.hl7.org/" : {
+          "ac0.1" : "terminology://fhir.hl7.org//ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/medication-statement-category"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2005ae81-37d4-45a9-88fc-f22e58733026",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "8a0cca74-4e1a-4718-bf62-59f0ae966d87",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "B5309AFAC0FB04616CADD8CED1F8E18A"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.identifier_fhir.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-identifier_fhir-010.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "de" : {
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Externer identifier",
+            "description" : "Identifikator",
+            "comment" : "Identifizierungsdetails"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "cd4805b6-8a31-48b6-93bc-ccb7ba2f5d0f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "translations" : [ ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Kim Sommer",
+      "organisation" : "MHH"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Linda Aulin",
+      "organisation" : "Region Stockholm",
+      "email" : "linda.aulin@sll.se"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Edgardo Vazquez",
+      "organisation" : "VinculoMedico",
+      "email" : "edgardo.vazquez@vinculomedico.com"
+    },
+    "accreditation" : "Medical Doctor",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "John Tore Valand and Vebjørn Arntzen",
+      "organisation" : "Helse Bergen HF and Oslo University Hospital",
+      "email" : "john.tore.valand@helse-bergen.no, varntzen@ous-hf.no"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : {
+      "name" : "Mona Saleh"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Martijn van Eenennaam",
+      "organisation" : "Nedap Healthcare",
+      "email" : "martijn.vaneenennaam@nedap.com"
+    },
+    "accreditation" : "Ph.D.",
+    "otherDetails" : { }
+  } ]
+}
