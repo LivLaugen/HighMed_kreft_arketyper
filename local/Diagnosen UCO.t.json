@@ -1,0 +1,2330 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "1084fd64-9c4b-4061-a8cd-b65d9956bc85",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2020-12-15",
+      "email" : "rehberg.alina@mh-hannover.de",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "name" : "Alina Rehberg"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "Initial"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "notes" : "Generated automatically by Adl Designer",
+      "MetaDataSet:Sample Set" : "Template metadata sample set ",
+      "Acknowledgements" : "",
+      "Business Process Level" : "",
+      "Care setting" : "",
+      "Client group" : "",
+      "Clinical Record Element" : "",
+      "Copyright" : "",
+      "Issues" : "",
+      "Owner" : "",
+      "Sign off" : "",
+      "Speciality" : "",
+      "User roles" : "",
+      "MD5-CAM-1.0.1" : "990746a019928fadc4e02f23d3b3bf96",
+      "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC",
+      "original_language" : "ISO_639-1::de",
+      "build_uid" : "64fed64e-1163-44ce-bcb9-472bd3f6ea82",
+      "sem_ver" : "6.1.0"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "purpose" : "Zur Repräsentation von Nebendiagnosen eines Patienten mit einer onkologischen Erkrankung im HiGHmed Projekt.",
+        "keywords" : [ "Diagnose, Problemliste, ICD, Ätiopathogenese, Anamnese, Begleiterkrankungen, Nebenerkrankungen" ],
+        "use" : "Dieses Template wird verwendet, um Nebendiagnosen eines Patienten mit einer onkologischen Erkrankung aufzuzeichnen. Es werden relevante Nebenerkrankungen mit zusätzlichen spezifischen Angaben wie Diabetestyp, Ätiopathogenese oder Schweregrad einer Erkrankung erfasst.\n",
+        "misuse" : "Nicht zur Repräsentation der Tumordiagnose des Patienten geeignet. Für diese Daten bitte das \"Tumordiagnose Bericht\" Template benutzen.\nNicht zur Repräsentation des MII Kerndatensatzes Moduls Diagnosen verwenden. Für diese Darstellung bitte das \"KDS_Diagnose\" Template verwenden.",
+        "copyright" : "© HiGHmed",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "originalResourceUri" : { },
+        "otherDetails" : {
+          "notes" : "Generated automatically by Adl Designer"
+        }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_report.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "1..1",
+                "nodeId" : "at0002.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "1..1",
+                "nodeId" : "at0006.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "1..*",
+        "nodeId" : "at0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        }
+      },
+      "zh" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Diagnosen UCO",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "86532389-d405-3bdd-ba9d-c4af20f38a2c",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Diagnosen UCO",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "b5bfd7b0-eb33-4b1a-86a4-eedd5b44e41a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D94F932D76D2D0389D242063ED336124"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.case_identification.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-case_identification-000.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004", "at0005" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "ar-sy" : { },
+        "de" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "76b9367d-f26d-4d22-a79d-d02cffa0dda5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Michael Lieser",
+        "organisation" : "University of Heidelberg, Department of Infectious Diseases",
+        "email" : "michael.lieser@med.uni-heidelberg.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "cc3a20b3-8928-4c2a-babd-fe9e28987be7",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "70083C267A35C88E111E5BA35120DE86"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "0..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "//fhir.hl7.org/"
+                      },
+                      "constraint" : [ "ac0.1" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0012.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "0..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "//fhir.hl7.org/"
+                      },
+                      "constraint" : [ "ac0.2" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0012.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "0..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "0..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "//fhir.hl7.org/"
+                      },
+                      "constraint" : [ "ac0.3" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0078.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0077.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "Schweregrad"
+                      },
+                      "constraint" : [ "at0047", "at0048", "at0049" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "Schweregrad",
+                        "code" : "1",
+                        "value" : "1"
+                      }, {
+                        "terminologyId" : "Schweregrad",
+                        "code" : "2",
+                        "value" : "2"
+                      }, {
+                        "terminologyId" : "Schweregrad",
+                        "code" : "3",
+                        "value" : "3"
+                      }, {
+                        "terminologyId" : "Schweregrad",
+                        "code" : "4",
+                        "value" : "4"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0005.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0072.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0030.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0073.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "//fhir.hl7.org/"
+                      },
+                      "constraint" : [ "ac0.4" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0069.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0043.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-diabetes_typ-002.v1",
+              "referenceType" : "archetypeOverlay"
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0043.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-etiology-003.v1",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0032",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0070.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "es" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "*Identification of the problem or diagnosis, by name.(en)",
+            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Fecha y hora, estimado o real, cuándo el problema/diagnóstico es detectado por un profesional de la salud"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Valoración de la severidad del problema/diagnóstico"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Día y hora, estimado o real, en que el problema/diagnóstico fue resuelto o entró en remisión"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "*The level of confidence in the identification of the diagnosis.(en)",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Comentario narrativo adicional sobre el problema/diagnóstico no capturado en otros campos"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "Fecha en la que el problema/diagnóstico fue actualizado"
+          }
+        },
+        "es-ar" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identificación del problema o diagnóstico, por nombre.",
+            "comment" : "Se prefiere la codificación del nombre del problema o diagnóstico mediante una terminología cuando esto sea posible."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Identificación de un sitio corporal simple para la localización o el problema.",
+            "comment" : "Se prefiere la codificación de la localización anatómica mediante una terminología cuando esto sea posible.\r\nUtilícese este dato para registrar localizaciones anatómicas precoordinadas. Si los requerimientos para el registro de una localización anatómica son determinadas en tiempo de ejecución por parte de la aplicación, o se requiere un modelado más complejo tal como una localización relativa, utilícese CLUSTER.anatomical_location or CLUSTER.relative_location dentro del slot \"localización anatómica estructurada\" en este arquetipo. Las ocurrencias de este dato son ilimitadas para así permitir escenarios clínicos tales como la descripción de un rash en múltiples localizaciones pero donde todos los demás atributos son idénticos. Si la localización anatómica esta incluida en el nombre del problema o diagnóstico mediante códigos precoordinados, este dato se torna redundante."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identificación de un sitio corporal simple para la localización o el problema.",
+            "comment" : "Se prefiere la codificación de la localización anatómica mediante una terminología cuando esto sea posible.\r\nUtilícese este dato para registrar localizaciones anatómicas precoordinadas. Si los requerimientos para el registro de una localización anatómica son determinadas en tiempo de ejecución por parte de la aplicación, o se requiere un modelado más complejo tal como una localización relativa, utilícese CLUSTER.anatomical_location or CLUSTER.relative_location dentro del slot \"localización anatómica estructurada\" en este arquetipo. Las ocurrencias de este dato son ilimitadas para así permitir escenarios clínicos tales como la descripción de un rash en múltiples localizaciones pero donde todos los demás atributos son idénticos. Si la localización anatómica esta incluida en el nombre del problema o diagnóstico mediante códigos precoordinados, este dato se torna redundante."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Fecha y hora estimadas o confirmadas en las cuales los signos o síntomas del problema fueron observados por primera vez.",
+            "comment" : "Los datos registrados o importados como \"Edad a la aparición\" deberán ser convertidos a una fecha utilizando la fecha de nacimiento del sujeto."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Fecha y hora estimadas o confirmadas en las cuales el diagnóstico o problema fue reconocido por el profesional de la salud.",
+            "comment" : "El uso de fechas parciales es aceptable. Si el sujeto de cuidados tiene menos de un año de edad, se requiere la fecha completa o al menos el año y mes para permitir cálculos adecuados (si por ejemplo se utiliza para guiar un apoyo a la toma de decisiones). Los datos registrados o importados como \"Edad a la aparición\" deberán ser convertidos a una fecha utilizando la fecha de nacimiento del sujeto."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Una evaluación de la severidad general del problema o diagnóstico.",
+            "comment" : "Si la severidad del problema o diagnóstico esta incluida en su nombre mediante códigos precoordinados, este dato se torna redundante. Nota: una gradación ,as específica de severidad puede ser registrada utilizando el slot de Detalles específicos."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Fecha y hora estimadas o confirmadas en las cuales este problema o diagnóstico remitió o se resolvió, determinadas de un profesional de la salud.",
+            "comment" : "El uso de fechas parciales es aceptable. Si el sujeto de cuidados tiene menos de un año de edad, se requiere la fecha completa o al menos el año y mes para permitir cálculos adecuados (si por ejemplo se utiliza para guiar un apoyo a la toma de decisiones)."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "El nivel de certeza de la identificación del diagnóstico.",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Narrativa adicional acerca del problema o diagnóstico que no ha sido consignada en otros campos."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "La fecha de la última actualización de este problema o diagnóstico."
+          }
+        },
+        "de" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Namentliche Identifikation des Problems oder der Diagnose.",
+            "comment" : "Wo möglich, ist die Kodierung des Problems oder der Diagnose über eine Terminologie zu bevorzugen."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identifikation einer einfachen Körperstelle zur Lokalisierung des Problems oder der Diagnose.",
+            "comment" : "Wo dies möglich ist, ist die Kodierung der anatomischen Lokalisation über eine Terminologie zu bevorzugen. Verwenden Sie dieses Datenelement, um vorab präkoordinierte anatomische Lokalisationen zu erfassen. Wenn die Anforderungen an die Erfassung der anatomischen Lokalisation zur Laufzeit durch die Anwendung bestimmt werden oder komplexere Modellierungen, wie z.B. relative Lokalisationen erforderlich sind, dann verwenden Sie in diesem Archetyp den CLUSTER.anatomical_location oder CLUSTER.relative_location innerhalb des SLOT 'Structured anatomical location'. Die Anzahl für dieses Datenelement ist unbegrenzt, um klinische Szenarien wie die Beschreibung eines Hautausschlags an mehreren Stellen zu ermöglichen, wobei jedoch alle anderen Attribute identisch sind. Falls die anatomische Lage über präkoordinierte Codes im Namen des Problems/Diagnose enthalten ist, wird dieses Datenelement überflüssig."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Geschätzte oder exakte Zeit (bzw. Datum), zu der die Krankheitsanzeichen oder Symptome zum ersten mal beobachtet wurden.",
+            "comment" : "Datumswerte, die als \"Alter zu Beginn\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Geschätzte oder exakte Zeit (bzw. Datum), zu der die Diagnose oder das Problem von einer medizinischen Fachkraft festgestellt wurde.",
+            "comment" : "Unvollständige Datumsangaben sind zulässig. Wenn der Patient unter einem Jahr alt ist, dann ist das vollständige Datum oder ein Minimum von Monat und Jahr notwendig, um genaue Altersberechnungen zu ermöglichen - z.B. wenn es zur Entscheidungsunterstützung verwendet wird. Datumswerte, die als \"Alter zum Zeitpunkt der klinischen Feststellung\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Eine Gesamtbeurteilung des Schweregrades des Problems oder der Diagnose.",
+            "comment" : "Ist der Schweregrad über vordefinierte Codes im Element \"Name des Problems/ der Diagnose\" enthalten, wird dieses Datenelement überflüssig. Hinweis: Eine spezifischere Einstufung des Schweregrads kann mit Hilfe des SLOTs \"Spezifische Angaben\" angegeben werden."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Geschätzte oder exakte Zeit (bzw. Datum), zu der von einer medizinischen Fachkraft die Genesung oder die Remission des Problems oder der Diagnose festgestellt wurde.",
+            "comment" : "Unvollständige Datumsangaben sind zulässig. Wenn der Patient unter einem Jahr alt ist, dann ist das vollständige Datum oder ein Minimum von Monat und Jahr notwendig, um genaue Altersberechnungen zu ermöglichen - z.B. wenn es zur Entscheidungsunterstützung verwendet wird. Datumswerte, die als \"Alter zum Zeitpunkt der Genesung\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "Grad der Sicherheit, mit der die Diagnose festgestellt wurde.",
+            "comment" : "Wenn ein alternativer Wertesatz benötigt wird, können diese Werte in einem Template zum Datentyp DV_TEXT hinzugefügt werden."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Ergänzende Beschreibung des Problems oder der Diagnose, die nicht anderweitig erfasst wurde."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "Datum der letzten Aktualisierung der Diagnose bzw. des Problems."
+          }
+        },
+        "en" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identification of the problem or diagnosis, by name.",
+            "comment" : "Coding of the name of the problem or diagnosis with a terminology is preferred, where possible."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
+            "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identification of a simple body site for the location of the problem or diagnosis.",
+            "comment" : "Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.",
+            "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.",
+            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "An assessment of the overall severity of the problem or diagnosis.",
+            "comment" : "If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
+            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "The level of confidence in the identification of the diagnosis.",
+            "comment" : "If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Additional narrative about the problem or diagnosis not captured in other fields."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "The date this problem or diagnosis was last updated."
+          }
+        },
+        "ar-sy" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "*Identification of the problem or diagnosis, by name.(en)",
+            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "*Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.(en)",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "*An assessment of the overall severity of the problem or diagnosis.(en)",
+            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "*The level of confidence in the identification of the diagnosis.(en)",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "*The date this problem or diagnosis was last updated.(en)"
+          }
+        },
+        "pt-br" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identificação do problema ou diagnóstico, por nome.",
+            "comment" : "Quando possível, é preferível usar a codificação do nome do problema ou diagnóstico com uma terminologia."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Simples identificação de um local do corpo para a localização do problema ou diagnóstico.",
+            "comment" : "A codificação do nome da localização anatômica com uma terminologia é preferível, quando possível.\r\nUtilize este elemento de dados para gravar localizações anatômicas precoordenadas. Se os requisitos para gravar a localização anatômica são determinados em tempo real através da aplicação ou requerem uma modelagem mais complexa, como localizações relativas, em seguida, use o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do SLOT 'localização anatômica estruturada' neste arquétipo. Ocorrências para este elemento de dados são ilimitadas para permitir cenários clínicos tais como a descrição de uma erupção cutânea em vários locais, mas em que todos os outros atributos são idênticos. Se a localização anatômica é incluída ao nome do Problema / diagnóstico, através de códigos pré-coordenados, este elemento de dados torna-se redundante."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Simples identificação de um local do corpo para a localização do problema ou diagnóstico.",
+            "comment" : "A codificação do nome da localização anatômica com uma terminologia é preferível, quando possível.\r\nUtilize este elemento de dados para gravar localizações anatômicas precoordenadas. Se os requisitos para gravar a localização anatômica são determinados em tempo real através da aplicação ou requerem uma modelagem mais complexa, como localizações relativas, em seguida, use o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do SLOT 'localização anatômica estruturada' neste arquétipo. Ocorrências para este elemento de dados são ilimitadas para permitir cenários clínicos tais como a descrição de uma erupção cutânea em vários locais, mas em que todos os outros atributos são idênticos. Se a localização anatômica é incluída ao nome do Problema / diagnóstico, através de códigos pré-coordenados, este elemento de dados torna-se redundante."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Data / tempo, estimada ou real, que os sinais ou sintomas do problema / diagnóstico foram observados pela primeira vez.",
+            "comment" : "Os dados capturados / importados como \"A idade de início\" devem ser convertidos para uma data, usando o sujeito data de nascimento."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Data / hora, estimada ou real, que o diagnóstico ou o problema foi reconhecido por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \r\nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade no momento do reconhecimento clínico\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Uma avaliação global da severidade do problema ou diagnóstico.",
+            "comment" : "Se a severidade está incluída no nome do Problema / diagnóstico através de códigos pré-coordenados, este elemento de dados torna-se redundante. \r\nNota: a classificação mais específica da gravidade pode ser gravada utilizando os detalhes específicos SLOT."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Data / tempo, estimado ou atual, de resolução ou de dispensa desse problema ou diagnóstico, como determinado por um profissional de saúde.",
+            "comment" : "Datas parciais são aceitáveis. \r\nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade na ocasião da resolução\" deve ser convertida para uma data usando o sujeito data de nascimento."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "O nível de confiança da identificação do diagnóstico.",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Narrativa adicional sobre o problema ou diagnóstico, não capturados em outros campos."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "A data este problema ou diagnóstico foi atualizado pela última vez."
+          }
+        },
+        "nb" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.",
+            "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Registrering av et enkelt og usammensatt anatomisk sted der problemet eller diagnosen er lokalisert.",
+            "comment" : "Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. \r\nBruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet \"Strukturert anatomisk lokalisering\" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\" via prekoordinerte koder blir dette dataelementet overflødig."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Registrering av et enkelt og usammensatt anatomisk sted der problemet eller diagnosen er lokalisert.",
+            "comment" : "Koding av navnet på den anatomiske lokaliseringen ved hjelp av en terminologi er foretrukket når dette er mulig. \r\nBruk dette dataelementet for å registrere prekoordinerte anatomiske lokaliseringer. Dersom behovene for å registrere anatomisk sted bestemmes i applikasjonen eller trenger større grad av kompleksitet som f.eks. relativ lokalisering, er det anbefalt å bruke CLUSTER.anatomical_location eller CLUSTER.relative_location innenfor SLOTet \"Strukturert anatomisk lokalisering\" i denne arketypen. Dette dataelementet kan ha ubegrenset antall forekomster, for å gjøre det mulig å registrere kliniske scenarier som f.eks. å beskrive et utslett som opptrer flere steder på kroppen, men der alle andre attributter er identiske. Dersom den anatomiske lokaliseringen inkluderes i feltet \"Problem/diagnosenavn\" via prekoordinerte koder blir dette dataelementet overflødig."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert.",
+            "comment" : "Data registrert eller importert som \"alder ved debut\" bør konverteres til en dato ved hjelp av individets fødselsdato."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Anslått eller faktisk dato/tid da diagnosen eller problemet ble bekreftet av helsepersonell.",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer. Data registrert eller importert som \"alder ved tidspunkt når diagnosen stilles\" bør konverteres til en dato ved hjelp av individets fødselsdato."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "En vurdering av problemet eller diagnosens overordnede alvorlighetsgrad.",
+            "comment" : "Dersom alvorlighetsgrad inkluderes i feltet \"Problem/diagnosenavn\" via prekoordinerte koder blir dette dataelementet overflødig. Merk: Mer spesifikk gradering av alvorlighetsgrad kan registreres ved å bruke SLOTet \"Spesifikke detaljer\""
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Estimert eller faktisk dato/tid for bedring eller remisjon av det aktuelle problemet eller diagnosen, fastslått av helsepersonell.",
+            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer.\r\nData registrert eller importert som \"alder ved bedring\" bør konverteres til en dato ved hjelp av individets fødselsdato."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "Grad av sikkerhet i identifikasjonen av diagnosen.",
+            "comment" : "Hvis et alternativt verdisett er nødvendig, kan disse verdiene legges til DV_TEXT-datatypen i et templat."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Utdypende fritekst om problemet eller diagnosen, som ikke passer i andre felt."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "Datoen da problemet eller diagnosen sist ble oppdatert."
+          }
+        },
+        "sv" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identifiering av problemet eller diagnosen efter namn.",
+            "comment" : "Kodning av namnet på problemet eller diagnosen med en terminologi är att föredra, om det är tillämpligt."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Identifiering av problemets eller diagnosens anatomiska plats.",
+            "comment" : "Kodning av den anatomiska platsens namn med en terminologi är att föredra, om det är tillämpligt. Använd det här fältet för att dokumentera förkoordinerade anatomiska platser. Om kraven för att dokumentera den anatomiska platsen bestäms automatiskt av applikationen eller kräver mer komplicerad modellering som exempelvis relativa platser, använd i så fall Cluster.anatomical_location eller cluster. relative_location inom \"Strukturerad anatomisk plats\" - fältet i denna arketyp. I detta fält är det möjligt att dokumentera kliniska scenarier som exempelvis att beskriva ett utslag på flera platser, men där alla andra egenskaper är identiska. Om den anatomiska platsen ingår i problem-och diagnos-namnet via förkoordinerade koder, blir detta fält överflödigt."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identifiering av problemets eller diagnosens anatomiska plats.",
+            "comment" : "Kodning av den anatomiska platsens namn med en terminologi är att föredra, om det är tillämpligt. Använd det här fältet för att dokumentera förkoordinerade anatomiska platser. Om kraven för att dokumentera den anatomiska platsen bestäms automatiskt av applikationen eller kräver mer komplicerad modellering som exempelvis relativa platser, använd i så fall Cluster.anatomical_location eller cluster. relative_location inom \"Strukturerad anatomisk plats\" - fältet i denna arketyp. I detta fält är det möjligt att dokumentera kliniska scenarier som exempelvis att beskriva ett utslag på flera platser, men där alla andra egenskaper är identiska. Om den anatomiska platsen ingår i problem-och diagnos-namnet via förkoordinerade koder, blir detta fält överflödigt."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Uppskattat eller reellt datum och tid när problemets eller diagnosens tecken eller symtom först observerades.",
+            "comment" : "Data som dokumenteras och importeras som \"Ålder vid debut\" ska konverteras till ett datum med hjälp av patientens födelsedatum."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Uppskattat eller reellt datum coh tid som diagnosen eller problemet erkändes av sjukvårdspersonal.",
+            "comment" : "Partiella datum är acceptabla. Om patienten är under ett år, då är det fullständiga datumet eller ett minimum av månad och år nödvändigt för korrekta åldersberäkningar exempelvis om de används för beslutsstöd. Data som registreras och importeras som \"Ålder vid tidpunkten för kliniskt erkännande\" ska omvandlas till ett datum med hjälp av patientens födelsedatum."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "En bedömning av problemets eller diagnosens totala svårighetsgrad.",
+            "comment" : "Om svårighetsgraden har lagts till i Problem- och diagnos-namnet via förkoordinerade koder, blir detta fält överflödigt. Obs: mer specifik gradering av svårighetsgrad kan registreras i fältet ”specifika detaljer.”"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Uppskattat eller reellt datum och tid för upplösning eller remission av detta problem eller diagnos, som fastställts av sjukvårdspersonal.",
+            "comment" : "Partiella datum är acceptabla. Om patienten är under ett år är det fullständiga datumet eller ett minimum av månad och år nödvändigt för korrekta åldersberäkningar, exempelvis om de används för beslutsstöd. Data som registreras och importeras som \"Ålder vid tidpunkten för upplösning\" ska konverteras till ett datum med hjälp av patientens födelsedatum."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "Säkerhetsgraden för identifiering av diagnos.",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "En extra beskrivning av problemet eller diagnosen som inte tagits upp i andra fält."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "Datumet då problemet eller diagnosen senast uppdaterades."
+          }
+        },
+        "ko" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "명칭으로 문제 또는 진단의 식별.",
+            "comment" : "가능하다면, 용어체계를 통한 문제 또는 진단의 명칭을 코딩하는 것이 좋음."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "문제 또는 진단의 위치를 위해 간단한 신체 위치 확인",
+            "comment" : "가능하다면, 용어체계를 통한 해부학적 위치의 명칭을 코딩하는 것이 좋음.\r\n이 데이터 엘리먼트에 선조합된 해부학적 위치를 사용. 해부학적 위치를 기록하기 위한 요구사항이 애플리케이션 실행 때 결정되거나 또는 상대적인 위치와 같은 더 복잡한 모델링을 요구한다면, 이 아키타입의 'Structured anatomical location' SLOT 내의 CLUSTER.anatomical_location 또는 CLUSTER.relative_location를 이용. 이 데이터 엘리먼트을 위한 Occurrences는 여러 위치에 생긴 발진(rash)을 기술하는 것과 같은 임상 시나리오를 허용하는데 제한이 없지만 모든 다른 속성(attributes)은 동일해야 함. 해부학적 위치가 문제/진단명에 선조합코드로 포함된다면 이 데이터 엘리먼트는 중복이 됨."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "문제 또는 진단의 위치를 위해 간단한 신체 위치 확인",
+            "comment" : "가능하다면, 용어체계를 통한 해부학적 위치의 명칭을 코딩하는 것이 좋음.\r\n이 데이터 엘리먼트에 선조합된 해부학적 위치를 사용. 해부학적 위치를 기록하기 위한 요구사항이 애플리케이션 실행 때 결정되거나 또는 상대적인 위치와 같은 더 복잡한 모델링을 요구한다면, 이 아키타입의 'Structured anatomical location' SLOT 내의 CLUSTER.anatomical_location 또는 CLUSTER.relative_location를 이용. 이 데이터 엘리먼트을 위한 Occurrences는 여러 위치에 생긴 발진(rash)을 기술하는 것과 같은 임상 시나리오를 허용하는데 제한이 없지만 모든 다른 속성(attributes)은 동일해야 함. 해부학적 위치가 문제/진단명에 선조합코드로 포함된다면 이 데이터 엘리먼트는 중복이 됨."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "문제/진단의 증상 또는 징후가 처음 관찰된 추정 또는 실제 날짜/시간.",
+            "comment" : "\\\"발병 나이\\\"로 획득/입력된 데이터는 진료의 주체의 생일을 이용해 날짜로 변환되어 함."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "진단 또는 문가가 헬스케어 전문가에게 인지된 추정 또는 실제 날짜/시간.",
+            "comment" : "부분 날짜도 허용됨. 진료의 주체가 한 살 이하이면, 완전한 날짜 또는 달과 년의 하한이 정확한 나이 계산을 위해 필요함 - 예를 들어, 의사결정지원을 사용하는 경우. \\\"임상적으로 인지된 시점의 나이\\\"로 획득/입력된 데이터는 진료의 주체의 생일을 이용해 날짜로 변환되어야 함."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "문제 또는 진단의 전반적인 중증도 평가.",
+            "comment" : "중증도가 선조합코드로 문제/진단 내에 포함된다면, 이 데이터 엘레먼트는 중복이 됨. 주의 : 더 상세한 중증도 등급은 Specific details SLOT을 이용해 기록할 수 있음."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "헬스케어 전문가에 의해 결정된 이 문제나 진단의 추정 또는 실제 완치 또는 관해 날짜시간.",
+            "comment" : "부분 날짜는 허용됨. 진료의 주체가 한 살 이하면, 완전한 날짜 또는 달과 년의 하한이 정확한 나이 계산을 위해 필요함 - 예를 들어, 의사결정지원을 사용하는 경우. \\\"임상적으로 인지된 시점의 나이\\\"로 획득/입력된 데이터는 진료의 주체의 생일을 이용해 날짜로 변환되어야 함."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "진단을 확인하는 신뢰의 수준.",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "다른 필드에서 획득되지 않은 문제 또는 진단에 대한 추가적인 서술내용"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "문제 또는 진단이 최종 업데이트된 날짜."
+          }
+        },
+        "fi" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Ongelman tai diagnoosin tunnistaminen nimellä.",
+            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Yksinkertaisen vartalokohdan tunnistaminen ongelman tai diagnoosin sijaintia varten.",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Yksinkertaisen vartalokohdan tunnistaminen ongelman tai diagnoosin sijaintia varten.",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Arvioitu tai todellinen päivämäärä / aika, jolloin ongelman / diagnoosin merkkejä tai oireita havaittiin ensimmäisen kerran.",
+            "comment" : "*Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Arvioitu tai tarkka ajankohta ongelman tai diagnoosin toteamiselle terv.huollon ammattilaisen tekemänä",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Arvioitu vakavuus oireen tai diagnoosin kohdalla",
+            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "ongelman tai diagnoosin arvioitu tai todellinen ratkaisemis- tai loppumispäivämäärä / -aika, jonka on määrittänyt terveydenhuollon ammattilainen.",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "Diagnoosin tunnistamisen luotettavuus",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Lisätietoa ongelmasta tai diagnoosista, jota ei voi asettaa edeltäville tietokentille."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "Ongelman tai diagnoosin viimeisin päivityspäivämäärä"
+          }
+        },
+        "it" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Nome/identificativo del problema o della diagnosi.",
+            "comment" : "Si preferisce, ove possibile, la codifica del problema o diagnosi con una terminologia."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Identificativo di un semplice sito corporeo per per la localizzazione del problema o della diagnosi.",
+            "comment" : "Si preferisce, ove possibile, la codifica del sito anatomico con una terminologia.  Utilizzare questo campo per memorizzare posizioni anatomiche precoordinate. Se i requisiti per la registrazione della localizzazione sono determinati in fase di esecuzione dell'applicazione  (run-time) o se richiedono una modellazione più complessa, come ad esempio le posizioni relative, allora utilizzare gli archetipi CLUSTER.anatomical_location o CLUSTER.relative_location all'interno dello SLOT di questo archetipo 'Dettagli strutturati del sito corporeo'.  Questo campo non ha limite sulle occorrenze per essere adattabile a scenari clinici come la descrizione di un'eruzione cutanea che coinvolge più siti corporei, ma dove tutti gli altri attributi sono identici. Se la posizione anatomica è inclusa nel campo 'Nome del problema/diagnosi attraverso una codifica prestabilita, questo elemento risulta ridondante."
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identificativo di un semplice sito corporeo per per la localizzazione del problema o della diagnosi.",
+            "comment" : "Si preferisce, ove possibile, la codifica del sito anatomico con una terminologia.  Utilizzare questo campo per memorizzare posizioni anatomiche precoordinate. Se i requisiti per la registrazione della localizzazione sono determinati in fase di esecuzione dell'applicazione  (run-time) o se richiedono una modellazione più complessa, come ad esempio le posizioni relative, allora utilizzare gli archetipi CLUSTER.anatomical_location o CLUSTER.relative_location all'interno dello SLOT di questo archetipo 'Dettagli strutturati del sito corporeo'.  Questo campo non ha limite sulle occorrenze per essere adattabile a scenari clinici come la descrizione di un'eruzione cutanea che coinvolge più siti corporei, ma dove tutti gli altri attributi sono identici. Se la posizione anatomica è inclusa nel campo 'Nome del problema/diagnosi attraverso una codifica prestabilita, questo elemento risulta ridondante."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Data/ora, stimate o effettive, in cui sono stati per la prima volta osservati i sintomi del problema/diagnosi.",
+            "comment" : "I dati acquisiti/importati come 'Età al momento dell'insorgenza' dovrebbero essere convertiti in una data usando la data di nascita del soggetto."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Data/ora, stimate o effettive, in cui la diagnosi o il problema sono stati riconosciuti da un operatore sanitario.",
+            "comment" : "Sono accettabili le date parziali. Se il soggetto ha età inferiore ad un anno, sono necessari la data completa o almeno il mese e l'anno per permettere un calcolo accurato dell'età - ad esempio, se utilizzato per guidare il supporto decisionale. I dati acquisiti/importati come 'Età al momento del riconoscimento clinico' dovrebbero essere convertiti in una data usando la data di nascita del soggetto."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "Una valutazione generale della severità del problema o della diagnosi.",
+            "comment" : "Se la severità è inclusa nel campo 'Nome del problema/diagnosi' attraverso una codifica prestabilita, questo elemento risulta ridondante. Nota: una classificazione più specifica della severità può essere memorizzata usando lo SLOT 'Dettagli specifici'."
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "Data/ora, stimate o effettive, della risoluzione o remissione del problema o della diagnosi come determinato da un operatore sanitario.",
+            "comment" : "Sono accettabili le date parziali. Se il soggetto ha età inferiore ad un anno, sono necessari la data completa o almeno il mese e l'anno per permettere un calcolo accurato dell'età - ad esempio, se utilizzato per guidare il supporto decisionale. I dati acquisiti/importati come 'Età al momento della risoluzione' dovrebbero essere convertiti in una data usando la data di nascita del soggetto."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "Grado di certezza nell'identificazione della diagnosi.",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "Informazioni aggiuntive sul problema o diagnosi non catturate in altri campi."
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "La data in cui questo record di Problema/Diagnosi è stato aggiornato l'ultima volta."
+          }
+        },
+        "nl" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "Identificatie van het probleem of de diagnose bij naam.\r\n                            ",
+            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "Identificatie van een eenvoudig lichaamsdeel voor de lokatie van het probleem of de diagnose.",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "Identificatie van een eenvoudig lichaamsdeel voor de lokatie van het probleem of de diagnose.",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "Geschatte of precieze datum/tijd dat de eerste tekenen of symptomen van het probleem of de diagnose werden opgemerkt.",
+            "comment" : "*Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "Geschatte of werkelijke datum/tijd waarop het probleem of de diagnose is herkend door een zorgprofessional.",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "*An assessment of the overall severity of the problem or diagnosis.(en)",
+            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "*The level of confidence in the identification of the diagnosis.(en)",
+            "comment" : "*If an alternative valueset is required, these values can be added to the DV_TEXT data type in a template.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "*The date this problem or diagnosis was last updated.(en)"
+          }
+        },
+        "zh" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Relevante Nebenerkrankung (ICD-10)",
+            "description" : "*Identification of the problem or diagnosis, by name.(en)",
+            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Körperstelle",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0012.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.2",
+            "text" : "Seitenlokalisation",
+            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
+            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt des Auftretens)",
+            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.(en)",
+            "comment" : "*Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Diagnosedatum",
+            "description" : "*Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.(en)",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Schweregrad der Nebenerkrankung",
+            "description" : "*An assessment of the overall severity of the problem or diagnosis.(en)",
+            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Klinisch relevanter Zeitraum (Zeitpunkt der Genesung)",
+            "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
+            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.(en)"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Diagnosesicherheit",
+            "description" : "*The level of confidence in the identification of the diagnosis.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Anmerkungen",
+            "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
+          },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Letztes Dokumentationsdatum",
+            "description" : "*The date this problem or diagnosis was last updated.(en)"
+          }
+        }
+      },
+      "termBindings" : {
+        "//fhir.hl7.org/" : {
+          "ac0.1" : "terminology://fhir.hl7.org//ValueSet/$expand?url=http://fhir.de/ValueSet/bfarm/icd-10-gm",
+          "ac0.2" : "terminology://fhir.hl7.org//ValueSet/$expand?url=http://hl7.org/fhir/ValueSet/body-site",
+          "ac0.3" : "terminology://fhir.hl7.org//ValueSet/$expand?url=https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION",
+          "ac0.4" : "terminology://fhir.hl7.org//ValueSet/$expand?url=https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_DIAGNOSESICHERHEIT"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "008d51dd-0f67-46f6-9fb1-de97aa4d79bb",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg",
+        "organisation" : "Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela",
+        "organisation" : "Tieto Sweden AB",
+        "email" : "ext.kirsi.poikela@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "email" : "alandmarch@gmail.com"
+      },
+      "accreditation" : "-",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, John Tore Valand, Liv Laugen",
+        "organisation" : "Helse Bergen HF, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ko"
+      },
+      "author" : {
+        "name" : "Seung-Jong Yu",
+        "organisation" : "InfoClinic Co.,Ltd.",
+        "email" : "seungjong.yu@gmail.com"
+      },
+      "accreditation" : "M.D.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima, Gabriela Alves, Maria Angela Scatena, Marivan Abrahäo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Cecilia Mascia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "cecilia.mascia@crs4.it"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh"
+      },
+      "author" : {
+        "name" : "Yexuan Cheng",
+        "organisation" : "浙江大学",
+        "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "49835546-1cf8-4b90-a045-4ff85d3ca702",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "B4F9317D500B6E2DE9C83138B0C062EC"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.diabetes_typ.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-diabetes_typ-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Falls Diabetes",
+            "description" : "Diabetes mellitus umfasst eine Gruppe von Stoffwechselerkrankungen mit unterschiedlichen Ursachen. Diese Erkrankungen sind gekennzeichnet durch einen chronisch erhöhten Blutzuckerspiegel die auf Insulinmangel oder Insulinresistenz beruhen. Es ist eine Einteilung in verschiedene Diabetes mellitus Typen üblich. "
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "bf926122-939e-4e34-911c-33c9d223e798",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ea83aa36-5f41-42ec-92a1-c231ebeee214",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "095B7B026ED1E03CA292CB90E8F0FC40"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.etiology.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-etiology-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0005", "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013", "at0014", "at0015", "at0016", "at0018" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0017.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "constraint" : [ "Typ A", "Typ B", "Typ C", "Typ D", "Typ E" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Falls Lebererkrankung",
+            "description" : "The underlying causes and etiology for a specific disease or abnormal condition."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Genese der chronischen Lebererkrankung",
+            "description" : "Identifying the etiology of the disease or the abnormal condition.",
+            "comment" : "This could be another disease, an unhealthy behaviour, a gene, or any other root cause of the disease that the patient has.\r\nIt is possible to repeat this element for a disease which has multiple causing factors.\r\nIt is also preferable to code this element with a terminology database when possible.\r\nExamples of the inputs could be: alcoholism (for liver cirrhosis), diabetes (for chronic kidney disease), respiratory infection (for fever), or smoking (for lung cancer)."
+          },
+          "at0017.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017.1",
+            "text" : "Hepatitis Typ",
+            "description" : "**(en)"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Falls Lebererkrankung",
+            "description" : "Die Ursachen, Gründe oder Erklärung für das Entstehen eines bestimmten Problems/einer Diagnose, dessen/deren auslösenden Faktoren und Entwicklung."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Genese der chronischen Lebererkrankung",
+            "description" : "Identifizierung der Ursache der Krankheit oder des abnormalen Zustands.",
+            "comment" : "Dies könnte eine andere Krankheit sein, ein ungesundes Verhalten, ein Gen oder eine andere Grundursache für die Krankheit, die der Patient hat.\r\nEs ist möglich, dieses Elements für eine Krankheit, die mehrere Ursachen hat, zu wiederholen.\r\nWo dies möglich ist, ist die Kodierung dieses Elements über eine Terminologiedatenbank zu bevorzugen. \r\nBeispiele für die Eingabe könnten sein: Alkoholismus (bei Leberzirrhose), Diabetes Mellitus (bei chronischer Nierenerkrankung), Atemwegsinfektion (bei Fieber) oder Rauchen (bei Lungenkrebs)."
+          },
+          "at0017.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017.1",
+            "text" : "Hepatitis Typ",
+            "description" : "Weitere Beschreibung der Ursachen oder Gründe für das Entstehen (Ätiologie) eines spezifischen Problems/einer Diagnose.",
+            "comment" : "z.B. Lokale Entzündungsreaktion mit Schädigung und Zerstörung der Leberzellen."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "38893387-a23e-43e9-93e4-87b0faf67259",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Samer Alkarkoukly",
+        "organisation" : "UKK",
+        "email" : "Mabbouda@uni-koeln.de"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : {
+      "name" : "Ramona Wellmann, Natalia Strauch",
+      "organisation" : "Medizinische Hochschule Hannover",
+      "email" : "Strauch.Natalia@mh-hannover.de"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : {
+      "name" : "Sofia Janstad, Åsa Skagerhult",
+      "organisation" : "SLL, Region Östergötland",
+      "email" : "sofia.lang-janstad@sll.se, asa.skagerhult@regionostergotland.se"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : {
+      "name" : "Alan March",
+      "organisation" : "Hospital Universitario Austral - Buenos Aires - Argentina",
+      "email" : "alandmarch@gmail.com"
+    },
+    "accreditation" : "physician",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : {
+      "name" : "John Tore Valand, Liv Laugen, Silje Ljosland Bakke",
+      "organisation" : "Helse Bergen, ​Oslo University Hospital, Norway, Helse Vest IKT AS",
+      "email" : "liv.laugen@ous-hf.no, silje.ljosland.bakke@helse-vest-ikt.no"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : {
+      "name" : "Seung-Jong Yu",
+      "organisation" : "InfoClinic Co.,Ltd.",
+      "email" : "seungjong.yu@gmail.com"
+    },
+    "accreditation" : "Certified Board of Family Medicine in South Korea",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : {
+      "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
+      "organisation" : "Core Consulting",
+      "email" : "contato@coreconsulting.com.br"
+    },
+    "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : {
+      "name" : "?"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : {
+      "name" : "Mona Saleh"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : {
+      "name" : "Francesca Frexia",
+      "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+      "email" : "francesca.frexia@crs4.it"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : {
+      "name" : "Pieter Bos, Jelte Zeilstra",
+      "organisation" : "Nedap Healthcare"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : {
+      "name" : "Yexuan Cheng",
+      "organisation" : "浙江大学",
+      "email" : "3160100913@zju.edu.cn"
+    },
+    "otherDetails" : { }
+  } ]
+}
