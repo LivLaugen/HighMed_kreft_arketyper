@@ -1,17 +1,33 @@
-archetype (adl_version=1.4; uid=28365b69-c6b7-4320-9329-c890dabd8b63)
+﻿archetype (adl_version=1.4; uid=28365b69-c6b7-4320-9329-c890dabd8b63)
 	openEHR-EHR-CLUSTER.family_prevalence.v1
 
 concept
-	[at0000]
-
+	[at0000]	-- Family prevalence
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
-				["name"] = <"Sarah Ballout">
-				["email"] = <"ballout.sarah@mh-hannover.de">
+				["name"] = <"Sarah Ballout, Andreas Kling">
+				["organisation"] = <"Heidelberg University Hospital">
+				["email"] = <"ballout.sarah@mh-hannover.de, andreas.kling@bioquant.uni-heidelberg.de">
+			>
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Therese Lindberg">
+				["organisation"] = <"Cambio CDS">
+				["email"] = <"therese.lindberg@cambio.se">
+			>
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"Hanne Marte Bårholm">
+				["organisation"] = <"Helse Vest IKT">
+				["email"] = <"hanne.marte.sandal.barholm@helse-vest-ikt.no">
 			>
 		>
 		["pt-br"] = <
@@ -23,47 +39,64 @@ language
 			>
 		>
 	>
-
 description
 	original_author = <
-		["date"] = <"2015-05-05">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
+		["date"] = <"2015-05-05">
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Vebjoern Arntzen, Oslo university hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Silje Ljosland Bakke, National ICT Norway, Norway (openEHR Editor)","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Shahla Foozonkhah, Ocean Informatics, Australia","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Heather Grain, Llewelyn Grain Informatics, Australia","Sam Heard, Ocean Informatics, Australia","Lars Karlsen, DIPS ASA, Norway","Shinji Kobayashi, Kyoto University, Japan","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Hugh Leslie, Ocean Informatics, Australia","Hallvard Lærum, Oslo University Hospital, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Andrej Orel, Marand d.o.o., Slovenia","Jussara Rotzsch, UNB, Brazil">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"Zur Repräsentation von Informationen über die Prävalenz eines bestimmten Risikofaktors, eines Problems oder einer Diagnose bei genetischen und nicht-genetischen Familienmitgliedern.">
-			keywords = <"Familienanamnese","Prävalenz","betroffen","genetisch">
 			use = <"Zur Repräsentation von Informationen über die Prävalenz eines bestimmten Risikofaktors, eines Problems oder einer Diagnose bei genetischen und nicht-genetischen Familienmitgliedern.
 
 Dieser Archetyp wurde speziell für die Verwendung im 'Detail' SLOT innerhalb des Archetyps EVALUATION.health_risk entwickelt, um die Risikobewertung im Bereich der Pflege für den ermittelten Risikofaktors und der \"Familienprävalenz\" Slot im Archetyp EVALUATION.family_history zu unterstützen. Es kann auch in der SLOT \"Spezifische Details\" innerhalb des Archetyps EVALUATION.problem_diagnosis ,oder anderer EVALUATION- oder CLUSTER-Archetypen verwendet werden, falls dies klinisch angemessen ist.
 ">
+			keywords = <"Familienanamnese", "Prävalenz", "betroffen", "genetisch">
 			misuse = <"Nicht zur Repräsentation von aktuellen Gesundheitsinformationen über Problemen oder Diagnosen einzelner Familienmitglieder verwenden - verwenden Sie dazu EVALUATION.family_history.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera information om förekomsten av en identifierad riskfaktor, problem eller diagnos hos genetiska och icke-genetiska familjemedlemmar.">
+			use = <"Används för att registrera information om förekomsten av en identifierad riskfaktor, problem eller diagnos hos genetiska och icke-genetiska familjemedlemmar.
+
+Denna arketyp har specifikt utformats för att användas i 'Detail' SLOT inom EVALUATION.health_risk archetype för att stödja bedömning av vårdrisk för den identifierade 'Risk factor' och 'Family prevalence' SLOT i EVALUATION.family_history arketyp. Den kan också användas i SLOT 'Specific details' inom EVALUATION.problem_diagnosis-arketyp eller andra EVALUATION- eller CLUSTER-arketyper, där det är kliniskt lämpligt.">
+			keywords = <"familjehistoria", "utbredning", "påverkade", "genetisk">
+			misuse = <"Inte utformad för att registrera faktisk hälsoinformation om problem eller diagnoser hos enskilda familjemedlemmar - använd EVALUATION.family_history för detta ändamål.">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"Å registrere informasjon om prevalensen av en bestemt risikofaktor, problem eller diagnose i beslektede eller ikke-beslektede familiemedlemmer.">
+			use = <"Brukes for å registrere informasjon om prevalensen av en bestemt risikofaktor, problem eller diagnose i beslektede eller ikke-beslektede familiemedlemmer.
+
+Denne arketypen er spesielt utviklet for \"Detaljer\"-utvidelsen i arketypen EVALUATION.health_risk for å støtte vurdering av den aktuelle risikofaktoren hos individet, og \"Familieforekomst\"-utvidelsen i arketypen EVALUATION.family_history. Den kan også brukes i \"Spesifikke detaljer\"-utvidelsen i arketypen EVALUATION.problem_diagnosis, eller andre EVALUATION eller CLUSTER-arketyper, der det egner seg klinisk.">
+			keywords = <"familieanamnese", "prevalens", "affisert", "genetisk", "risikofaktor">
+			misuse = <"Må ikke brukes til å registrere informasjon om faktiske problemer eller diagnoser hos individets familiemedlemmer - bruk heller arketype EVALUATION.family_history til dette.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para registrar informações sobre a prevalência de um fator de risco identificado, problema ou diagnóstico não-genético ou genético em membros da família.">
-			keywords = <"história familiar","prevalência","afetado","genético">
 			use = <"Use para registrar informações sobre a prevalência de um fator de risco identificado, problema ou diagnóstico não-genético ou genético em membros da família .
 
 Este arquétipo foi projetado especificamente para ser usado no SLOT detalhe dentro do arquétipo de EVALUATION.healthrisk para apoiar a avaliação de risco em objeto de cuidados para o fator de risco identificado e a família prevalência SLOT no arquétipo de EVALUATION.familyhistory. Também pode ser usada em detalhes específicos SLOT dentro do arquétipo de EVALUATION.problemdiagnosis, ou outros arquétipos de avaliação ou de CLUSTER, quando clinicamente apropriado.">
+			keywords = <"história familiar", "prevalência", "afetado", "genético">
 			misuse = <"Não deve ser utilizado para registrar informações sobre problemas ou diagnósticos individuais de membros da família - use EVALUATION.family_history para essa finalidade.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record information about the prevalence of an identified risk factor, problem or diagnosis in genetic and non-genetic family members.">
-			keywords = <"family history","prevalence","affected","genetic">
-			copyright = <"© openEHR Foundation">
 			use = <"Use to record information about the prevalence of an identified risk factor, problem or diagnosis in genetic and non-genetic family members.
 
 This archetype has specifically been designed to be used in the 'Detail' SLOT within the EVALUATION.health_risk archetype to support assessment of risk in the subject of care for the identified 'Risk factor' and the 'Family prevalence' SLOT in the EVALUATION.family_history archetype. It can also be used in the 'Specific details' SLOT within the EVALUATION.problem_diagnosis archetype or other EVALUATION or CLUSTER archetypes, where clinically appropriate.">
+			keywords = <"family history", "prevalence", "affected", "genetic">
 			misuse = <"Not to be used to record actual health information about problems or diagnoses in individual family members - use EVALUATION.family_history for this purpose.">
+			copyright = <"© openEHR Foundation">
 		>
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Vebjoern Arntzen, Oslo university hospital, Norway", "Koray Atalag, University of Auckland, New Zealand", "Silje Ljosland Bakke, National ICT Norway, Norway (openEHR Editor)", "Lars Bitsch-Larsen, Haukeland University hospital, Norway", "Shahla Foozonkhah, Ocean Informatics, Australia", "Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway", "Heather Grain, Llewelyn Grain Informatics, Australia", "Sam Heard, Ocean Informatics, Australia", "Lars Karlsen, DIPS ASA, Norway", "Shinji Kobayashi, Kyoto University, Japan", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Hugh Leslie, Ocean Informatics, Australia", "Hallvard Lærum, Oslo University Hospital, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Andrej Orel, Marand d.o.o., Slovenia", "Jussara Rotzsch, UNB, Brazil">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -72,9 +105,9 @@ This archetype has specifically been designed to be used in the 'Detail' SLOT wi
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"A76B97FA164830629EA15341E9229D7C">
-		["build_uid"] = <"252b7c71-387a-41d0-93ec-87cd7ee23cc8">
-		["revision"] = <"1.0.5">
+		["MD5-CAM-1.0.1"] = <"7F665605A51194F27BC93980A6093D50">
+		["build_uid"] = <"ad14ba03-1ced-4cfe-9d1a-63ef4332455f">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -99,7 +132,7 @@ definition
 			}
 			CLUSTER[at0031] occurrences matches {0..*} matches {    -- Affected family
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Relationship
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Relationship degree
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -111,6 +144,11 @@ definition
 									at0050]    -- Non-genetic family
 								}
 							}
+						}
+					}
+					ELEMENT[at0057] occurrences matches {0..1} matches {    -- Relationship category
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Family line
@@ -155,13 +193,14 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
 					text = <"Family prevalence">
-					description = <"Summary information about the prevalence of a risk factor, problem or diagnosis in all family members.">
+					description = <"Summary information about the prevalence of a risk factor, problem or diagnosis in family members.">
 				>
 				["at0030"] = <
 					text = <"Description">
@@ -170,10 +209,10 @@ ontology
 				["at0031"] = <
 					text = <"Affected family">
 					description = <"Details about the numbers of family members affected.">
-					comment = <"This cluster will be repeated for each relationship, family line, sex value or combination of all three. For example, the cluster will be repeated for any or all of first degree relative (without sex specified), first degree relative from maternal line; first degree male relative or first degree female relative; or all males, all females.">
+					comment = <"This cluster will be repeated for each relationship degree, relationship group, family line, sex value or combination of all four. For example, the cluster will be repeated for any or all of first degree relative (without sex specified), first degree relative from maternal line; parents; grandparents; first degree male relative or first degree female relative; or all males, all females.">
 				>
 				["at0032"] = <
-					text = <"Relationship">
+					text = <"Relationship degree">
 					description = <"The degree of relationship between the subject of care and a selected group of family members.">
 				>
 				["at0033"] = <
@@ -183,7 +222,7 @@ ontology
 				["at0034"] = <
 					text = <"Number affected">
 					description = <"The number of family members known to be affected.">
-					comment = <"This is the number of family members who are affected AND who also fit selected relationship, family line and sex criteria. Effectively this number is the numerator for calculation of an 'Affected ratio'.">
+					comment = <"This is the number of family members who are affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the numerator for calculation of an 'Affected ratio'.">
 				>
 				["at0037"] = <
 					text = <"First degree relative">
@@ -233,7 +272,7 @@ ontology
 				["at0054"] = <
 					text = <"Number eligible">
 					description = <"The number of eligible family members.">
-					comment = <"This is the number of family members who potentially could be affected AND who also fit selected relationship, family line and sex criteria. Effectively this number is the denominator for calculation of an 'Affected ratio'.">
+					comment = <"This is the number of family members who potentially could be affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the denominator for calculation of an 'Affected ratio'.">
 				>
 				["at0055"] = <
 					text = <"Genetic predisposition?">
@@ -245,13 +284,18 @@ ontology
 					description = <"Category of inheritance for the identified risk factor, problem or diagnosis.">
 					comment = <"For example: autosomal dominant, autosomal recessive, X-linked dominant, X-linked recessive, codominant, or mitochondrial.">
 				>
+				["at0057"] = <
+					text = <"Relationship group">
+					description = <"The relationship between a group of the family members and the subject of care.">
+					comment = <"For example: parents, grandparents, or uncles. Coding of the relationship with a terminology is preferred, where possible.">
+				>
 			>
 		>
 		["pt-br"] = <
 			items = <
 				["at0000"] = <
 					text = <"Prevalência Familiar">
-					description = <"Resumo das informações sobre a prevalência de um fator de risco, o problema ou o diagnóstico em todos os membros da família.">
+					description = <"*Summary information about the prevalence of a risk factor, problem or diagnosis in family members.(en)">
 				>
 				["at0030"] = <
 					text = <"Descrição">
@@ -260,11 +304,11 @@ ontology
 				["at0031"] = <
 					text = <"Familiares afetados">
 					description = <"Detalhes sobre o número de membros da família afetados">
-					comment = <"Este cluster será repetido para cada relação, linha de família, valor do sexo ou combinação dos três. Por exemplo, o cluster será repetido para qualquer um ou todos de primeiro grau relativo (sem sexo especificado), primeiro grau relativo de linha materna; primeiro grau de parente masculino ou primeiro grau de parente feminino; ou todos os homens, ou todas as mulheres.">
+					comment = <"*This cluster will be repeated for each relationship degree, relationship group, family line, sex value or combination of all four. For example, the cluster will be repeated for any or all of first degree relative (without sex specified), first degree relative from maternal line; parents; grandparents; first degree male relative or first degree female relative; or all males, all females.(en)">
 				>
 				["at0032"] = <
-					text = <"Relacionamento">
-					description = <"O grau de relacionamento entre o sujeito do cuidado e o grupo selecionado dos membros da família.">
+					text = <"*Relationship degree(en)">
+					description = <"*The degree of relationship between the subject of care and a selected group of family members.(en)">
 				>
 				["at0033"] = <
 					text = <"Sexo Biológico">
@@ -273,7 +317,7 @@ ontology
 				["at0034"] = <
 					text = <"Número de afetados">
 					description = <"O número de membros da família conhecido por serem afetados">
-					comment = <"Este é o número de membros da família que são afetados e que também se encaixam na relação selecionada, linhagem familiar e critérios de sexo. Efetivamente, este número é o numerador para o cálculo de uma proporção de afetados.">
+					comment = <"*This is the number of family members who are affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the numerator for calculation of an 'Affected ratio'.(en)">
 				>
 				["at0037"] = <
 					text = <"Relação de Primeiro Grau">
@@ -281,7 +325,7 @@ ontology
 				>
 				["at0038"] = <
 					text = <"Relação de Segundo Grau">
-					description = <"25% compartilhamento genético com o sujeito - por exemplo, avós, tia, tio, sobrinha, sobrinho, netos. e meio-irmãos">
+					description = <"25% compartilhamento genético com o sujeito - por exemplo, avós, tia, tio, sobrinha, sobrinho, netos e meio-irmãos">
 				>
 				["at0039"] = <
 					text = <"Relação de Terceiro Grau">
@@ -323,7 +367,7 @@ ontology
 				["at0054"] = <
 					text = <"Números de elegíveis">
 					description = <"O número de membros elegíveis da família.">
-					comment = <"Este é o número de membros da família que potencialmente poderiam ser afetados, e que também se encaixam a relação selecionada, linhagem familiar e critérios de sexo. Este número é, efetivamente, o denominador para cálculo da proporção de afetados.">
+					comment = <"*This is the number of family members who potentially could be affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the denominator for calculation of an 'Affected ratio'.(en)">
 				>
 				["at0055"] = <
 					text = <"Predisposição genética?">
@@ -335,13 +379,18 @@ ontology
 					description = <"Categoria de herança para o identificar o diagnóstico, problema ou fator de risco.">
 					comment = <"Por exemplo: autossômica dominante, autossômica recessiva, dominante ligada ao X, recessiva ligada ao X, co-dominante, ou mitocondrial.">
 				>
+				["at0057"] = <
+					text = <"*Relationship group(en)">
+					description = <"*The relationship between a group of the family members and the subject of care.(en)">
+					comment = <"*For example: parents, grandparents, or uncles. Coding of the relationship with a terminology is preferred, where possible.(en)">
+				>
 			>
 		>
 		["de"] = <
 			items = <
 				["at0000"] = <
 					text = <"Familienprävalenz">
-					description = <"Zusammenfassung von information über die Prävalenz eines Risikofaktors, eines Problems oder einer Diagnose bei allen Familienmitgliedern.">
+					description = <"*Summary information about the prevalence of a risk factor, problem or diagnosis in family members.(en)">
 				>
 				["at0030"] = <
 					text = <"Beschreibung">
@@ -350,21 +399,20 @@ ontology
 				["at0031"] = <
 					text = <"Betroffene Familienmitglieder">
 					description = <"Angaben über die Anzahl der betroffenen Familienmitglieder.">
-					comment = <"Dieses Cluster wird für jede Verwandtschaft, Familienlinie, Geschlechtswert oder Kombination aller drei wiederholt. Zum Beispiel wird dieses Cluster für einen oder alle männlichen Verwandten ersten Grades (ohne Geschlecht angegeben), einen Verwandten ersten Grades von der mütterlichen Linie, einen Verwandten ersten Grades männlichen Verwandten oder weiblichen Verwandten ersten Grades oder alle männlichen, alle weiblichen Verwandten wiederholt.
-">
+					comment = <"*This cluster will be repeated for each relationship degree, relationship group, family line, sex value or combination of all four. For example, the cluster will be repeated for any or all of first degree relative (without sex specified), first degree relative from maternal line; parents; grandparents; first degree male relative or first degree female relative; or all males, all females.(en)">
 				>
 				["at0032"] = <
-					text = <"Verwandtschaft">
-					description = <"Der Verwandtschaftsgrad zwischen dem Pflegebedürftigen und einer bestimmten Gruppe von Familienmitgliedern.">
+					text = <"*Relationship degree(en)">
+					description = <"*The degree of relationship between the subject of care and a selected group of family members.(en)">
 				>
 				["at0033"] = <
 					text = <"Biologisches Geschlecht">
 					description = <"Das biologische Geschlecht des/der Familienmitglieder(s).">
 				>
 				["at0034"] = <
-					text = <"Anzahl der betroffenen">
-					description = <"Die Anzahl der bekannten Familienmitgliedern, die davon betroffen sind.">
-					comment = <"Die Anzahl der betroffenen Familienmitglieder, die auch zu bestimmten Kriterien wie Beziehung, Familienlinien- und Geschlechterkriterien passen. Diese Zahl ist faktisch der Nenner für die Berechnung eines \"Affected Ratio\".">
+					text = <"Anzahl der Betroffenen">
+					description = <"Die Anzahl der Familienmitglieder, von denen bekannt ist, daß sie betroffen sind.">
+					comment = <"*This is the number of family members who are affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the numerator for calculation of an 'Affected ratio'.(en)">
 				>
 				["at0037"] = <
 					text = <"Verwandter ersten Grades">
@@ -412,9 +460,9 @@ ontology
 					description = <"Ein Familienmitglied, das entweder die biologischen Eigenschaften beider Geschlechter hat oder einige der biologischen Eigenschaften nicht aufweist, die als notwendig erachtet werden, um als das eine oder andere Geschlecht definiert zu werden.">
 				>
 				["at0054"] = <
-					text = <"Anzahl der Berechtigten">
-					description = <"Die Anzahl der berechtigten Familienmitglieder.">
-					comment = <"Die Anzahl der Familienmitglieder, die möglicherweise betroffen sein könnten UND die auch zu ausgewählten Beziehungs-, Familienlinien- und Geschlechterkriterien passen. Diese Zahl ist faktisch der Nenner für die Berechnung eines \"Affected Ratio\".">
+					text = <"Anzahl der infrage Kommenden">
+					description = <"Die Anzahl der infrage kommenden Familienmitglieder.">
+					comment = <"*This is the number of family members who potentially could be affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the denominator for calculation of an 'Affected ratio'.(en)">
 				>
 				["at0055"] = <
 					text = <"Genetische Veranlagung?">
@@ -425,6 +473,201 @@ ontology
 					text = <"Vererbungstyp">
 					description = <"Kategorie der Vererbung für den ermittelten Risikofaktor, das Problem oder die Diagnose.">
 					comment = <"Zum Beispiel: autosomal dominant, autosomal rezessiv, X-linked dominant, X-linked rezessiv, codominant oder mitochondrial.">
+				>
+				["at0057"] = <
+					text = <"*Relationship group(en)">
+					description = <"*The relationship between a group of the family members and the subject of care.(en)">
+					comment = <"*For example: parents, grandparents, or uncles. Coding of the relationship with a terminology is preferred, where possible.(en)">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Familjär prevalens">
+					description = <"*Summary information about the prevalence of a risk factor, problem or diagnosis in family members.(en)">
+				>
+				["at0030"] = <
+					text = <"Beskrivning">
+					description = <"Berättande beskrivning om förekomst hos familjemedlemmar.">
+				>
+				["at0031"] = <
+					text = <"Berörd familj">
+					description = <"Detaljer om antalet berörda familjemedlemmar.">
+					comment = <"*This cluster will be repeated for each relationship degree, relationship group, family line, sex value or combination of all four. For example, the cluster will be repeated for any or all of first degree relative (without sex specified), first degree relative from maternal line; parents; grandparents; first degree male relative or first degree female relative; or all males, all females.(en)">
+				>
+				["at0032"] = <
+					text = <"*Relationship degree(en)">
+					description = <"*The degree of relationship between the subject of care and a selected group of family members.(en)">
+				>
+				["at0033"] = <
+					text = <"Biologiskt kön">
+					description = <"Familjemedlemmarnas biologiska kön.">
+				>
+				["at0034"] = <
+					text = <"Antal berörda">
+					description = <"Antalet familjemedlemmar som påverkas.">
+					comment = <"*This is the number of family members who are affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the numerator for calculation of an 'Affected ratio'.(en)">
+				>
+				["at0037"] = <
+					text = <"Förstagradssläkting">
+					description = <"50% genetisk andel med patienten - till exempel förälder, syskon eller barn.">
+				>
+				["at0038"] = <
+					text = <"Andragradssläkting">
+					description = <"25% genetisk andel med patienten- till exempel morförälder, moster, farbror, systerdotter, brorson, barnbarn och halvsyskon.">
+				>
+				["at0039"] = <
+					text = <"Tredjegradssläkting">
+					description = <"12,5% genetisk andel med patienten- till exempel farfar, morfar, farbror, kusin, syskonbarnsbarn och barnbarnsbarn.">
+				>
+				["at0040"] = <
+					text = <"Moderns härstamning">
+					description = <"Relaterat genom patientens mor.">
+				>
+				["at0041"] = <
+					text = <"Faderns härstamning">
+					description = <"Relaterat genom patientens far.">
+				>
+				["at0042"] = <
+					text = <"Genetisk familj">
+					description = <"Alla genetiskt relaterade familjemedlemmar.">
+				>
+				["at0043"] = <
+					text = <"Man">
+					description = <"Familjemedlem som är biologiskt manlig.">
+				>
+				["at0044"] = <
+					text = <"Kvinna">
+					description = <"Familjemedlem som är biologiskt kvinnlig.">
+				>
+				["at0050"] = <
+					text = <"Icke-genetisk familj">
+					description = <"Alla icke-genetiska familjemedlemmar.">
+				>
+				["at0051"] = <
+					text = <"Familjens härstamning">
+					description = <"Identifiering av moderns eller faderns härstamning i förhållandet.">
+					comment = <"Endast för användning med genetiska familjemedlemmar.">
+				>
+				["at0052"] = <
+					text = <"Obestämd / intersex / ospecificerad">
+					description = <"Familjemedlem som antingen har de biologiska attributen för båda könen eller saknar några av de biologiska attribut som anses nödvändiga för att definieras som det ena eller det andra könet.">
+				>
+				["at0054"] = <
+					text = <"Antal berättigade">
+					description = <"Antalet berättigade familjemedlemmar.">
+					comment = <"*This is the number of family members who potentially could be affected AND who also fit selected relationship degree, relationship group, family line and sex criteria. Effectively this number is the denominator for calculation of an 'Affected ratio'.(en)">
+				>
+				["at0055"] = <
+					text = <"Genetisk diates?">
+					description = <"Finns det en genetisk grund för den identifierade riskfaktorn, problemet eller diagnosen?">
+					comment = <"Valfritt att registrera som sant om det finns en erkänd genetisk diates. I många fall kan detta framgå från riskfaktorn, problemet eller diagnosen och behöver inte registreras uttryckligen.">
+				>
+				["at0056"] = <
+					text = <"Arvstyp">
+					description = <"Arvskategori för den identifierade riskfaktorn, problemet eller diagnosen.">
+					comment = <"Till exempel: autosomal dominant, autosomal recessiv, X-länkad dominant, X-länkad recessiv, kodominant eller mitokondriell.">
+				>
+				["at0057"] = <
+					text = <"*Relationship group(en)">
+					description = <"*The relationship between a group of the family members and the subject of care.(en)">
+					comment = <"*For example: parents, grandparents, or uncles. Coding of the relationship with a terminology is preferred, where possible.(en)">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Familieprevalens">
+					description = <"Oppsummerende informasjon om forekomsten av en bestemt risikofaktor, problem eller diagnose hos familiemedlemmer.">
+				>
+				["at0030"] = <
+					text = <"Beskrivelse">
+					description = <"Fritekstbeskrivelse av forekomsten i familien.">
+				>
+				["at0031"] = <
+					text = <"Affiserte familiemedlemmer">
+					description = <"Detaljer om antall familiemedlemmer som er affisert">
+					comment = <"Dette clusteret blir repetert for hver grad av slektskap, relasjonsgruppe, familielinje eller kjønn eller kombinasjonen av alle fire. For eksempel vil clusteret bli repetert for alle eller noen førstegradsslektninger (uten å nevne kjønn), førstegradsslektninger fra morssiden, foreldre, besteforeldre, mannlige førstegradsslektninger eller kvinnelige førstegradsslektninger; eller alle menn, alle kvinner.">
+				>
+				["at0032"] = <
+					text = <"Grad av slektskap">
+					description = <"Graden av slektskap mellom individet og et utvalg familiemedlemmer.">
+				>
+				["at0033"] = <
+					text = <"Biologisk kjønn">
+					description = <"Familiemedlemmenes biologiske kjønn.">
+				>
+				["at0034"] = <
+					text = <"Antall affisert">
+					description = <"Antall familiemedlemmer som er kjent affisert av tilstanden.">
+					comment = <"Dette er antall familiemedlemmer som er rammet OG som passer den valgte grad av slektskap, relasjonsgruppe, familieside og kjønn. I praksis er dette telleren for å regne ut andel affiserte familiemedlemmer.">
+				>
+				["at0037"] = <
+					text = <"Førstgradsslektning">
+					description = <"Deler 50% av genene med individet - for eksempel forelder, søsken eller barn.">
+				>
+				["at0038"] = <
+					text = <"Andregradsslektning">
+					description = <"Deler 25% av genene med individet - for eksempel besteforelder, tante, onkel, niese, nevø, barnebarn eller halvsøsken.">
+				>
+				["at0039"] = <
+					text = <"Tredjegradsslektning">
+					description = <"Deler 12,5% av genene med individet - for eksempel oldeforelder, grandtante, grandonkel, fetter, kusine, barn av nieser og nevøer og barnebarns barn (oldebarn).">
+				>
+				["at0040"] = <
+					text = <"Morssiden">
+					description = <"Er beslektet gjennom individets mor.">
+				>
+				["at0041"] = <
+					text = <"Farssiden">
+					description = <"Er beslektet gjennom individets far.">
+				>
+				["at0042"] = <
+					text = <"Genetisk familie">
+					description = <"Alle familiemedlemmer som er genetisk beslektet.">
+				>
+				["at0043"] = <
+					text = <"Mann">
+					description = <"Familiemedlem som er biologisk mann.">
+				>
+				["at0044"] = <
+					text = <"Kvinne">
+					description = <"Familiemedlem som er biologisk kvinne.">
+				>
+				["at0050"] = <
+					text = <"Ikke-genetisk familie">
+					description = <"Alle familiemedlemmer som ikke er genetisk beslektet.">
+				>
+				["at0051"] = <
+					text = <"Familieside">
+					description = <"Identifisering av morsside eller farsside i slektskapet.">
+					comment = <"Brukes bare for genetisk beslektede familiemedlemmer.">
+				>
+				["at0052"] = <
+					text = <"Ubestemt/Intersex/Uspesifisert">
+					description = <"Familiemedlemmer som enten har kjønnskarakteristika fra begge kjønn, eller mangler kjønnskarakteristika regnet som nødvendig for å bli definert som mann eller kvinne.">
+				>
+				["at0054"] = <
+					text = <"Antall familiemedlemmer i gruppen">
+					description = <"Antall familiemedlemmer som passer i dette utvalget.">
+					comment = <"Dette er antall familiemedlemmer som potensielt kan ha blitt rammet OG som også passer den valgte grad av slektskap, relasjonsgruppe, familieside og kjønn. I praksis er dette nevneren for å regne ut andel affiserte familiemedlemmer.">
+				>
+				["at0055"] = <
+					text = <"Genetisk predisposisjon?">
+					description = <"Har den identifiserte risikofaktoren, problemet eller diagnosen en genetisk årsak?">
+					comment = <"Valgfritt å registrere som \"Sann\" hvis det finnes en bekreftet genetisk predisposisjon. I mange tilfeller kan man resonnere seg til dette ut fra risikofaktoren, problemet eller diagnosen, og trenger ikke ble registrert eksplisitt.">
+				>
+				["at0056"] = <
+					text = <"Type arvelighet">
+					description = <"Hvordan den identifiserte risikofaktoren, problemet eller diagnosen arves i familien.">
+					comment = <"For eksempel: autosomal dominant, autosmal recessiv, X-bundet dominant, X-bundet recessiv, condominant eller mitokondriell.">
+				>
+				["at0057"] = <
+					text = <"Relasjonsgruppe">
+					description = <"Relasjonen mellom en gruppe av familiemedlemmer og individet.">
+					comment = <"For eksempel: foreldre, besteforeldre, onkler. Koding av relasjonen med terminologi er foretrukket hvor det er mulig.">
 				>
 			>
 		>
