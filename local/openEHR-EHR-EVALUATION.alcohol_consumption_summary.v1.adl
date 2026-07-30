@@ -1,9 +1,8 @@
-archetype (adl_version=1.4; uid=71ef98e0-22d6-4548-a375-251cb5d776da)
+﻿archetype (adl_version=1.4; uid=71ef98e0-22d6-4548-a375-251cb5d776da)
 	openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1
 
 concept
-	[at0000]
-
+	[at0000]	-- Alcohol consumption summary
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -49,22 +48,18 @@ language
 			accreditation = <"Ph.D.">
 		>
 	>
-
 description
 	original_author = <
-		["date"] = <"2009-06-21">
 		["name"] = <"Heather Leslie">
 		["organisation"] = <"Atomica Informatics">
 		["email"] = <"heather.leslie@atomicainformatics.com">
+		["date"] = <"2009-06-21">
 	>
-	lifecycle_state = <"published">
-	other_contributors = <"Amund Aakerholt, Helse Stavanger, KORFOR, Norway","Morten Aas, Oslo Universitetssykehus, Norway","Tomas Alme, DIPS ASA, Norway","Ole Andreas Bjordal, Webmed, Norway","Rita Apelt, Department of Health,NT, Australia","Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)","Koray Atalag, University of Auckland, New Zealand","Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Editor)","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Marcus Baw, openGPSoC / BawMedical Ltd, United Kingdom","Kristian Berg, Universitetssykehuset Nord Norge, Norway","Lars Bitsch-Larsen, Haukeland University Hospital, Bergen, Norway","Fredrik Borchsenius, Oslo universitetssykehus, Norway","Chris Bullen, University of Auckland, New Zealand","Fatemeh Chalabianloo, Helse Bergen, Norway","Bjørn Christensen, Helse Bergen HF, Norway","Stephen Chu, NEHTA, Australia","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Are Edvardsen, SKDE, Norway","Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway","Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Liv Grøtvedt, Folkehelseinstituttet, Norway","Sam Heard, Ocean Informatics, Australia","Kristian Heldal, Telemark Hospital Trust, Norway","Jørn Henrik Vold, Helse Bergen, Avdeling for rusmedisin, Norway","Anca Heyd, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Tom Jarl Jakobsen, Helse Bergen, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Stelios Joseph Karras, Ergobyte, Greece","Adriana Kitajima, CORE Consulting, Brazil","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Ole Kristian Losvik, Losol AS, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Rikard Lovstrom, Swedish Medical Association, Sweden","Camilla Lund, Institute for Cancer Genetics and Informatics, Norway","Hallvard Lærum, Direktoratet for e-helse, Norway","Arne Løberg Sæter, DIPS ASA, Norway","Siv Marie Lien, DIPS ASA, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom","Paul Miller, SCIMP NHS Scotland, United Kingdom","Bjørn Næss, DIPS ASA, Norway","Jeremy Oats, NT Health, Australia","Andrej Orel, Marand d.o.o., Slovenia","Anne Pauline Anderssen, Helse Nord RHF, Norway","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Tanja Riise, Nasjonal IKT HF, Norway","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Rosalie Schultz, Anyinginyi Health Aboriginal Corporation, Australia","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Raymond Simkus, Brookswood Family Practice, Canada","Lisbeth Sommervoll, Akershus Universitetssykehus, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","Jon Tysdahl, Furst medlab AS, Norway","John Tore Valand, Helse Bergen, Norway (openEHR Editor)","Ping-Cheng Wei, New Zealand">
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			purpose = <"
 Zur Darstellung zusammenfassender Informationen über den Alkoholkonsum einer Person.">
-			keywords = <"trinken","betrunken","Dipsomanie","Trunksucht","alkoholisch","Alkoholismus","Alkoholsucht","Alkohol">
 			use = <"
 Zur Darstellung zusammenfassender Informationen über das typische Muster des Alkoholkonsums einer Person.
 
@@ -83,6 +78,7 @@ Das Cluster 'Pro Typ' ermöglicht die Aufzeichnung spezifischer Details und Epis
 In manchen Situationen konsumiert der Einzelne nur eine Art von alkoholischen Getränken, wie z.B. Bier. Wenn andere Arten von alkoholischen Getränken verwendet werden, werden die Details in einer anderen Instanz des Clusters \"Pro Typ\" aufgezeichnet.
 
 Zu verwenden, um die Beschreibungen von Alkoholkonsumgewohnheiten innerhalb bestehender oder älterer klinischer Systeme in ein archetypisches Format zu integrieren, unter Verwendung des Datenelements \"Gesamtbeschreibung\".">
+			keywords = <"trinken", "betrunken", "Dipsomanie", "Trunksucht", "alkoholisch", "Alkoholismus", "Alkoholsucht", "Alkohol">
 			misuse = <"
 Nicht zur Darstellung ereignis- oder periodenbezogener Informationen über den Alkoholkonsum, wie z.B. den tatsächlichen täglichen Konsum oder den durchschnittlichen Konsum über einen bestimmten Zeitraum geeignet - verwenden Sie hierzu den Archetyp OBSERVATION.alcohol_intake.
 
@@ -93,7 +89,6 @@ Nicht zur Darstellung der Verabreichung von Alkohol auf anderen Wegen, wie z.B. 
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Att registrera information om individens alkoholvanor">
-			keywords = <"alkohol","alkoholvanor","alkoholmönster","berusningsdrickande","alkoholintag","alkoholism","dryckesvanor","alkoholanamnes">
 			use = <"Används för att beskriva sammanfattad information om individens alkohol konsumtion
 
 Den här arketypen kan användas för att registrera information om både nuvarande och tidigare alkoholanvändning.
@@ -111,6 +106,7 @@ Anledningar för att stänga en episod och starta en ny kommer i hög grad att �
 I vissa situationer kommer individen bara att konsumera en typ av alkoholhaltig dryck, till exempel öl. Om andra typer av alkoholhaltiga drycker används kommer detaljerna att registreras i en annan instans av klustret \"Per typ\".
 
 För att införliva beskrivande information om alkoholvanor från befintliga eller gamla vård-IT-system till ett arketyp-baserade system använd dataelementet \"Övergripande beskrivning\".">
+			keywords = <"alkohol", "alkoholvanor", "alkoholmönster", "berusningsdrickande", "alkoholintag", "alkoholism", "dryckesvanor", "alkoholanamnes">
 			misuse = <"Används inte för att registrera händelse- eller periodbaserad information om alkoholanvändning, till exempel faktisk daglig användning eller genomsnittlig användning under en viss tidsperiod - använd då OBSERVATION.alcohol_intake-arketypen
 
 Att inte användas för att registrera en bedömning om alkoholberoende. Använd specifika arketyper för detta ändamål.
@@ -120,7 +116,6 @@ Används inte för att registrera alkoholkonsumtion vid andra vägar, såsom ina
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For å registrere sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol.">
-			keywords = <"drikking","full","alkoholbegjær","alkoholiker","alkoholisme","ethyl","etanol","alkoholforbruk","avhold","rus">
 			use = <"Brukes for å registrere sammendrag eller detaljer om et individs tidligere og nåværende bruk av alkohol.
 
 Denne arketypen er tenkt brukt til å registrere informasjon om både nåværende og tidligere bruk av alkohol.
@@ -138,6 +133,7 @@ Clusteret 'Per type' tillater registrering av spesifikke detaljer knyttet til ul
 I noen tilfeller vil individet konsumere kun én type alkohol, som for eksempel øl. Inntas også andre typer alkoholholdig drikke, legges detaljene i en ny instans av clusteret 'Per type'.
 
 Dataelementet 'Overordnet beskrivelse' brukes til å gi fritekstbeskrivelser av alkoholbruk, eller til å overføre data fra eksisterende eller tidligere kliniske systemer til arketypeformat.">
+			keywords = <"drikking", "full", "alkoholbegjær", "alkoholiker", "alkoholisme", "ethyl", "etanol", "alkoholforbruk", "avhold", "rus">
 			misuse = <"Brukes ikke til registrering av hendelses- eller periodebasert informasjon om drikking av alkohol, som faktisk daglig bruk eller gjennomsnittlig bruk over en gitt periode, som siste 30 dager - bruk arketypen OBSERVATION.alcohol_intake til dette.
 
 Brukes ikke til registrering av vurdering av alkoholavhengighet. Bruk spesifikke arketyper til dette formålet, for eksempel OBSERVATION.audit.
@@ -147,8 +143,6 @@ Brukes ikke til registrering av andre måter å innta alkohol på enn drikking, 
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record summary information about the individual's typical pattern of alcohol consumption.">
-			keywords = <"drinking","drunk","dipsomania","alcoholic","alcoholism">
-			copyright = <"© openEHR Foundation, Australian Digital Health Agency, Nasjonal IKT (Norway)">
 			use = <"Use to record summary information about the individual's typical pattern of alcohol consumption.
 
 This archetype is to be used to record information about both current and previous alcohol consumption.
@@ -166,16 +160,17 @@ The 'Per type' cluster of data elements allows for recording of specific details
 In many situations the individual will only consume one type of alcohol, such as beer. If other types of alcohol are consumed, the details will be recorded in another instance of the 'Per type' cluster.
 
 Use to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into an archetyped format, using the 'Overall description' data element.">
+			keywords = <"drinking", "drunk", "dipsomania", "alcoholic", "alcoholism">
 			misuse = <"Not to be used to record event-or period-based information about alcohol drinking, such as actual daily drinking/binging or the average drinking over a specified period of time - use the OBSERVATION.alcohol_intake archetype.
 
 Not to be used to record an assessment about alcohol dependence. Use specific archetypes for this purpose - for example OBSERVATION.audit.
 
 Not to be used to record administration of alcohol by other routes, such as inhalation.">
+			copyright = <"© openEHR Foundation, Australian Digital Health Agency, openEHR Norway">
 		>
 		["fr"] = <
 			language = <[ISO_639-1::fr]>
 			purpose = <"*To record summary information about the individual's typical pattern of alcohol consumption.(en)">
-			keywords = <"en buvant","ivre","dipsomanie","alcoolique","alcoolisme">
 			use = <"*Use to record summary information about the individual's typical pattern of alcohol consumption.
 
 This archetype is to be used to record information about both current and previous alcohol consumption.
@@ -193,6 +188,7 @@ The 'Per type' cluster of data elements allows for recording of specific details
 In many situations the individual will only consume one type of alcohol, such as beer. If other types of alcohol are consumed, the details will be recorded in another instance of the 'Per type' cluster.
 
 Use to incorporate the narrative descriptions of alcohol consumption within existing or legacy clinical systems into an archetyped format, using the 'Overall description' data element.(en)">
+			keywords = <"en buvant", "ivre", "dipsomanie", "alcoolique", "alcoolisme">
 			misuse = <"*Not to be used to record event-or period-based information about alcohol drinking, such as actual daily drinking/binging or the average drinking over a specified period of time - use the OBSERVATION.alcohol_intake archetype.
 
 Not to be used to record an assessment about alcohol dependence. Use specific archetypes for this purpose - for example OBSERVATION.audit.
@@ -202,7 +198,6 @@ Not to be used to record administration of alcohol by other routes, such as inha
 		["nl"] = <
 			language = <[ISO_639-1::nl]>
 			purpose = <"Om samenvattende informatie over het typische alcohol consumptie patroon van een individu vast te leggen.">
-			keywords = <"drinken","dronken","dipsomanie","alcoholverslaafde","alcoholisme">
 			use = <"Gebruik om samenvattende informatie over het typische alcohol consumptie patroon van een individu vast te leggen.
 
 Dit archetype dient gebruikt te worden voor zowel huidige als voormalig alcohol consumptie.
@@ -220,6 +215,7 @@ Het 'Per type' cluster van data elementen staat het vastleggen van specifieke de
 In veel situaties zal het individu maar één type alcohol consumeren, zoals bier. Indien andere types alcohol geconsumeerd worden kunnen deze details vastgelegd worden in aanvullende 'Per type' clusters.
 
 Gebruik om een verhalende beschrijving van alcoholgebruik vast te leggen binnen bestaande of legacy klinische systemen in een archetyped formaat het 'Algemene beschrijving' data element.">
+			keywords = <"drinken", "dronken", "dipsomanie", "alcoholverslaafde", "alcoholisme">
 			misuse = <"Niet te gebruiken om gebeurtenissen of periode-gebasserde informatie over alcoholgebruik vast te leggen, zoals bijvoorbeeld de daadwerkelijke dagelijkse / overmatige / gemiddelde consumptie over een bepaalde periode. Gebruik hiervoor het OBSERVATION.alcohol_intake archetype.
 
 Niet te gebruiken om een beoordeling van afhankelijkheid van alcohol vast te leggen. Gebruik hiervoor specifieke archetypes zoals OBSERVATION.audit.
@@ -227,6 +223,8 @@ Niet te gebruiken om een beoordeling van afhankelijkheid van alcohol vast te leg
 Niet te gebruiken voor het vastleggen van toediening van alcohol op andere wijzen, zoals inhaleren.">
 		>
 	>
+	lifecycle_state = <"published">
+	other_contributors = <"Amund Aakerholt, Helse Stavanger, KORFOR, Norway", "Morten Aas, Oslo Universitetssykehus, Norway", "Tomas Alme, DIPS ASA, Norway", "Ole Andreas Bjordal, Webmed, Norway", "Rita Apelt, Department of Health,NT, Australia", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Koray Atalag, University of Auckland, New Zealand", "Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Editor)", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Marcus Baw, openGPSoC / BawMedical Ltd, United Kingdom", "Kristian Berg, Universitetssykehuset Nord Norge, Norway", "Lars Bitsch-Larsen, Haukeland University Hospital, Bergen, Norway", "Fredrik Borchsenius, Oslo universitetssykehus, Norway", "Chris Bullen, University of Auckland, New Zealand", "Fatemeh Chalabianloo, Helse Bergen, Norway", "Bjørn Christensen, Helse Bergen HF, Norway", "Stephen Chu, NEHTA, Australia", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Are Edvardsen, SKDE, Norway", "Einar Fosse, UNN HF, Norwegian Centre for Integrated Care and Telemedicine, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Liv Grøtvedt, Folkehelseinstituttet, Norway", "Sam Heard, Ocean Informatics, Australia", "Kristian Heldal, Telemark Hospital Trust, Norway", "Jørn Henrik Vold, Helse Bergen, Avdeling for rusmedisin, Norway", "Anca Heyd, DIPS ASA, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Stelios Joseph Karras, Ergobyte, Greece", "Adriana Kitajima, CORE Consulting, Brazil", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Ole Kristian Losvik, Losol AS, Norway", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Rikard Lovstrom, Swedish Medical Association, Sweden", "Camilla Lund, Institute for Cancer Genetics and Informatics, Norway", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Arne Løberg Sæter, DIPS ASA, Norway", "Siv Marie Lien, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom", "Paul Miller, SCIMP NHS Scotland, United Kingdom", "Bjørn Næss, DIPS ASA, Norway", "Jeremy Oats, NT Health, Australia", "Andrej Orel, Marand d.o.o., Slovenia", "Anne Pauline Anderssen, Helse Nord RHF, Norway", "Rune Pedersen, Universitetssykehuset i Nord Norge, Norway", "Tanja Riise, Nasjonal IKT HF, Norway", "Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil", "Rosalie Schultz, Anyinginyi Health Aboriginal Corporation, Australia", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Raymond Simkus, Brookswood Family Practice, Canada", "Lisbeth Sommervoll, Akershus Universitetssykehus, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "Nyree Taylor, Ocean Informatics, Australia", "Jon Tysdahl, Furst medlab AS, Norway", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Ping-Cheng Wei, New Zealand">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -235,9 +233,9 @@ Niet te gebruiken voor het vastleggen van toediening van alcohol op andere wijze
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"CC297465A592B5BE0321B62E37D9E7EE">
-		["build_uid"] = <"fbe8337b-d5f5-4c8e-8986-beaba8eb82e8">
-		["revision"] = <"1.0.6">
+		["MD5-CAM-1.0.1"] = <"C83B63C1172C68A0B749BA3D22B6E27E">
+		["build_uid"] = <"5f2cbe93-bbdf-4f52-9b56-24f17db157e9">
+		["revision"] = <"1.1.0">
 	>
 
 definition
@@ -250,9 +248,9 @@ definition
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
+									at0006,    -- Lifetime non-drinker
 									at0003,    -- Current drinker
-									at0005,    -- Former drinker
-									at0006]    -- Lifetime non-drinker
+									at0005]    -- Former drinker
 								}
 							}
 						}
@@ -284,7 +282,7 @@ definition
 									DV_CODED_TEXT matches {
 										defining_code matches {
 											[local::
-											at0061,    -- Current drinker
+											at0061,    -- Drinker
 											at0091]    -- Non-drinker
 										}
 									}
@@ -422,7 +420,7 @@ definition
 							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Typical consumption (alcohol units)
 								value matches {
 									C_DV_QUANTITY <
-										property = <[openehr::382]>
+										
 										list = <
 											["1"] = <
 												units = <"1/d">
@@ -438,6 +436,30 @@ definition
 												units = <"1/mo">
 												magnitude = <|>=0.0|>
 												precision = <|1|>
+											>
+										>
+									>
+								}
+							}
+							ELEMENT[at0122] occurrences matches {0..1} matches {    -- Typical consumption (mass)
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"g/d">
+												magnitude = <|>=0.0|>
+												precision = <|2|>
+											>
+											["2"] = <
+												units = <"g/wk">
+												magnitude = <|>=0.0|>
+												precision = <|2|>
+											>
+											["3"] = <
+												units = <"g/mo">
+												magnitude = <|>=0.0|>
+												precision = <|2|>
 											>
 										>
 									>
@@ -473,7 +495,7 @@ definition
 									ELEMENT[at0111] occurrences matches {0..1} matches {    -- Typical consumption (alcohol units)
 										value matches {
 											C_DV_QUANTITY <
-												property = <[openehr::382]>
+												
 												list = <
 													["1"] = <
 														units = <"1/d">
@@ -494,9 +516,33 @@ definition
 											>
 										}
 									}
+									ELEMENT[at0127] occurrences matches {0..1} matches {    -- Typical consumption (mass)
+										value matches {
+											C_DV_QUANTITY <
+												
+												list = <
+													["1"] = <
+														units = <"g/d">
+														magnitude = <|>=0.0|>
+														precision = <|2|>
+													>
+													["2"] = <
+														units = <"g/wk">
+														magnitude = <|>=0.0|>
+														precision = <|2|>
+													>
+													["3"] = <
+														units = <"g/mo">
+														magnitude = <|>=0.0|>
+														precision = <|2|>
+													>
+												>
+											>
+										}
+									}
 									allow_archetype CLUSTER[at0077] occurrences matches {0..*} matches {    -- Type details
 										include
-											archetype_id/value matches {/.*/}
+											archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.alcohol_consumption\.v0/}
 									}
 									ELEMENT[at0069] occurrences matches {0..1} matches {    -- Comment
 										value matches {
@@ -519,7 +565,7 @@ definition
 							}
 							allow_archetype CLUSTER[at0026] occurrences matches {0..*} matches {    -- Episode details
 								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.cessation_attempts(-[a-zA-Z0-9_]+)*\.v1/}
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.cessation_attempts(-[a-zA-Z0-9_]+)*\.v1|openEHR-EHR-CLUSTER\.alcohol_consumption\.v0/}
 							}
 							ELEMENT[at0087] occurrences matches {0..1} matches {    -- Episode comment
 								value matches {
@@ -562,17 +608,17 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0079] occurrences matches {0..*} matches {    -- Lifetime non-drinker definition
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
 					ELEMENT[at0075] occurrences matches {0..*} matches {    -- Current drinker definition
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0076] occurrences matches {0..*} matches {    -- Former drinker definition
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0079] occurrences matches {0..*} matches {    -- Lifetime non-drinker definition
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -606,6 +652,7 @@ definition
 		}
 	}
 
+
 ontology
 	term_definitions = <
 		["en"] = <
@@ -637,7 +684,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Quit date">
-					description = <"Date when the individual last consumed an alcohol.">
+					description = <"Date when the individual last consumed alcohol.">
 					comment = <"Can be a partial date, for example, only a year. Definitions for a 'Quit date' vary enormously and can be defined using the 'Quit data definition' data element in the Protocol section of this archetype. This date will be identical to the 'Episode end date' for the most recent episode. This date could be used by decision support guidance to determine if the individual is at risk of relapse, for example in the first 12 months since quitting.">
 				>
 				["at0015"] = <
@@ -664,7 +711,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Typical consumption (alcohol units)">
-					description = <"Estimate of number of alcohol units consumed in the specified time period.">
+					description = <"Estimate of number of alcohol units consumed.">
 				>
 				["at0025"] = <
 					text = <"Number of quit attempts">
@@ -697,7 +744,7 @@ ontology
 					description = <"Narrative summary about alcohol consumption for the specified type of alcohol.">
 				>
 				["at0061"] = <
-					text = <"Current drinker">
+					text = <"Drinker">
 					description = <"Individual consumed alcohol during this period.">
 				>
 				["at0064"] = <
@@ -741,7 +788,7 @@ ontology
 				["at0081"] = <
 					text = <"Episode label">
 					description = <"Identification of an episode of alcohol consumption - either as a number in a sequence and/or a named event.">
-					comment = <"For example: '2' as the second episode within a sequence of episodes; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy.">
+					comment = <"For example: '2' as the second episode within a sequence of episodes; 'Life-long'; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy.">
 				>
 				["at0082"] = <
 					text = <"Episode end date">
@@ -797,7 +844,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Typical consumption (alcohol units)">
-					description = <"Estimate of number of standard drinks of the specified type of alcohol consumed in the specified period.">
+					description = <"Estimate of number of standard drinks of the specified type of alcohol consumed.">
 					comment = <"The definition of an Alcohol unit can be recorded in the Protocol.">
 				>
 				["at0112"] = <
@@ -842,6 +889,14 @@ ontology
 					text = <"Fortified wine">
 					description = <"Wine with added spirits.">
 				>
+				["at0122"] = <
+					text = <"Typical consumption (mass)">
+					description = <"Estimate of number of pure grams alcohol consumed.">
+				>
+				["at0127"] = <
+					text = <"Typical consumption (mass)">
+					description = <"Estimate of number of grams of pure alcohol the specified type of alcoholic beverage consumed.">
+				>
 			>
 		>
 		["nb"] = <
@@ -855,16 +910,16 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0003"] = <
-					text = <"Drikker">
-					description = <"Individet bruker alkohol.">
+					text = <"Bruker">
+					description = <"Individet drikker alkohol.">
 				>
 				["at0005"] = <
-					text = <"Drukket tidligere">
-					description = <"Individet har brukt alkohol tidligere, men drikker ikke nå.">
+					text = <"Tidligere brukt">
+					description = <"Individet har drukket alkohol tidligere, men drikker ikke nå.">
 				>
 				["at0006"] = <
-					text = <"Aldri drukket">
-					description = <"Individet har aldri brukt alkohol.">
+					text = <"Aldri brukt">
+					description = <"Individet har aldri drukket alkohol.">
 				>
 				["at0013"] = <
 					text = <"Episodens startdato">
@@ -873,7 +928,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Sluttdato">
-					description = <"Datoen da individet sluttet å drikke alkohol i denne perioden.">
+					description = <"Datoen da individet sluttet å drikke alkohol.">
 					comment = <"Kan være en deldato, for eksempel årstall. Definisjoner for \"Sluttdato\" varierer enormt og kan defineres ved å bruke dataelementet \"Definisjon på Sluttdato\" i protokolldelen av denne arketypen. Denne datoen vil være identisk med \"Episodens sluttdato\" for den siste episoden. Denne datoen kan brukes av beslutningsstøttesystemer for å beregne om individet er i faresonen for tilbakefall, for eksempel i løpet av de første 12 månedene etter å ha sluttet.">
 				>
 				["at0015"] = <
@@ -900,7 +955,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Typisk bruk (alkoholenheter)">
-					description = <"Estimat på antall alkoholenheter som ble drukket i den spesifiserte perioden.">
+					description = <"Estimat på antall alkoholenheter som ble drukket.">
 				>
 				["at0025"] = <
 					text = <"Antall forsøk på å slutte">
@@ -933,7 +988,7 @@ ontology
 					description = <"Oppsummering i fritekst om drikkeatferd for den spesifiserte typen alkoholholdig drikke.">
 				>
 				["at0061"] = <
-					text = <"Nåværende bruker">
+					text = <"Brukt">
 					description = <"Individet har inntatt alkohol i denne episoden.">
 				>
 				["at0064"] = <
@@ -954,20 +1009,20 @@ ontology
 					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
 				["at0075"] = <
-					text = <"Definisjon på \"Drikker\"">
-					description = <"Den anvendte definisjonen av verdien \"Drikker\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
+					text = <"Definisjon på \"Nåværende bruker\"">
+					description = <"Den anvendte definisjonen av verdien \"Nåværende bruker\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
 				>
 				["at0076"] = <
-					text = <"Definisjon på \"Drukket tidligere\"">
-					description = <"Den anvendte definisjonen av verdien \"Drukket tidligere\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
+					text = <"Definisjon på \"Tidligere bruker\"">
+					description = <"Den anvendte definisjonen av verdien \"Tidligere bruker\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
 				>
 				["at0077"] = <
 					text = <"Detaljer om typen">
 					description = <"Ytterligere strukturerte detaljer om den spesifiserte typen alkoholholdig drikke.">
 				>
 				["at0079"] = <
-					text = <"Definisjon på \"Aldri drukket\"">
-					description = <"Den anvendte definisjonen av verdien \"Aldri drukket\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
+					text = <"Definisjon på \"Aldri brukt\"">
+					description = <"Den anvendte definisjonen av verdien \"Aldri brukt\" i dataelementet \"Overordnet status\" benyttet i denne arketypen.">
 				>
 				["at0080"] = <
 					text = <"Startet daglig alkoholbruk">
@@ -977,7 +1032,7 @@ ontology
 				["at0081"] = <
 					text = <"Episodenavn">
 					description = <"Identifikasjon av en episode med alkoholbruk, enten som et nummer i en sekvens eller som en navngitt hendelse.">
-					comment = <"For eksempel: \"2\" som den andre episoden i en serie av episoder, eller \"Gravid med tvillinger\" om en beskriver alkoholbruk under en helserelatert hendelse som for eksempel et bestemt svangerskap.">
+					comment = <"For eksempel: \"2\" som den andre episoden i en serie av episoder, \"Livtidsbruk\" eller \"Gravid med tvillinger\" om en beskriver bruken av alkohol under en helserelatert hendelse, som for eksempel et bestemt svangerskap.">
 				>
 				["at0082"] = <
 					text = <"Episodens sluttdato">
@@ -1011,7 +1066,7 @@ ontology
 					description = <"Utsagn om nåværende atferd og bruk for alle typer alkohol.">
 				>
 				["at0091"] = <
-					text = <"Aldri brukt">
+					text = <"Ikke brukt">
 					description = <"Individet har ikke drukket alkohol i løpet av denne episoden.">
 				>
 				["at0097"] = <
@@ -1033,7 +1088,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Typisk bruk (alkoholenheter)">
-					description = <"Estimat på antall alkoholenheter av den spesifiserte typen alkohol som ble drukket i den spesifiserte perioden.">
+					description = <"Estimat på antall alkoholenheter av den spesifiserte typen alkohol som ble drukket.">
 					comment = <"Definisjon på alkoholenhet kan gjøres i protokolldelen av arketypen.">
 				>
 				["at0112"] = <
@@ -1078,6 +1133,14 @@ ontology
 					text = <"Sterkvin">
 					description = <"Vin som er tilsatt brennevin. Tidligere kalt hetvin.">
 				>
+				["at0122"] = <
+					text = <"Typisk bruk (masse)">
+					description = <"Estimat på antall gram ren alkohol som ble drukket.">
+				>
+				["at0127"] = <
+					text = <"Typisk bruk (masse)">
+					description = <"Estimat på antall gram ren alkohol av den spesifiserte typen alkoholholdig drikke som ble drukket.">
+				>
 			>
 		>
 		["sv"] = <
@@ -1109,7 +1172,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Slutdatum">
-					description = <"Datum när individen senast konsumerade alkoholhaltiga drycken.">
+					description = <"*Date when the individual last consumed alcohol. (en)">
 					comment = <"Kan vara del av ett datum, till exempel bara ett år. Definitioner för ett \"Slutdatum\" varierar enormt och kan definieras med dataelementet \"Avsluta data definition\" i protokolldelen i den här arketypen. Detta datum kommer att vara identiskt med \"Episodslutdatum\" för den senaste episoden. Detta datum kan användas av beslutsstödsguiden för att avgöra om individen är i riskzonen för återfall, till exempel under de första 12 månaderna sedan hen slutade.">
 				>
 				["at0015"] = <
@@ -1136,7 +1199,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Typisk konsumtion (alkoholenheter)">
-					description = <"Uppskattning av antal alkoholenheter som konsumerats under den angivna episoden.">
+					description = <"*Estimate of number of alcohol units consumed. (en)">
 				>
 				["at0025"] = <
 					text = <"Antal försök att sluta">
@@ -1169,7 +1232,7 @@ ontology
 					description = <"Beskrivande sammanfattning om alkohol konsumtion för det specificerade typen av alkohol.">
 				>
 				["at0061"] = <
-					text = <"Dricker alkohol">
+					text = <"*Drinker (en)">
 					description = <"Individen har konsumerat alkohol under denna episod.">
 				>
 				["at0064"] = <
@@ -1213,7 +1276,7 @@ ontology
 				["at0081"] = <
 					text = <"Episodbeteckning">
 					description = <"Identifiering av en episod av alkoholkonsumtion - antingen som ett tal i en sekvens och/eller en namngiven händelse.">
-					comment = <"Till exempel: \"2\" som den andra episoden inom en sekvens av episoder; eller \"Graviditet med tvillingar\" om man beskriver alkoholkonsumtionen under en kroppslig händelse, t.ex. under en viss graviditet.">
+					comment = <"*For example: '2' as the second episode within a sequence of episodes; 'Life-long'; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy. (en)">
 				>
 				["at0082"] = <
 					text = <"Episodens slutdatum">
@@ -1269,7 +1332,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Typisk konsumtion (alkoholenheter)">
-					description = <"Uppskattning av antal alkoholenheter av specificerat typ som konsumerats under den angivna episoden.">
+					description = <"*Estimate of number of standard drinks of the specified type of alcohol consumed. (en)">
 					comment = <"Definitionen av en alkoholenhet kan registreras i protokollet.">
 				>
 				["at0112"] = <
@@ -1314,6 +1377,14 @@ ontology
 					text = <"Starkvin">
 					description = <"Vin med tillsatt sprit, till exempel portvin, sherry, madeira och marsala.">
 				>
+				["at0122"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of pure grams alcohol consumed. (en)">
+				>
+				["at0127"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of grams of pure alcohol the specified type of alcoholic beverage consumed. (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -1345,7 +1416,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Datum des Aufhörens">
-					description = <"Das Datum, an dem die Person zuletzt Alkohol jeglicher Art zu sich genommen hat.">
+					description = <"*Date when the individual last consumed alcohol. (en)">
 					comment = <"Kann ein Teildatum sein, z.B. nur ein Jahr. Die Definitionen für ein 'Allgemeiner Zeitpunkt des Aufhörens' sind sehr unterschiedlich und können über das Datenelement 'Definition des Aufhörens' im Protokollbereich dieses Archetyps definiert werden. Dieses Datum ist identisch mit dem Enddatum der Episode für die letzte Episode. Dieses Datum könnte von der Entscheidungsunterstützung genutzt werden, um festzustellen, ob die Person, zum Beispiel in den ersten 12 Monaten nach dem Aufhören, einem Rückfallrisiko ausgesetzt ist.">
 				>
 				["at0015"] = <
@@ -1374,7 +1445,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Typische Verwendung (Alkoholeinheiten)">
-					description = <"Schätzung der Anzahl von Alkoholeinheiten, die im angegebenen Zeitraum konsumiert wurden.">
+					description = <"*Estimate of number of alcohol units consumed. (en)">
 				>
 				["at0025"] = <
 					text = <"Anzahl der Aufhörversuche">
@@ -1408,7 +1479,7 @@ ontology
 					description = <"Zusammenfassung des Alkoholkonsumverhaltens für die angegebene Art von Getränk.">
 				>
 				["at0061"] = <
-					text = <"Derzeitiger Trinker">
+					text = <"*Drinker (en)">
 					description = <"Die Person konsumierte Alkohol in dieser Episode.">
 				>
 				["at0064"] = <
@@ -1452,7 +1523,7 @@ ontology
 				["at0081"] = <
 					text = <"Bezeichnung der Episode">
 					description = <"Identifizierung einer Episode des Alkoholkonsums - entweder als Zahl in einer Sequenz und/oder als benanntes Ereignis.">
-					comment = <"Zum Beispiel: \"2\" als zweite Episode innerhalb einer Folge von Episoden; oder \"Schwangerschaft mit Zwillingen\", wenn der Alkoholkonsum während eines gesundheitlichen Ereignisses, wie z.B. während einer bestimmten Schwangerschaft, beschrieben wird.">
+					comment = <"*For example: '2' as the second episode within a sequence of episodes; 'Life-long'; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy. (en)">
 				>
 				["at0082"] = <
 					text = <"Enddatum der Episode">
@@ -1510,7 +1581,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Typische Verwendung (Alkoholeinheiten)">
-					description = <"Schätzung der Anzahl von Alkohleinheiten des angegebenen Typs des konsumierten alkoholischen Getränks.">
+					description = <"*Estimate of number of standard drinks of the specified type of alcohol consumed. (en)">
 					comment = <"Die Definition von Alkoholeinheiten kann im Protokoll aufgezeichnet werden.">
 				>
 				["at0112"] = <
@@ -1555,6 +1626,14 @@ ontology
 					text = <"Likörwein">
 					description = <"Wein mit hinzugefügten Spirituosen.">
 				>
+				["at0122"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of pure grams alcohol consumed. (en)">
+				>
+				["at0127"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of grams of pure alcohol the specified type of alcoholic beverage consumed. (en)">
+				>
 			>
 		>
 		["fr"] = <
@@ -1586,7 +1665,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Date d'arrêt">
-					description = <"Date à laquelle l'individu a consommé de l'alcool pour la dernière fois.">
+					description = <"*Date when the individual last consumed alcohol. (en)">
 					comment = <"Peut être une date partielle, par exemple, seulement une année. Les définitions d'une \"Date d'arrêt\" varient énormément et peuvent être définies en utilisant l'élément de données \"Définition des données d'arrêt\" dans la section Protocole de cet archétype. Cette date sera identique à la \"date de fin d'épisode\" pour l'épisode le plus récent. Cette date pourrait être utilisée par les services d'aide à la décision pour déterminer si la personne risque de rechuter, par exemple au cours des 12 premiers mois suivant son départ.">
 				>
 				["at0015"] = <
@@ -1613,7 +1692,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Consommation type (unités d'alcool)">
-					description = <"Estimation du nombre d'unités d'alcool consommées au cours de la période spécifiée.">
+					description = <"*Estimate of number of alcohol units consumed. (en)">
 				>
 				["at0025"] = <
 					text = <"Nombre de tentatives d'arrêt">
@@ -1646,7 +1725,7 @@ ontology
 					description = <"Résumé narratif sur la consommation d'alcool pour le type d'alcool spécifié.">
 				>
 				["at0061"] = <
-					text = <"Buveur actuel">
+					text = <"*Drinker (en)">
 					description = <"L'individu a consommé de l'alcool pendant cette période.">
 				>
 				["at0064"] = <
@@ -1690,7 +1769,7 @@ ontology
 				["at0081"] = <
 					text = <"Étiquette d'épisode">
 					description = <"Identification d'un épisode de consommation d'alcool - soit sous la forme d'un numéro dans une séquence et/ou d'un événement nommé.">
-					comment = <"Par exemple : \"2\" comme deuxième épisode dans une séquence d'épisodes ; ou \"grossesse avec des jumeaux\" si l'on décrit la consommation d'alcool pendant un événement de santé comme une grossesse spécifique.">
+					comment = <"*For example: '2' as the second episode within a sequence of episodes; 'Life-long'; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy. (en)">
 				>
 				["at0082"] = <
 					text = <"Date de fin de l'épisode">
@@ -1746,7 +1825,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Consommation type (unités d'alcool)">
-					description = <"Estimation du nombre de boissons types du type d'alcool spécifié consommées au cours de la période spécifiée.">
+					description = <"*Estimate of number of standard drinks of the specified type of alcohol consumed. (en)">
 					comment = <"La définition d'une unité d'alcool peut être enregistrée dans le protocole.">
 				>
 				["at0112"] = <
@@ -1791,6 +1870,14 @@ ontology
 					text = <"Vin fortifié">
 					description = <"Vin additionné de spiritueux.">
 				>
+				["at0122"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of pure grams alcohol consumed. (en)">
+				>
+				["at0127"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of grams of pure alcohol the specified type of alcoholic beverage consumed. (en)">
+				>
 			>
 		>
 		["nl"] = <
@@ -1822,7 +1909,7 @@ ontology
 				>
 				["at0014"] = <
 					text = <"Stopdatum">
-					description = <"Datum waarop het individu voor het laats alcohol heeft gedronken.">
+					description = <"*Date when the individual last consumed alcohol. (en)">
 					comment = <"Kan een gedeeltelijke datum zijn, zoals een jaartal. Definities voor 'Stopdatum' lopen enorm uiteen en kunnen gedefinieerd worden met het 'Stopdatum definitie' data element in de Protocol sectie van dit archetype. Deze datum zal gelijk zijn aan de 'Episode einddatum' van de meest recente episode. Deze datum kan gebruikt worden door beslissingondersteuning om vast te stellen of het individu risico heeft op terugval, bijvoorbeeld in de eerste 12 maanden na het stoppen.">
 				>
 				["at0015"] = <
@@ -1849,7 +1936,7 @@ ontology
 				>
 				["at0023"] = <
 					text = <"Typische consumptie (alcohol eenheden)">
-					description = <"Geschatte aantal alcohol eenheden geconsumeerd in de bepaalde periode.">
+					description = <"*Estimate of number of alcohol units consumed. (en)">
 				>
 				["at0025"] = <
 					text = <"Aantal stoppogingen">
@@ -1882,7 +1969,7 @@ ontology
 					description = <"Verhalende samenvatting over alcohol consumptie van het bepaalde type alcohol.">
 				>
 				["at0061"] = <
-					text = <"Huidige drinker">
+					text = <"*Drinker (en)">
 					description = <"Individu gebruikt alcohol tijdens deze periode.">
 				>
 				["at0064"] = <
@@ -1926,7 +2013,7 @@ ontology
 				["at0081"] = <
 					text = <"Episode label">
 					description = <"Identificatie van een episode van alcohol consumptie - als een nummer in een reeks of een genoemde gebeurtenis.">
-					comment = <"Bijvoorbeeld: '2' als de tweede episode in een reeks van episodes, of 'Zwangerschap van tweeling' indien de alcohol consumptie beschreven wordt tijdens een gezondheidsgebeurtenis zoals een specifieke zwangerschap.">
+					comment = <"*For example: '2' as the second episode within a sequence of episodes; 'Life-long'; or 'Pregnancy with twins' if describing the alcohol consumption during a health event such as during a specific pregnancy. (en)">
 				>
 				["at0082"] = <
 					text = <"Episode einddatum">
@@ -1982,7 +2069,7 @@ ontology
 				>
 				["at0111"] = <
 					text = <"Typische consumptie (alcohol eenheden)">
-					description = <"Geschatte aantal alcohol eenheden van het specifieke type alcohol geconsumeerd in de bepaalde periode.">
+					description = <"*Estimate of number of standard drinks of the specified type of alcohol consumed. (en)">
 					comment = <"De definitie van een alcohol eenheid kan vastgelegd worden in het Protocol.">
 				>
 				["at0112"] = <
@@ -2026,6 +2113,14 @@ ontology
 				["at0121"] = <
 					text = <"Versterkte wijn">
 					description = <"Wijn met toegevoegde gedestileerde drank.">
+				>
+				["at0122"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of pure grams alcohol consumed. (en)">
+				>
+				["at0127"] = <
+					text = <"*Typical consumption (mass) (en)">
+					description = <"*Estimate of number of grams of pure alcohol the specified type of alcoholic beverage consumed. (en)">
 				>
 			>
 		>
