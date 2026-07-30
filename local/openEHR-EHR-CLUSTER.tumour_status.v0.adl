@@ -15,6 +15,14 @@ language
 				["email"] = <"liv.laugen@ous-hf.no">
 			>
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"Liv Laugen">
+				["organisation"] = <"Oslo universitetssykehus">
+				["email"] = <"liv.laugen@ous-hf.no">
+			>
+		>
 	>
 
 description
@@ -52,6 +60,21 @@ I tillegg viser denne arketypen forløpsstatusen i områdene med fjernmetastaser
 
 Denne arketypen kan innlemmes i sporingsdetaljene til overordnet arketypen \"Problem/Diagnose\" (openEHR-EHR-EVALUATION.problem_diagnosis).">
 			misuse = <"Må ikke brukes til å representere sykdomsstatus utenfor kreftsykdom.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To represent the status of a tumour disease during the course of treatment or after treatment and follow-up.">
+			keywords = <"residual status","primary tumour","therapy","tumour status","residual tumour","local recurrence","tumour","progression","no change","complete remission","partial remission","CR","PR","divergent","MR","CRr","NC","residual tumour","change","partial remission","no change","complete remission","minimal response","residual","tumour course","lymph node metastases","distant metastases","spread","residuals">
+			copyright = <"© HiGHmed, Nasjonal IKT HF">
+			use = <"To represent the status of a tumour disease during the course of treatment or after treatment and follow-up.
+Use
+This archetype shall be used to present assessments of the status of the tumour locally, overall, and in the areas of distant metastases and regional lymph nodes during the course of treatment or after treatment and follow-up.
+
+The tumour status is important for assessing the success of the therapy and describes the changes in the tumour after the (primary) treatment. It shall be determined whether, for example, tumour tissue is still present; whether there is progression with existing residual tumour; no changes with existing residual tumour or a local recurrence.
+In addition, this archetype presents the course status in the areas of distant metastases and regional lymph nodes.
+
+This archetype can be embedded in the slot \"Specific Details\" of the parent archetype \"Problem/Diagnosis\" (openEHR-EHR-EVALUATION.problem_diagnosis).">
+			misuse = <"Must not be used to represent a disease status outside of the tumour disease.">
 		>
 	>
 	other_details = <
@@ -465,6 +488,166 @@ ontology
 				["at0040"] = <
 					text = <"X = Ingen opplysninger">
 					description = <"Det finnes ingen opplysninger om tumorstatus i forbindelse med regionale lymfeknuter.">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tumour status">
+					description = <"Status of the tumour disease during the course of treatment or after treatment and follow-up.">
+				>
+				["at0001"] = <
+					text = <"Local tumour status">
+					description = <"The condition of the primary tumour is assessed.">
+				>
+				["at0002"] = <
+					text = <"K = No tumour detectable">
+					description = <"There is no tumour present.">
+				>
+				["at0003"] = <
+					text = <"T = Residual tumour (residual tumour)">
+					description = <"A residual tumour is present, meaning that there is tumour tissue remaining in the tissue after treatment.">
+				>
+				["at0004"] = <
+					text = <"P = Residual tumour progression">
+					description = <"A residual tumour is present, meaning that the tumour tissue has further spread in the tissue after treatment.">
+				>
+				["at0005"] = <
+					text = <"N = Residual tumour no change">
+					description = <"A residual tumour is present, meaning that the tumour tissue has remained unchanged after treatment and is still present in the tissue.">
+				>
+				["at0006"] = <
+					text = <"R = Local recurrence">
+					description = <"Reappearance of the tumour at the same site after successful treatment or complete removal.">
+				>
+				["at0007"] = <
+					text = <"F = Questionable finding">
+					description = <"There is no unambiguous result of the tumour status.">
+				>
+				["at0008"] = <
+					text = <"U = Unknown">
+					description = <"The tumour status could not be determined.">
+				>
+				["at0009"] = <
+					text = <"X = No information">
+					description = <"There is no information available on the tumour status.">
+				>
+				["at0010"] = <
+					text = <"Overall assessment of tumour status">
+					description = <"Overall assessment of the disease taking into account all manifestations.">
+				>
+				["at0011"] = <
+					text = <"V = Complete remission (complete remission, CR)">
+					description = <"The tumour is no longer detectable.">
+				>
+				["at0012"] = <
+					text = <"T = Partial remission / at least 50% reduction of the tumour (partial remission, PR)">
+					description = <"The tumour has significantly decreased, but tumour cells are still present.">
+				>
+				["at0013"] = <
+					text = <"K = No change (no change, NC) = stable disease">
+					description = <"The tumour has not decreased or further spread - no significant change in tumour status.">
+				>
+				["at0014"] = <
+					text = <"P = Progression">
+					description = <"Increase in tumour cells or deterioration of the tumour disease.">
+				>
+				["at0015"] = <
+					text = <"D = Divergent course">
+					description = <"The tumour disease progresses in a contradictory manner, meaning that there is complete or partial remission in one location and progression in another.">
+				>
+				["at0016"] = <
+					text = <"B = Clinical improvement of the condition, criteria for partial remission not met (minimal response, MR)">
+					description = <"Clinical improvement of the condition, but without meeting the criteria for complete or partial remission.">
+				>
+				["at0017"] = <
+					text = <"R = Complete remission with residual abnormalities (CRr)">
+					description = <"The tumour is no longer detectable, but individual tumour cells may still be present.">
+				>
+				["at0018"] = <
+					text = <"U = Assessment impossible">
+					description = <"The overall assessment of the tumour status could not be determined.">
+				>
+				["at0019"] = <
+					text = <"X = No information">
+					description = <"There is no information available on the overall assessment of the tumour status.">
+				>
+				["at0020"] = <
+					text = <"Comment on tumour status">
+					description = <"Supplementary description of the tumour status not recorded in other areas.">
+				>
+				["at0021"] = <
+					text = <"Tumour status distant metastasis/metastases">
+					description = <"Assessment of the situation regarding distant metastases.">
+				>
+				["at0023"] = <
+					text = <"K = No distant metastases detectable">
+					description = <"There are no distant metastases present.">
+				>
+				["at0024"] = <
+					text = <"M = Remaining distant metastasis/metastases">
+					description = <"There are distant metastases that remain present after treatment.">
+				>
+				["at0025"] = <
+					text = <"R = Newly occurred distant metastasis/metastases or metastasis recurrence">
+					description = <"There are new distant metastases present or previously regressed distant metastases that have reappeared at the same site.">
+				>
+				["at0026"] = <
+					text = <"T = Distant metastases residuals">
+					description = <"There are remnants or parts of distant metastases that remain present after treatment.">
+				>
+				["at0027"] = <
+					text = <"P = Distant metastases progression">
+					description = <"There are distant metastases that have further spread in the tissue after treatment.">
+				>
+				["at0028"] = <
+					text = <"N = Distant metastases no change">
+					description = <"There are distant metastases that remain present after treatment and have not changed.">
+				>
+				["at0029"] = <
+					text = <"F = Questionable finding">
+					description = <"There is no unambiguous result of the tumour status regarding distant metastases.">
+				>
+				["at0030"] = <
+					text = <"U = Unknown">
+					description = <"The tumour status regarding distant metastases could not be determined.">
+				>
+				["at0031"] = <
+					text = <"X = No information">
+					description = <"There is no information available on the tumour status regarding distant metastases.">
+				>
+				["at0033"] = <
+					text = <"Tumour status lymph nodes">
+					description = <"Assessment of the situation regarding regional lymph nodes.">
+				>
+				["at0034"] = <
+					text = <"K = No lymph node involvement detectable">
+					description = <"No involvement of lymph nodes was detected.">
+				>
+				["at0035"] = <
+					text = <"R = Newly occurred lymph node recurrence">
+					description = <"Reappearance of previously completely regressed lymph node metastases.">
+				>
+				["at0036"] = <
+					text = <"T = Known lymph node involvement residuals">
+					description = <"There are tumour remnants that remain in the lymph nodes after treatment.">
+				>
+				["at0037"] = <
+					text = <"N = Known lymph node involvement no change">
+					description = <"There are tumour remnants that remain in the lymph nodes after treatment and have not changed.">
+				>
+				["at0038"] = <
+					text = <"F = Questionable finding">
+					description = <"There is no unambiguous result of the tumour status regarding regional lymph nodes.">
+				>
+				["at0039"] = <
+					text = <"U = Unknown">
+					description = <"The tumour status regarding regional lymph nodes could not be determined.">
+				>
+				["at0040"] = <
+					text = <"X = No information">
+					description = <"There is no information available on the tumour status regarding regional lymph nodes.">
 				>
 			>
 		>
