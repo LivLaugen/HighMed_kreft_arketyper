@@ -20,10 +20,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "7.0.0",
+      "sem_ver" : "8.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "812b24fd7c7fb2ddc13be9a35d6a109f",
-      "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD",
+      "MD5-CAM-1.0.1" : "c0830505b739017dc0ae33242e06ace2",
+      "PARENT:MD5-CAM-1.0.1" : "3B0765A6B395C9D01595FDF2D440E6CB",
       "original_language" : "ISO_639-1::de"
     },
     "details" : {
@@ -197,6 +197,36 @@
         "otherDetails" : {
           "notes" : "Generated automatically by Adl Designer"
         }
+      },
+      "pt-pt" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-pt"
+        },
+        "purpose" : "Registar os dados documentais de uma única interação, contacto ou evento de prestação de cuidados entre uma pessoa sujeita a cuidados e o(s) prestador(es) de cuidados de saúde para a prestação de serviços de saúde. Pode tratar-se de uma interação presencial ou à distância.",
+        "keywords" : [ "encontro", "contato", "visita", "evento de cuidados" ],
+        "use" : "Utilizar como um container genérico a nível documental para registar os pormenores de uma única interação, contacto ou evento de cuidados entre uma pessoa que recebe cuidados e o(s) prestador(es) de cuidados de saúde.\r\nO contacto pode ser presencial, telefónico ou por outro meio eletrónico. A modalidade pode ser registada, se necessário, através do atributo COMPOSITION/mode do modelo de referência.\r\n\r\nO componente principal Secções/Conteúdo foi deliberadamente deixado sem restrições. Isto permite-lhe ser preenchido com quaisquer arquétipos SECTION ou ENTRY apropriados para o objetivo clínico dentro de um modelo.\r\n\r\nApesar de não ser restrito para o conteúdo clínico, a especificação de COMPOSITION.Encounter fornece um valor significativo ao permitir a consulta explícita de todos os Encounters num registo de doente.\r\n\r\nO componente Context (Contexto) contém um SLOT opcional \"Extension\" (Extensão) que pode ser utilizado na conceção do modelo para\r\n- adicionar informações contextuais opcionais, tais como informações sobre episódios; ou\r\n- permitir a harmonização ou o alinhamento com outros formalismos de modelos, como o FHIR ou o CIMI, como a representação explícita de participantes que são normalmente geridos pelo modelo de referência openEHR num arquétipo openEHR.\r\n\r\nExemplos típicos são uma visita clínica, uma observação de enfermagem ou uma consulta de telemedicina.",
+        "misuse" : "Não deve ser utilizado para registar pormenores sobre um episódio completo de cuidados de saúde.\r\n\r\nNão deve ser utilizado para registar informações persistentes e resumidas sobre o doente, como uma lista de problemas ou um resumo da medicação.\r\n\r\nNão deve ser utilizado para representar o relatório de um serviço de diagnóstico, como um exame imagiológico ou laboratorial.\r\n\r\nNão deve ser utilizado para representar o recurso FHIR com o mesmo nome - existe uma incompatibilidade entre o âmbito e a intenção.\r\n",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ca" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ca"
+        },
+        "purpose" : "Registrar les dades en l’àmbit del document d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. Pot ser una interacció presencial o remota.",
+        "keywords" : [ "encontre", "contacte", "visita", "esdeveniment d’atenció" ],
+        "use" : "Utilitzar com a contenidor genèric en l’àmbit del document per a registrar dades d'una única interacció, contacte o esdeveniment d’atenció entre un pacient i un o més professionals d'atenció sanitària. El contacte pot ser presencial, per telèfon o un altre mitjà electrònic. La modalitat es pot recollir, si fos necessari, mitjançant l'atribut COMPOSITION/mode del model de referència.\r\n\r\nEl component principal de Sections/Content s'ha deixat deliberadament sense restriccions. Això permetrà que es completi amb qualsevol arquetip de tipus SECTION o ENTRY adequats per a la finalitat clínica dins d'una plantilla.\r\n\r\nTot i que COMPOSITION.Encounter no té restriccions per al contingut clínic, especificar aquest element proporciona un valor significatiu en permetre la consulta explícita de tots els Encounters dins d'un registre de pacients.\r\n\r\nEl component Context conté un SLOT opcional de «Extensió» que es pot utilitzar en el disseny de plantilles per a:\r\n- afegir informació contextual opcional, com ara informació de l'episodi; o\r\n- permetre l'harmonització o alineació amb altres formalismes model com FHIR o CIMI, com la representació explícita dels participants que solen ser gestionats pel Model de Referència openEHR en un arquetip openEHR.\r\n\r\nExemples típics són una visita clínica, una observació d'infermeria o una consulta de telemedicina.",
+        "misuse" : "No utilitzar per a registrar dades sobre un episodi complet d’atenció.\r\n\r\nNo utilitzar per a contenir informació persistent i resumida del pacient, com ara una llista de problemes o un resum de medicació.\r\n\r\nNo utilitzar per a registrar l'informe d'un servei de diagnòstic, com ara imatges o proves de laboratori.\r\n\r\nNo utilitzar per a representar el recurs FHIR del mateix nom - hi ha un abast i una intenció que no coincideixen.",
+        "originalResourceUri" : { },
+        "otherDetails" : { }
       }
     }
   },
@@ -402,7 +432,9 @@
           "text" : "Tumorverlauf",
           "description" : "Interaksjon, kontakt eller omsorgshendelse mellom et individ og helsepersonell."
         }
-      }
+      },
+      "pt-pt" : { },
+      "ca" : { }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -559,7 +591,20 @@
         "en" : { },
         "nb" : { },
         "ar-sy" : { },
-        "de" : { }
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Sakidentifikasjon",
+            "description" : "Zur Erfassung von Details zur Identifikation eines Falls im Gesundheitswesen."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Sakidentifikator",
+            "description" : "Der Bezeichner/die Kennung dieses Falls."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -629,7 +674,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "70083C267A35C88E111E5BA35120DE86"
+        "PARENT:MD5-CAM-1.0.1" : "3784CDA20920BF84035159DDC43A4D62"
       },
       "details" : {
         "de" : {
@@ -830,6 +875,51 @@
           "keywords" : [ "*issue(en)", "*condition(en)", "*problem(en)", "*diagnosis(en)", "*concern(en)", "*injury(en)", "*clinical impression(en)" ],
           "use" : "*Use for recording details about a single, identified health problem or diagnosis. \r\n\r\nClear definitions that enable differentiation between a 'problem' and a 'diagnosis' are almost impossible in practice - we cannot reliably tell when a problem should be regarded as a diagnosis. When diagnostic or classification criteria are successfully met, then we can confidently call the condition a formal diagnosis, but prior to these conditions being met and while there is supportive evidence available, it can also be valid to use the term 'diagnosis'. The amount of supportive evidence required for the label of diagnosis is not easy to define and in reality probably varies from condition to condition. Many standards committees have grappled with this definitional conundrum for years without clear resolution.\r\n\r\nFor the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'. In this archetype it is not neccessary to classify the condition as a 'problem' or 'diagnosis'. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. Examples of problems include: the individual's expressed desire to lose weight, but without a formal diagnosis of Obesity; or a relationship problem with a family member. Examples of formal diagnoses would include a cancer that is supported by historical information, examination findings, histopathological findings, radiological findings and meets all requirements for known diagnostic criteria. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\r\n\r\nThis archetype can be used within many contexts. For example, recording a problem or a clinical diagnosis during a clinical consultation; populating a persistent Problem List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nIn practice, clinicians use many context-specific qualifiers such as past/present, primary/secondary, active/inactive, admission/discharge etc. The contexts can be location-, specialisation-, episode- or workflow-specific, and these can cause confusion or even potential safety issues if perpetuated in Problem Lists or shared in documents that are outside of the original context. These qualifiers can be archetyped separately and included in the ‘Status’ slot, because their use varies in different settings. It is expected that these will be used mostly within the appropriate context and not shared out of that context without clear understanding of potential consequences. For example, a primary diagnosis to one clinician may be a secondary one to another specialist; an active problem can become inactive (or vice versa) and this can impact the safe use of clinical decision support. In general these qualifiers should be applied locally within the context of the clinical system, and in practice these statuses should be manually curated by clinicians to ensure that lists of Current/Past, Active/Inactive or Primary/Secondary Problems are clinically accurate. \r\n\r\nThis archetype will be used as a component within the Problem Oriented Medical Record as described by Larry Weed. Additional archetypes, representing clinical concepts such as condition as an overarching organiser for diagnoses etc, will need to be developed to support this approach.\r\n\r\nIn some situations, it may be assumed that identification of a diagnosis fits only within the expertise of physicians, but this is not the intent for this archetype. Diagnoses can be recorded using this archetype by any healthcare professional.(en)",
           "misuse" : "*Not to be used to record symptoms as described by the individual - use the CLUSTER.symptom archetype, usually within the OBSERVATION.story archetype.\r\n\r\nNot to be used to record examination findings - use the family of examination-related CLUSTER archetypes, usually nested within the OBSERVATION.exam archetype.\r\n\r\nNot to be used to record laboratory test results or related diagnoses, for example pathological diagnoses - use an appropriate archetype from the laboratory family of OBSERVATION archetypes.\r\n\r\nNot to be used to record imaging examination results or imaging diagnoses - use an appropriate archetype from the imaging family of OBSERVATION archetypes.\r\n\r\nNot to be used to record 'Differential Diagnoses' - use the EVALUATION.differential_diagnosis archetype.\r\n\r\nNot to be used to record 'Reason for Encounter' or 'Presenting Complaint' - use the EVALUATION.reason_for_encounter archetype.\r\n\r\nNot to be used to record procedures - use the ACTION.procedure archetype.\r\n\r\nNot to be used to record details about pregnancy - use the EVALUATION.pregnancy_bf_status and EVALUATION.pregnancy and related archetypes.\r\n\r\nNot to be used to record statements about health risk or potential problems - use the EVALUATION.health_risk archetype.\r\n\r\nNot to be used to record statements about adverse reactions, allergies or intolerances - use the EVALUATION.adverse_reaction archetype.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer des informations détaillées sur un problème de santé spécifique identifié ou sur un diagnostic particulier.\r\n\r\nLa définition d’un problème de santé est délibérément laissée ouverte dans le contexte de la documentation clinique, afin de recenser toute préoccupation, réelle ou perçue, susceptible d’affecter négativement, à quelque degré que ce soit, le bien-être d’une personne. Un problème de santé peut être identifié par la personne concernée, un proche ou un professionnel de santé. En revanche, un diagnostic est défini de manière plus précise sur la base de critères cliniques objectifs et n’est généralement établi que par un professionnel de santé.",
+          "keywords" : [ "problématique", "affection", "problème", "diagnostic", "préoccupation", "blessure", "impression clinique" ],
+          "use" : "À utiliser pour enregistrer des informations détaillées sur un problème de santé spécifique identifié ou sur un diagnostic particulier. \r\n\r\nIl est pratiquement impossible, dans la réalité, d’établir des définitions claires permettant de différencier un « problème » d’un « diagnostic » : nous ne pouvons pas déterminer de manière fiable à quel moment un problème doit être considéré comme un diagnostic. Lorsque les critères de diagnostic ou de classification sont remplis, on peut alors qualifier en toute confiance la condition de « diagnostic formel » ; mais avant que ces conditions ne soient remplies et tant qu’il existe des éléments probants à l’appui, il peut également être valable d’utiliser le terme « diagnostic ». La quantité d’éléments probants requise pour attribuer l’étiquette de « diagnostic » n’est pas facile à définir et, en réalité, varie probablement d’une condition à l’autre. De nombreux comités de normalisation se penchent depuis des années sur ce casse-tête définitionnel sans parvenir à une résolution claire.\r\n\r\nAux fins de la documentation clinique avec cet archétype, le « problème » et le « diagnostic » sont considérés comme un continuum, les niveaux croissants de détail et de preuves à l’appui conférant généralement plus de poids à l’étiquette de « diagnostic ». Dans cet archétype, il n’est pas nécessaire de classer l’affection comme un « problème » ou un « diagnostic ». Les exigences en matière de données pour justifier l'un ou l'autre sont identiques, une structure de données supplémentaire étant requise pour permettre l’intégration des preuves si et quand celles-ci deviennent disponibles. Parmi les exemples de problèmes, on peut citer : le souhait exprimé par la personne de perdre du poids, sans pour autant qu’il y ait de diagnostic formel d’obésité ; ou un problème relationnel avec un membre de la famille. Parmi les exemples de diagnostics formels, on peut citer un cancer soutenu par des antécédents médicaux, des résultats d’examen, des résultats histopathologiques et radiologiques, et qui répond à toutes les exigences des critères diagnostiques connus. Dans la pratique, la plupart des problèmes ou des diagnostics ne se situent pas à l’une ou l’autre extrémité du spectre problème-diagnostic, mais quelque part entre les deux.\r\n\r\nCet archétype peut être utilisé dans de nombreux contextes. Par exemple, pour enregistrer un problème ou un diagnostic clinique lors d’une consultation ; pour alimenter une liste de problèmes persistants ; ou pour fournir un résumé dans un document de compte rendu de sortie.\r\n\r\nDans la pratique, les cliniciens utilisent de nombreux qualificatifs spécifiques au contexte, tels que passé/présent, primaire/secondaire, actif/inactif, admission/sortie, etc. Les contextes peuvent être spécifiques à un lieu, à une spécialité, à un épisode ou à un flux de travail, et cela peut être source de confusion, voire poser des problèmes de sécurité s’ils sont reproduits dans des listes de problèmes ou partagés dans des documents hors du contexte d’origine. Ces qualificatifs peuvent être définis dans des archétypes distincts et être inclus dans le slot « Statut », car leur utilisation varie selon les contextes. On s’attend à ce qu’ils soient principalement utilisés dans le contexte approprié et qu’ils ne soient pas partagés en dehors de ce contexte sans une compréhension claire des conséquences potentielles. Par exemple, un diagnostic principal pour un clinicien peut être un diagnostic secondaire pour un autre spécialiste ; un problème actif peut devenir inactif (ou inversement), ce qui peut avoir un impact sur l’utilisation sûre de l’aide à la décision clinique. En général, ces qualificatifs doivent être appliqués localement dans le contexte du système clinique, et dans la pratique, ces statuts doivent être gérés manuellement par les cliniciens afin de garantir que les listes de problèmes « actuels/passés », « actifs/inactifs » ou « principaux/secondaires » soient cliniquement exactes. \r\n\r\nCet archétype sera utilisé comme composant au sein du dossier médical axés sur les problèmes (Problem Oriented Medical Record), tel que décrit par Larry Weed. D’autres archétypes, représentant des concepts cliniques tels que l’« état pathologique » en tant qu’organisateur global des diagnostics, etc., devront être développés pour soutenir cette approche.\r\n\r\nDans certaines situations, on peut supposer que l’identification d’un diagnostic relève exclusivement de l’expertise des médecins, mais ce n’est pas l’objectif de cet archétype. Les diagnostics peuvent être enregistrés à l’aide de cet archétype par n’importe quel professionnel de santé.",
+          "misuse" : "À ne pas utiliser pour enregister les symptômes tels que décrits par la personne concernée — utiliser l’archétype CLUSTER.symptom, généralement au sein de l’archétype OBSERVATION.story.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’examens — utiliser la famille d’archétypes CLUSTER liés aux examens, généralement imbriqués dans l’archétype OBSERVATION.exam.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’analyses de laboratoire ou les diagnostics associés, par exemple les diagnostics pathologiques — utilisez un archétype approprié de la famille des archétypes OBSERVATION relatifs au laboratoire.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’examens d’imagerie ou les diagnostics d’imagerie — utilisez un archétype approprié de la famille des archétypes OBSERVATION relatifs à l’imagerie.\r\n\r\nÀ ne pas utiliser pour enregister des « diagnostics différentiels » : utilisez l’archétype EVALUATION.differential_diagnosis.\r\n\r\nÀ ne pas utiliser pour enregistrer le « motif de la consultation » ou la « plainte principale » : utilisez l’archétype EVALUATION.reason_for_encounter.\r\n\r\nÀ ne pas utiliser pour enregistrer des interventions : utilisez l’archétype ACTION.procedure.\r\n\r\nÀ ne pas utiliser pour enregister des informations relatives à la grossesse — utilisez les archétypes EVALUATION.pregnancy_bf_status, EVALUATION.pregnancy et les archétypes associés.\r\n\r\nÀ ne pas utiliser pour enregister des informations concernant des risques pour la santé ou des problèmes potentiels — utilisez l’archétype EVALUATION.health_risk.\r\n\r\nÀ ne pas utiliser pour enregister des déclarations concernant des effets indésirables, des allergies ou des intolérances — utilisez l’archétype EVALUATION.adverse_reaction.\r\n\r\nÀ ne pas utiliser pour enregister l’absence (ou la présence négative) d’un problème ou d’un diagnostic, par exemple « Aucun problème ou diagnostic connu » ou « Aucun diabète connu ». Utilisez l’archétype EVALUATION.exclusion-problem_diagnosis pour exprimer une affirmation positive concernant l’exclusion d’un problème ou d’un diagnostic.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在临床文档记录的背景下，健康问题故意保持了宽松的预定适用范围，以便采集任何可能对个人健康产生任何程度不利影响的真实或所感知到的担忧/关注事项（concern）。健康问题可能是由个人（患者本人）、[非正规]照护人员或医疗保健专业人员来确定。然而，诊断则另外还依据客观的临床评判标准进行了定义，且通常仅仅是由医疗保健专业人员来确定。",
+          "keywords" : [ "事宜", "事项", "情况", "健康状况", "病情", "问题", "诊断", "关注事项", "担心事项", "担忧", "损伤", "临床印象" ],
+          "use" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在实践当中，几乎不可能做出明确的定义来区分“问题”（problem）与“诊断”（diagnosis）——我们无法可靠地判断究竟何时才应该将问题视为诊断。当诊断或分类标准得以成功满足时，我们可以自信地将相应的情况/病情（condition）称为正式的诊断，但在满足此类的评判标准/条件之前，且存在可用的支持性证据之时，也可以有效合理地采用“诊断”一词。诊断标签所需支持性证据的数量并不容易定义，实际上很可能还会因情况而异。多年来，许多标准委员会一直在努力解决这个定义难题，但目前还没有明确的解决办法。\r\n\r\n对于利用本原始型的临床文档记录目的来说，在此会将问题与诊断视为统一的连续体系，且由问题到诊断，不断增加的细节水平和支持性证据通常会为“诊断”标签带来更大的权重。在本原始型当中，没有必要将情况/健康状况/病情归类为“问题”还是“诊断”。支持两者文档记录工作的数据需求完全相同，当证据变得可用之时，就需要额外的数据结构来支持收纳相应的证据。关于问题的例子包括：在没有关于肥胖的正式诊断的情况下，个人所表达的关于减肥的愿望；或者是与特定家庭成员的关系问题。关于正式诊断的示例包括拥有历史/病史信息、检查结果、组织病理学发现、放射医学发现支持并满足已知诊断标准所有要求的癌症。在实践当中，大多数的问题或诊断并不处于问题—诊断连续体系的两端，而是介于两者之间。\r\n\r\n本原始型可用于很多的上下文背景。例如，在临床就诊咨询/会诊期间对问题或临床诊断的记录；填写持续存在/更新的问题清单；或者是提供出院摘要文档之中总结性陈述。\r\n\r\n在实践当中，临床医务人员/临床医生会使用许多上下文特异性的限定词（context-specific qualifier），如过去/现在、主要/次要、现行有效/无效、入院/出院等等。上下文背景可以针对的是位置/场所、专业、服务节段（episode）或工作流，如果将此类的限定词长久存储在问题清单当中，或者是在原始上下文背景之外的文档当中加以共享，则可能会导致混淆/困惑甚至潜在的安全问题。可以单独对此类的限定词进行原始型化，并将其收纳在状态槽位'Status'之中，因为它们的用法在不同的场所环境下会有所不同。期望将此类的限定词/状态主要用于合适的上下文背景，而不是在没有清楚地了解潜在后果的情况下在相应的上下文背景之外共享。例如，一位临床医生的初步诊断可能是另一位专科医生的次要诊断；现行有效的问题可能会变为无效状态（反之亦然），而这种情况可能会影响临床决策支持（CDS）措施的安全使用。一般来说，应该在本地将这些状态应用于相应临床系统的上下文背景，而在实践当中，则应该由临床医务人员/临床医生来手动管理这些状态，以确保当前/过去、现行有效/无效或主要/次要的问题的列表在临床上是准确的。\r\n\r\n正如拉里·维德（Larry Weed）所描述的那样，在面向问题的病历（Problem Oriented Medical Record）当中，本原始型将会作为一种组件来使用。为了支持这种方法，需要开发其他原始型，以便将情况/健康状况/病情（condition）之类的临床概念表示为诊断的总体组织手段等。\r\n\r\n在某些情况下，可能会假定认为诊断的确定仅仅属于是医生的专长，但这一点并不是本原始型的意图。任何的医疗保健专业人员都可以利用本原始型来记录诊断。",
+          "misuse" : "并非旨在用于记录个人（患者本人）所描述的症状 - 对此，请采用群簇型症状原始型 CLUSTER.symptom 来记录，且通常会将后者放在观察型主观临床病史原始型 OBSERVATION.story 之中。\r\n\r\n并非旨在用于记录检查发现/所见 - 对此，请采用与检查相关的群簇型原始型系列，且通常会将后者嵌套在观察型检查原始型 OBSERVATION.exam 当中。\r\n\r\n并非旨在用于记录实验室检验结果或相关的诊断，如病理诊断 - 对此，请选用观察型实验室[检验]原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录成像检查结果或成像诊断 - 对此，请选用观察型成像/影像学原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录鉴别诊断（Differential Diagnosis） - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于记录就医/就诊原因（Reason for Encounter）或当前主诉（Present Complaint） - 对此，请采用评价型就医/就诊原因原始型 EVALUATION.reason_for_encounter。\r\n\r\n并非旨在用于记录操作[项目] - 对此，请采用行动型操作[项目]原始型 ACTION.procedure。\r\n\r\n并非旨在用于记录关于妊娠的详情 - 对此，请采用评价型妊娠【bf: 哺乳?】状态原始型 EVALUATION.pregnancy_bf_status 和评价型妊娠原始型 EVALUATION.pregnancy 以及相关的原始型。\r\n\r\n并非旨在用于记录关于健康风险或潜在问题的陈述 - 对此，请采用评价型健康风险原始型 EVALUATION.health_risk。\r\n\r\n并非旨在用于记录关于不良反应、过敏/变态反应或不耐的陈述 - 对此，请采用评价型不良反应原始型 EVALUATION.adverse_reaction。\r\n\r\n并非旨在用于明确记录关于并不存在（或否定存在）特定问题或诊断的情况，如“无已知问题或诊断”或“无已知糖尿病”。对此，请采用评价型除外问题/诊断原始型 EVALUATION.exclusion-problem_diagnosis 来表达关于排除特定问题或诊断的明确陈述。\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar dades sobre un únic problema de salut o diagnòstic identificat. \r\n\r\nEn el context d’una documentació clínica, l’envergadura d’un problema relacionat amb la salut té deliberadament pocs detalls, amb el fi de captar qualsevol preocupació real o percebuda que pugui afectar negativament a la salut de la persona en qualsevol grau. Un problema de salut pot ser identificat per la persona, per un cuidador o per un professional sanitari. No obstant això, un diagnòstic es defineix addicionalment basat en criteris clínics objectius, i determinat, en general, només per un professional sanitari.\r\n\r\n",
+          "keywords" : [ "Malaltia", "condició", "problema", "diagnòstic", "preocupació", "lesió", "impressió clínica" ],
+          "use" : "Registrar dades sobre un únic problema de salut o diagnòstic identificat. \r\n\r\nLes definicions evidents que permeten la diferenciació entre un «problema» i un «diagnòstic» són quasi impossibles en la pràctica: no podem, d’una manera fiable, constatar quan un problema de salut s’ha de considerar un diagnòstic. Quan un criteri de diagnòstic o de classificació es compleixen, podem constatar amb confiança l’afecció com a diagnòstic formal, però abans que aquestes condicions es compleixin i mentre que existí una evidència, també pot ser vàlid utilitzar el terme «diagnòstic». La quantitat d’evidències d’ajuda necessàries per a l’etiqueta de diagnòstic no és fàcil de definir i, en realitat, probablement variarà segons una malaltia o altra. Molts comitès de normalització han intentat solucionar aquest problema semàntic durant molts anys i no han trobat una resposta. \r\n\r\nPer la documentació clínica amb aquest arquetip, el problema i el diagnòstic es veuen com un continu, amb uns nivells de detall i d’evidència d’ajuda que sol donar pes a l’etiqueta de diagnòstic. En aquest arquetip no és necessari classificar la condició com un «problema» o «diagnòstic». Les dades per raspallar la documentació de qualsevol d’aquests són idèntics, ja que és necessari l’estructura de dades addicionals requerides per suportar la inclusió d’una evidència sempre que estiguin disponibles. Exemples de problemes: la persona expressa desig en perdre pes, però sense un diagnòstic formal d’Obesitat; o un problema de relació amb un membre de la família. Entre els exemples de diagnòstics formals es poden incloure un càncer raspallat per l’historial, troballes en l’exploració, troballes histopatològics, troballes radiològiques i que compleixin tots els requisits dels criteris diagnòstics coneguts. En la pràctica, molts problemes o diagnòstics no se situen en cap dels extrems de l’espectre problema-diagnòstic, sinó en qualsevol punt de la línia. \r\n\r\nAquest arquetip pot utilitzar-se en molts contextos. Per exemple, per a registrar un problema o un diagnòstic clínic durant una consulta clínica; per a omplir una Llista de Problemes persistents; o per a proporcionar una declaració resumida en un document de Resum d’Alta. \r\n\r\nEn la pràctica, molts mèdics utilitzen uns qualificatius o altres depenent del context, com passat/present, primari/secundari/, actiu/inactiu, admissió/alta, etc. Els contexts poden ser específics de la zona, especialització, episodi o flux de treball específic, i aquests poden crear confusió o inclús possibles problemes de seguretat si es perpetuen en les Llistes de problemes o es comparteixen en documents fora del context original. Aquests qualificadors poden arquetipar-se per separat i poden incloure a la casella «Estat», perquè el seu ús varia en funció del seu context. S’espera que s’utilitzin principalment dins d’un context apropiat i no es comparteixin fora d’aquest context sense una clara comprensió de les possibles conseqüències. Per exemple, un diagnòstic primari per un clínic pot ser secundari per a un altre especialista; un problema actiu pot convertir-se en inactiu (o viceversa) i això pot repercutir en l’ús segur de l’ajuda de la presa de decisions clíniques. En general, aquests classificadors deuen aplicar-se localment en el context del sistema clínic i, en la pràctica, aquests estats s’han de solucionar manualment pels clínics per a garantir que les llistes de Problemes Actuals/Passats, Actius/Inactius o Primaris/Secundaris siguin clínicament precisos. \r\n\r\nAquest arquetip s’utilitzarà com un component sense el qual l’història clínica orientada a problemes descrits per Larry Weed. Per ajudar a aquest enfocament, serà necessari desenvolupar arquetips addicionals que representen conceptes clínics, com un organitzador global per a diagnòstics, etc., que necessitarà ser desenvolupat. \r\n\r\nEn algunes situacions, es pot pressuposar que la identificació d’un diagnòstic sols és competència dels metges, però aquesta no és la intenció d’aquest arquetip. Qualsevol professional sanitari pot registrar diagnòstics utilitzant aquest arquetip.\r\n",
+          "misuse" : "No utilitzar per a registrar els símptomes descrits per la persona. Utilitzar l’arquetip CLUSTER.symptom, normalment dins de l’arquetip OBSERVATION.story. \r\n\r\nNo utilitzar per a registrar els resultats dels exàmens. Utilitzar la família d’arquetips d’examinació CLUSTER, normalment trobats dins de l’arquetip OBSERVATION.exam. \r\n\r\nNo utilitzar per a registrar els resultats de tests de laboratori o diagnòstics relacionats. Per exemple, diagnòstics patològics. Utilitzar un arquetip apropiat des de la família de laboratoris d’arquetip OBSERVATION. \r\n\r\nNo utilitzar per a registrar els escanejos dels resultats dels exàmens o diagnòstics. Utilitzar un arquetip apropiat des de la família d’escanejos d’arquetip OBSERVATION. \r\n\r\nNo registrar per a registrar «Diagnòstics diferencials»: utilitzar l’arquetip EVALUATION.differential_diagnosis. \r\n\r\nNo utilitzar per a registrar «Motiu de l'encontre» o «Queixa actual». Utilitzar l’arquetip EVALUATION.reason_for_encounter. \r\n\r\nNo utilitzar per registrar procediments. Utilitzar ACTION.procedure. \r\n\r\nNo utilitzar per a registrar dades sobre l’embaràs. Utilitzar EVALUATION.pregnancy_bf_status i EVALUATION.pregnancy. \r\n\r\nNo utilitzar per a registrar declaracions sobre riscos per la salut o problemes potencials. Utilitzar l’arquetip EVALUATION.health_risk.\r\n\r\nNo utilitzar per a registrar declaracions sobre reaccions adverses, al·lèrgies o intoleràncies. Utilitzar l’arquetip \r\n\r\nEVALUATION.adverse_reaction. \r\n\r\nNo utilitzar per registrar explícitament l’absència o (presència negativa) d’un problema o diagnòstic, per exemple, «Cap diabetis coneguda». Utilitzar l’arquetip EVALUATION.exclusion-problem_diagnosis per expressar una declaració positiva sobre l'exclusió d’un problema o diagnòstic.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -1134,7 +1224,7 @@
           "at0072.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0072.1",
-            "text" : "Beschreibung des Diagnoseverlaufs",
+            "text" : "Beskrivelse av sykdomsforløpet",
             "description" : "Beschreibung des Problem-/ Diagnoseverlaufs seit Beginn."
           },
           "at0030.1" : {
@@ -1503,7 +1593,10 @@
             "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
             "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.(en)"
           }
-        }
+        },
+        "ca" : { },
+        "zh-cn" : { },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -1687,6 +1780,50 @@
         "email" : "3160100913@zju.edu.cn"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -1936,11 +2073,43 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0125",
+              "nodeId" : "at0125.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
                 "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0126.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "CODE_PHRASE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "at0131", "at0132" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
@@ -1974,6 +2143,12 @@
             "code" : "at0000.1",
             "text" : "Rezidiv: Modalität",
             "description" : "Beschreibt die höchste erreichte Diagnosesicherheit, die in der Krankenakte des Patienten vermerkt ist. Außerdem kann dargestellt werden, welche Verfahren zur Krebsdiagnose verwendet wurden."
+          },
+          "at0126.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0126.1",
+            "text" : "Annen prosedyre",
+            "description" : "Die Diagnosesicherheit beruht auf einem alternativen Verfahren, welches in den vorherigen Elementen nicht dargestellt wurde."
           }
         },
         "nb" : {
@@ -2017,7 +2192,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "7CD5D4B56F1AAC4BF3DFF1AB6120FCD0"
+        "PARENT:MD5-CAM-1.0.1" : "2DC80F474683F0694427F87B2BA48457"
       },
       "details" : {
         "de" : {
@@ -2078,6 +2253,21 @@
           "keywords" : [ "absence", "information", "négatif", "réaction", "problème", "diagnostic", "médicament", "procédure", "vaccination", "réaction indésirable" ],
           "use" : "*Use to enable recording or exchange of an explicit statement that specified health information is not available for inclusion in the health record or record extract at the time of recording. \r\n\r\nThis statement is the third component of a family of statements - statements of positive presence, statements of positive exclusion and statements of absence:\r\n- Statements of positive presence indicate that there is relevant health information in the record or extract - for example, EVALUATION.adverse_reaction stating that the patient has an allergy to penicillin or EVALUATION.problem_diagnosis stating that the patient has diabetes. \r\n- Equivalent statements about exclusion are used to indicate that it is known that there is no relevant health information in the health record or extract - for example, EVALUATION.exclusion_adverse  stating that the patient does not have a known allergy to penicillin or EVALUATION.exclusion_problem_diagnosis stating that the patient is not diabetic; and;\r\n- In this context, the EVALUATION.absence could be used to record that there is no health information available about penicillin allergy or the diagnosis of diabetes - it is not known if it is present or excluded, but there is no information that can be provided. \r\n\r\nThis archetype has been developed specifically for the use case where a clinician is preparing an extract from a health record, so that the receiver has explicit and unambiguous understanding of the information available - that which is present, excluded or just not available. It is primarily intended to be used within SLOTS in persistent COMPOSITIONS such as 'Therapeutic precautions', 'Medication list', 'Problem list', or 'Adverse reaction list'. It is also deliberately intended to be statement made by a clinician in the same way that they would record any allergies or diagnoses, and is intended to be quite different to technical use of null flavours in data.\r\n\r\nAbsence statements can only be considered to be current and accurate at the time of recording.\r\n\r\nThis archetype has been designed specifically to avoid the need to use of flags to express negation about any entry within the health record.(en)",
           "misuse" : "*Not to be used to record the presence of adverse reactions, medication use, procedures, problems or diagnoses - use specific archetypes for this purpose.\r\n\r\nNot to be used to record the exclusion of adverse reactions, medication use, procedures, problems or diagnoses - use specific specialisations of the EVALUATION.exclusion archetype for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Permitir el registro o intercambio de una declaración expresa por parte de un clínico, de que determinada información sanitaria no está disponible para su inclusión en la historia clínica, o extracto de la misma, en el momento del registro.",
+          "keywords" : [ "ausencia", "información", "adversa", "reacción", "problema", "diagnóstico", "medicación", "procedimiento", "vacunación", "reacción adversa" ],
+          "use" : "Se utiliza para permitir el registro o intercambio de una declaración expresa de que determinada información sanitaria no está disponible para su inclusión en la historia clínica, o extracto de la misma, en el momento del registro. \r\n\r\nEsta declaración es el tercer componente de una familia de declaraciones: declaraciones de presencia positiva, declaraciones de exclusión positiva y declaraciones de ausencia:\r\n- Las declaraciones de presencia positiva indican que existe información sanitaria relevante en el registro o extracto - por ejemplo, EVALUATION.adverse_reaction indica que el paciente tiene alergia a la penicilina, o EVALUATION.problem_diagnosis indica que el paciente tiene diabetes. \r\n- Las declaraciones equivalentes sobre exclusión se utilizan para indicar que se sabe que no hay información sanitaria relevante en la historia clínica o en el extracto - por ejemplo, EVALUATION.exclusion_adverse indicando que el paciente no tiene una alergia conocida a la penicilina, o EVALUATION.exclusion_problem_diagnosis indicando que el paciente no es diabético;\r\n- En este contexto, EVALUATION.absence podría utilizarse para registrar que no se dispone de información sanitaria sobre la alergia a la penicilina o el diagnóstico de diabetes - no se sabe si está presente o excluido, pero no hay información que pueda proporcionarse. \r\n\r\nEste arquetipo se ha desarrollado específicamente para el caso de uso en el que un clínico está preparando un extracto de un registro sanitario, de modo que el receptor tenga una comprensión explícita e inequívoca de la información disponible: la que está presente, la que está excluida o simplemente la que no está disponible. Está pensado principalmente para ser utilizado dentro de SLOTS en COMPOSITIONS persistentes como 'Therapeutic precautions', 'Medication list', 'Problem list' o 'Adverse reaction list'. También se pretende, de forma deliberada, que sea una declaración realizada por un clínico de la misma manera que registraría cualquier alergia o diagnóstico, y se pretende que sea bastante diferente del uso técnico de los valoras nulos en los datos.\r\n\r\nLas declaraciones de ausencia sólo pueden considerarse actuales y precisas en el momento de su registro.\r\n\r\nEste arquetipo se ha diseñado específicamente para evitar la necesidad de utilizar indicadores para expresar una negación sobre cualquier entrada de la historia clínica.",
+          "misuse" : "No debe utilizarse para registrar la presencia de reacciones adversas, uso de medicación, procedimientos, problemas o diagnósticos - utilice arquetipos específicos para este fin.\r\n\r\nNo debe utilizarse para registrar la exclusión de reacciones adversas, uso de medicación, procedimientos, problemas o diagnósticos - utilice especializaciones específicas del arquetipo EVALUATION.exclusion para este fin.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -2167,9 +2357,17 @@
       "termDefinitions" : {
         "en" : { },
         "pt-br" : { },
-        "de" : { },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Manglende informasjon",
+            "description" : "Aussage darüber, dass bestimmte Gesundheitsinformationen zum Zeitpukt der Erfassung nicht in der Krankenakte oder einem Schriftstück erfasst werden können, da keine Kenntnisse darüber vorhanden sind."
+          }
+        },
         "fr" : { },
-        "nb" : { }
+        "nb" : { },
+        "es" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2226,6 +2424,20 @@
         "name" : "Bassem Khouzam, Vanessa Pereira",
         "organisation" : "Medtronic, Better - Pathfinder",
         "email" : "bassem.khouzam@medtronic.com, vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Julio de Sosa",
+        "organisation" : "Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
       },
       "otherDetails" : { }
     } ]
@@ -2571,7 +2783,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6F24243771B944641D47850B1487D23A"
+        "PARENT:MD5-CAM-1.0.1" : "0DC26E43DE454A2B3FE00A7AEA553E2A"
       },
       "details" : {
         "de" : {
@@ -2666,7 +2878,47 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "OBSERVATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -2677,7 +2929,20 @@
         "nb" : { },
         "es-ar" : { },
         "nl" : { },
-        "de" : { }
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Forløpsrapport (progress note)¨",
+            "description" : "Einfache Beschreibung von gesundheitsbezogenen Ereignissen zu einem bestimmten Zeitpunkt über eine Person, insbesondere aus der Sicht eines Gesundheitsdienstleisters."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "forløpsrapport",
+            "description" : "Einfache Beschreibung von gesundheitsbezogenen Ereignissen, Gesundheitszustand, Befunden, Meinungen zu einem bestimmten Zeitpunkt."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2973,7 +3238,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "70083C267A35C88E111E5BA35120DE86"
+        "PARENT:MD5-CAM-1.0.1" : "3784CDA20920BF84035159DDC43A4D62"
       },
       "details" : {
         "de" : {
@@ -3174,6 +3439,51 @@
           "keywords" : [ "*issue(en)", "*condition(en)", "*problem(en)", "*diagnosis(en)", "*concern(en)", "*injury(en)", "*clinical impression(en)" ],
           "use" : "*Use for recording details about a single, identified health problem or diagnosis. \r\n\r\nClear definitions that enable differentiation between a 'problem' and a 'diagnosis' are almost impossible in practice - we cannot reliably tell when a problem should be regarded as a diagnosis. When diagnostic or classification criteria are successfully met, then we can confidently call the condition a formal diagnosis, but prior to these conditions being met and while there is supportive evidence available, it can also be valid to use the term 'diagnosis'. The amount of supportive evidence required for the label of diagnosis is not easy to define and in reality probably varies from condition to condition. Many standards committees have grappled with this definitional conundrum for years without clear resolution.\r\n\r\nFor the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'. In this archetype it is not neccessary to classify the condition as a 'problem' or 'diagnosis'. The data requirements to support documentation of either are identical, with additional data structure required to support inclusion of the evidence if and when it becomes available. Examples of problems include: the individual's expressed desire to lose weight, but without a formal diagnosis of Obesity; or a relationship problem with a family member. Examples of formal diagnoses would include a cancer that is supported by historical information, examination findings, histopathological findings, radiological findings and meets all requirements for known diagnostic criteria. In practice, most problems or diagnoses do not sit at either end of the problem-diagnosis spectrum, but somewhere in between.\r\n\r\nThis archetype can be used within many contexts. For example, recording a problem or a clinical diagnosis during a clinical consultation; populating a persistent Problem List; or to provide a summary statement within a Discharge Summary document.\r\n\r\nIn practice, clinicians use many context-specific qualifiers such as past/present, primary/secondary, active/inactive, admission/discharge etc. The contexts can be location-, specialisation-, episode- or workflow-specific, and these can cause confusion or even potential safety issues if perpetuated in Problem Lists or shared in documents that are outside of the original context. These qualifiers can be archetyped separately and included in the ‘Status’ slot, because their use varies in different settings. It is expected that these will be used mostly within the appropriate context and not shared out of that context without clear understanding of potential consequences. For example, a primary diagnosis to one clinician may be a secondary one to another specialist; an active problem can become inactive (or vice versa) and this can impact the safe use of clinical decision support. In general these qualifiers should be applied locally within the context of the clinical system, and in practice these statuses should be manually curated by clinicians to ensure that lists of Current/Past, Active/Inactive or Primary/Secondary Problems are clinically accurate. \r\n\r\nThis archetype will be used as a component within the Problem Oriented Medical Record as described by Larry Weed. Additional archetypes, representing clinical concepts such as condition as an overarching organiser for diagnoses etc, will need to be developed to support this approach.\r\n\r\nIn some situations, it may be assumed that identification of a diagnosis fits only within the expertise of physicians, but this is not the intent for this archetype. Diagnoses can be recorded using this archetype by any healthcare professional.(en)",
           "misuse" : "*Not to be used to record symptoms as described by the individual - use the CLUSTER.symptom archetype, usually within the OBSERVATION.story archetype.\r\n\r\nNot to be used to record examination findings - use the family of examination-related CLUSTER archetypes, usually nested within the OBSERVATION.exam archetype.\r\n\r\nNot to be used to record laboratory test results or related diagnoses, for example pathological diagnoses - use an appropriate archetype from the laboratory family of OBSERVATION archetypes.\r\n\r\nNot to be used to record imaging examination results or imaging diagnoses - use an appropriate archetype from the imaging family of OBSERVATION archetypes.\r\n\r\nNot to be used to record 'Differential Diagnoses' - use the EVALUATION.differential_diagnosis archetype.\r\n\r\nNot to be used to record 'Reason for Encounter' or 'Presenting Complaint' - use the EVALUATION.reason_for_encounter archetype.\r\n\r\nNot to be used to record procedures - use the ACTION.procedure archetype.\r\n\r\nNot to be used to record details about pregnancy - use the EVALUATION.pregnancy_bf_status and EVALUATION.pregnancy and related archetypes.\r\n\r\nNot to be used to record statements about health risk or potential problems - use the EVALUATION.health_risk archetype.\r\n\r\nNot to be used to record statements about adverse reactions, allergies or intolerances - use the EVALUATION.adverse_reaction archetype.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a problem or diagnosis, for example ‘No known problem or diagnoses’ or ‘No known diabetes’. Use the EVALUATION.exclusion-problem_diagnosis archetype to express a positive statement about exclusion of a problem or diagnosis.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "Pour enregistrer des informations détaillées sur un problème de santé spécifique identifié ou sur un diagnostic particulier.\r\n\r\nLa définition d’un problème de santé est délibérément laissée ouverte dans le contexte de la documentation clinique, afin de recenser toute préoccupation, réelle ou perçue, susceptible d’affecter négativement, à quelque degré que ce soit, le bien-être d’une personne. Un problème de santé peut être identifié par la personne concernée, un proche ou un professionnel de santé. En revanche, un diagnostic est défini de manière plus précise sur la base de critères cliniques objectifs et n’est généralement établi que par un professionnel de santé.",
+          "keywords" : [ "problématique", "affection", "problème", "diagnostic", "préoccupation", "blessure", "impression clinique" ],
+          "use" : "À utiliser pour enregistrer des informations détaillées sur un problème de santé spécifique identifié ou sur un diagnostic particulier. \r\n\r\nIl est pratiquement impossible, dans la réalité, d’établir des définitions claires permettant de différencier un « problème » d’un « diagnostic » : nous ne pouvons pas déterminer de manière fiable à quel moment un problème doit être considéré comme un diagnostic. Lorsque les critères de diagnostic ou de classification sont remplis, on peut alors qualifier en toute confiance la condition de « diagnostic formel » ; mais avant que ces conditions ne soient remplies et tant qu’il existe des éléments probants à l’appui, il peut également être valable d’utiliser le terme « diagnostic ». La quantité d’éléments probants requise pour attribuer l’étiquette de « diagnostic » n’est pas facile à définir et, en réalité, varie probablement d’une condition à l’autre. De nombreux comités de normalisation se penchent depuis des années sur ce casse-tête définitionnel sans parvenir à une résolution claire.\r\n\r\nAux fins de la documentation clinique avec cet archétype, le « problème » et le « diagnostic » sont considérés comme un continuum, les niveaux croissants de détail et de preuves à l’appui conférant généralement plus de poids à l’étiquette de « diagnostic ». Dans cet archétype, il n’est pas nécessaire de classer l’affection comme un « problème » ou un « diagnostic ». Les exigences en matière de données pour justifier l'un ou l'autre sont identiques, une structure de données supplémentaire étant requise pour permettre l’intégration des preuves si et quand celles-ci deviennent disponibles. Parmi les exemples de problèmes, on peut citer : le souhait exprimé par la personne de perdre du poids, sans pour autant qu’il y ait de diagnostic formel d’obésité ; ou un problème relationnel avec un membre de la famille. Parmi les exemples de diagnostics formels, on peut citer un cancer soutenu par des antécédents médicaux, des résultats d’examen, des résultats histopathologiques et radiologiques, et qui répond à toutes les exigences des critères diagnostiques connus. Dans la pratique, la plupart des problèmes ou des diagnostics ne se situent pas à l’une ou l’autre extrémité du spectre problème-diagnostic, mais quelque part entre les deux.\r\n\r\nCet archétype peut être utilisé dans de nombreux contextes. Par exemple, pour enregistrer un problème ou un diagnostic clinique lors d’une consultation ; pour alimenter une liste de problèmes persistants ; ou pour fournir un résumé dans un document de compte rendu de sortie.\r\n\r\nDans la pratique, les cliniciens utilisent de nombreux qualificatifs spécifiques au contexte, tels que passé/présent, primaire/secondaire, actif/inactif, admission/sortie, etc. Les contextes peuvent être spécifiques à un lieu, à une spécialité, à un épisode ou à un flux de travail, et cela peut être source de confusion, voire poser des problèmes de sécurité s’ils sont reproduits dans des listes de problèmes ou partagés dans des documents hors du contexte d’origine. Ces qualificatifs peuvent être définis dans des archétypes distincts et être inclus dans le slot « Statut », car leur utilisation varie selon les contextes. On s’attend à ce qu’ils soient principalement utilisés dans le contexte approprié et qu’ils ne soient pas partagés en dehors de ce contexte sans une compréhension claire des conséquences potentielles. Par exemple, un diagnostic principal pour un clinicien peut être un diagnostic secondaire pour un autre spécialiste ; un problème actif peut devenir inactif (ou inversement), ce qui peut avoir un impact sur l’utilisation sûre de l’aide à la décision clinique. En général, ces qualificatifs doivent être appliqués localement dans le contexte du système clinique, et dans la pratique, ces statuts doivent être gérés manuellement par les cliniciens afin de garantir que les listes de problèmes « actuels/passés », « actifs/inactifs » ou « principaux/secondaires » soient cliniquement exactes. \r\n\r\nCet archétype sera utilisé comme composant au sein du dossier médical axés sur les problèmes (Problem Oriented Medical Record), tel que décrit par Larry Weed. D’autres archétypes, représentant des concepts cliniques tels que l’« état pathologique » en tant qu’organisateur global des diagnostics, etc., devront être développés pour soutenir cette approche.\r\n\r\nDans certaines situations, on peut supposer que l’identification d’un diagnostic relève exclusivement de l’expertise des médecins, mais ce n’est pas l’objectif de cet archétype. Les diagnostics peuvent être enregistrés à l’aide de cet archétype par n’importe quel professionnel de santé.",
+          "misuse" : "À ne pas utiliser pour enregister les symptômes tels que décrits par la personne concernée — utiliser l’archétype CLUSTER.symptom, généralement au sein de l’archétype OBSERVATION.story.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’examens — utiliser la famille d’archétypes CLUSTER liés aux examens, généralement imbriqués dans l’archétype OBSERVATION.exam.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’analyses de laboratoire ou les diagnostics associés, par exemple les diagnostics pathologiques — utilisez un archétype approprié de la famille des archétypes OBSERVATION relatifs au laboratoire.\r\n\r\nÀ ne pas utiliser pour enregistrer les résultats d’examens d’imagerie ou les diagnostics d’imagerie — utilisez un archétype approprié de la famille des archétypes OBSERVATION relatifs à l’imagerie.\r\n\r\nÀ ne pas utiliser pour enregister des « diagnostics différentiels » : utilisez l’archétype EVALUATION.differential_diagnosis.\r\n\r\nÀ ne pas utiliser pour enregistrer le « motif de la consultation » ou la « plainte principale » : utilisez l’archétype EVALUATION.reason_for_encounter.\r\n\r\nÀ ne pas utiliser pour enregistrer des interventions : utilisez l’archétype ACTION.procedure.\r\n\r\nÀ ne pas utiliser pour enregister des informations relatives à la grossesse — utilisez les archétypes EVALUATION.pregnancy_bf_status, EVALUATION.pregnancy et les archétypes associés.\r\n\r\nÀ ne pas utiliser pour enregister des informations concernant des risques pour la santé ou des problèmes potentiels — utilisez l’archétype EVALUATION.health_risk.\r\n\r\nÀ ne pas utiliser pour enregister des déclarations concernant des effets indésirables, des allergies ou des intolérances — utilisez l’archétype EVALUATION.adverse_reaction.\r\n\r\nÀ ne pas utiliser pour enregister l’absence (ou la présence négative) d’un problème ou d’un diagnostic, par exemple « Aucun problème ou diagnostic connu » ou « Aucun diabète connu ». Utilisez l’archétype EVALUATION.exclusion-problem_diagnosis pour exprimer une affirmation positive concernant l’exclusion d’un problème ou d’un diagnostic.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在临床文档记录的背景下，健康问题故意保持了宽松的预定适用范围，以便采集任何可能对个人健康产生任何程度不利影响的真实或所感知到的担忧/关注事项（concern）。健康问题可能是由个人（患者本人）、[非正规]照护人员或医疗保健专业人员来确定。然而，诊断则另外还依据客观的临床评判标准进行了定义，且通常仅仅是由医疗保健专业人员来确定。",
+          "keywords" : [ "事宜", "事项", "情况", "健康状况", "病情", "问题", "诊断", "关注事项", "担心事项", "担忧", "损伤", "临床印象" ],
+          "use" : "旨在用于记录关于单个已明确的健康问题或诊断的详情。\r\n\r\n在实践当中，几乎不可能做出明确的定义来区分“问题”（problem）与“诊断”（diagnosis）——我们无法可靠地判断究竟何时才应该将问题视为诊断。当诊断或分类标准得以成功满足时，我们可以自信地将相应的情况/病情（condition）称为正式的诊断，但在满足此类的评判标准/条件之前，且存在可用的支持性证据之时，也可以有效合理地采用“诊断”一词。诊断标签所需支持性证据的数量并不容易定义，实际上很可能还会因情况而异。多年来，许多标准委员会一直在努力解决这个定义难题，但目前还没有明确的解决办法。\r\n\r\n对于利用本原始型的临床文档记录目的来说，在此会将问题与诊断视为统一的连续体系，且由问题到诊断，不断增加的细节水平和支持性证据通常会为“诊断”标签带来更大的权重。在本原始型当中，没有必要将情况/健康状况/病情归类为“问题”还是“诊断”。支持两者文档记录工作的数据需求完全相同，当证据变得可用之时，就需要额外的数据结构来支持收纳相应的证据。关于问题的例子包括：在没有关于肥胖的正式诊断的情况下，个人所表达的关于减肥的愿望；或者是与特定家庭成员的关系问题。关于正式诊断的示例包括拥有历史/病史信息、检查结果、组织病理学发现、放射医学发现支持并满足已知诊断标准所有要求的癌症。在实践当中，大多数的问题或诊断并不处于问题—诊断连续体系的两端，而是介于两者之间。\r\n\r\n本原始型可用于很多的上下文背景。例如，在临床就诊咨询/会诊期间对问题或临床诊断的记录；填写持续存在/更新的问题清单；或者是提供出院摘要文档之中总结性陈述。\r\n\r\n在实践当中，临床医务人员/临床医生会使用许多上下文特异性的限定词（context-specific qualifier），如过去/现在、主要/次要、现行有效/无效、入院/出院等等。上下文背景可以针对的是位置/场所、专业、服务节段（episode）或工作流，如果将此类的限定词长久存储在问题清单当中，或者是在原始上下文背景之外的文档当中加以共享，则可能会导致混淆/困惑甚至潜在的安全问题。可以单独对此类的限定词进行原始型化，并将其收纳在状态槽位'Status'之中，因为它们的用法在不同的场所环境下会有所不同。期望将此类的限定词/状态主要用于合适的上下文背景，而不是在没有清楚地了解潜在后果的情况下在相应的上下文背景之外共享。例如，一位临床医生的初步诊断可能是另一位专科医生的次要诊断；现行有效的问题可能会变为无效状态（反之亦然），而这种情况可能会影响临床决策支持（CDS）措施的安全使用。一般来说，应该在本地将这些状态应用于相应临床系统的上下文背景，而在实践当中，则应该由临床医务人员/临床医生来手动管理这些状态，以确保当前/过去、现行有效/无效或主要/次要的问题的列表在临床上是准确的。\r\n\r\n正如拉里·维德（Larry Weed）所描述的那样，在面向问题的病历（Problem Oriented Medical Record）当中，本原始型将会作为一种组件来使用。为了支持这种方法，需要开发其他原始型，以便将情况/健康状况/病情（condition）之类的临床概念表示为诊断的总体组织手段等。\r\n\r\n在某些情况下，可能会假定认为诊断的确定仅仅属于是医生的专长，但这一点并不是本原始型的意图。任何的医疗保健专业人员都可以利用本原始型来记录诊断。",
+          "misuse" : "并非旨在用于记录个人（患者本人）所描述的症状 - 对此，请采用群簇型症状原始型 CLUSTER.symptom 来记录，且通常会将后者放在观察型主观临床病史原始型 OBSERVATION.story 之中。\r\n\r\n并非旨在用于记录检查发现/所见 - 对此，请采用与检查相关的群簇型原始型系列，且通常会将后者嵌套在观察型检查原始型 OBSERVATION.exam 当中。\r\n\r\n并非旨在用于记录实验室检验结果或相关的诊断，如病理诊断 - 对此，请选用观察型实验室[检验]原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录成像检查结果或成像诊断 - 对此，请选用观察型成像/影像学原始型系列之中合适的原始型。\r\n\r\n并非旨在用于记录鉴别诊断（Differential Diagnosis） - 对此，请采用评价型鉴别诊断原始型 EVALUATION.differential_diagnosis。\r\n\r\n并非旨在用于记录就医/就诊原因（Reason for Encounter）或当前主诉（Present Complaint） - 对此，请采用评价型就医/就诊原因原始型 EVALUATION.reason_for_encounter。\r\n\r\n并非旨在用于记录操作[项目] - 对此，请采用行动型操作[项目]原始型 ACTION.procedure。\r\n\r\n并非旨在用于记录关于妊娠的详情 - 对此，请采用评价型妊娠【bf: 哺乳?】状态原始型 EVALUATION.pregnancy_bf_status 和评价型妊娠原始型 EVALUATION.pregnancy 以及相关的原始型。\r\n\r\n并非旨在用于记录关于健康风险或潜在问题的陈述 - 对此，请采用评价型健康风险原始型 EVALUATION.health_risk。\r\n\r\n并非旨在用于记录关于不良反应、过敏/变态反应或不耐的陈述 - 对此，请采用评价型不良反应原始型 EVALUATION.adverse_reaction。\r\n\r\n并非旨在用于明确记录关于并不存在（或否定存在）特定问题或诊断的情况，如“无已知问题或诊断”或“无已知糖尿病”。对此，请采用评价型除外问题/诊断原始型 EVALUATION.exclusion-problem_diagnosis 来表达关于排除特定问题或诊断的明确陈述。\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar dades sobre un únic problema de salut o diagnòstic identificat. \r\n\r\nEn el context d’una documentació clínica, l’envergadura d’un problema relacionat amb la salut té deliberadament pocs detalls, amb el fi de captar qualsevol preocupació real o percebuda que pugui afectar negativament a la salut de la persona en qualsevol grau. Un problema de salut pot ser identificat per la persona, per un cuidador o per un professional sanitari. No obstant això, un diagnòstic es defineix addicionalment basat en criteris clínics objectius, i determinat, en general, només per un professional sanitari.\r\n\r\n",
+          "keywords" : [ "Malaltia", "condició", "problema", "diagnòstic", "preocupació", "lesió", "impressió clínica" ],
+          "use" : "Registrar dades sobre un únic problema de salut o diagnòstic identificat. \r\n\r\nLes definicions evidents que permeten la diferenciació entre un «problema» i un «diagnòstic» són quasi impossibles en la pràctica: no podem, d’una manera fiable, constatar quan un problema de salut s’ha de considerar un diagnòstic. Quan un criteri de diagnòstic o de classificació es compleixen, podem constatar amb confiança l’afecció com a diagnòstic formal, però abans que aquestes condicions es compleixin i mentre que existí una evidència, també pot ser vàlid utilitzar el terme «diagnòstic». La quantitat d’evidències d’ajuda necessàries per a l’etiqueta de diagnòstic no és fàcil de definir i, en realitat, probablement variarà segons una malaltia o altra. Molts comitès de normalització han intentat solucionar aquest problema semàntic durant molts anys i no han trobat una resposta. \r\n\r\nPer la documentació clínica amb aquest arquetip, el problema i el diagnòstic es veuen com un continu, amb uns nivells de detall i d’evidència d’ajuda que sol donar pes a l’etiqueta de diagnòstic. En aquest arquetip no és necessari classificar la condició com un «problema» o «diagnòstic». Les dades per raspallar la documentació de qualsevol d’aquests són idèntics, ja que és necessari l’estructura de dades addicionals requerides per suportar la inclusió d’una evidència sempre que estiguin disponibles. Exemples de problemes: la persona expressa desig en perdre pes, però sense un diagnòstic formal d’Obesitat; o un problema de relació amb un membre de la família. Entre els exemples de diagnòstics formals es poden incloure un càncer raspallat per l’historial, troballes en l’exploració, troballes histopatològics, troballes radiològiques i que compleixin tots els requisits dels criteris diagnòstics coneguts. En la pràctica, molts problemes o diagnòstics no se situen en cap dels extrems de l’espectre problema-diagnòstic, sinó en qualsevol punt de la línia. \r\n\r\nAquest arquetip pot utilitzar-se en molts contextos. Per exemple, per a registrar un problema o un diagnòstic clínic durant una consulta clínica; per a omplir una Llista de Problemes persistents; o per a proporcionar una declaració resumida en un document de Resum d’Alta. \r\n\r\nEn la pràctica, molts mèdics utilitzen uns qualificatius o altres depenent del context, com passat/present, primari/secundari/, actiu/inactiu, admissió/alta, etc. Els contexts poden ser específics de la zona, especialització, episodi o flux de treball específic, i aquests poden crear confusió o inclús possibles problemes de seguretat si es perpetuen en les Llistes de problemes o es comparteixen en documents fora del context original. Aquests qualificadors poden arquetipar-se per separat i poden incloure a la casella «Estat», perquè el seu ús varia en funció del seu context. S’espera que s’utilitzin principalment dins d’un context apropiat i no es comparteixin fora d’aquest context sense una clara comprensió de les possibles conseqüències. Per exemple, un diagnòstic primari per un clínic pot ser secundari per a un altre especialista; un problema actiu pot convertir-se en inactiu (o viceversa) i això pot repercutir en l’ús segur de l’ajuda de la presa de decisions clíniques. En general, aquests classificadors deuen aplicar-se localment en el context del sistema clínic i, en la pràctica, aquests estats s’han de solucionar manualment pels clínics per a garantir que les llistes de Problemes Actuals/Passats, Actius/Inactius o Primaris/Secundaris siguin clínicament precisos. \r\n\r\nAquest arquetip s’utilitzarà com un component sense el qual l’història clínica orientada a problemes descrits per Larry Weed. Per ajudar a aquest enfocament, serà necessari desenvolupar arquetips addicionals que representen conceptes clínics, com un organitzador global per a diagnòstics, etc., que necessitarà ser desenvolupat. \r\n\r\nEn algunes situacions, es pot pressuposar que la identificació d’un diagnòstic sols és competència dels metges, però aquesta no és la intenció d’aquest arquetip. Qualsevol professional sanitari pot registrar diagnòstics utilitzant aquest arquetip.\r\n",
+          "misuse" : "No utilitzar per a registrar els símptomes descrits per la persona. Utilitzar l’arquetip CLUSTER.symptom, normalment dins de l’arquetip OBSERVATION.story. \r\n\r\nNo utilitzar per a registrar els resultats dels exàmens. Utilitzar la família d’arquetips d’examinació CLUSTER, normalment trobats dins de l’arquetip OBSERVATION.exam. \r\n\r\nNo utilitzar per a registrar els resultats de tests de laboratori o diagnòstics relacionats. Per exemple, diagnòstics patològics. Utilitzar un arquetip apropiat des de la família de laboratoris d’arquetip OBSERVATION. \r\n\r\nNo utilitzar per a registrar els escanejos dels resultats dels exàmens o diagnòstics. Utilitzar un arquetip apropiat des de la família d’escanejos d’arquetip OBSERVATION. \r\n\r\nNo registrar per a registrar «Diagnòstics diferencials»: utilitzar l’arquetip EVALUATION.differential_diagnosis. \r\n\r\nNo utilitzar per a registrar «Motiu de l'encontre» o «Queixa actual». Utilitzar l’arquetip EVALUATION.reason_for_encounter. \r\n\r\nNo utilitzar per registrar procediments. Utilitzar ACTION.procedure. \r\n\r\nNo utilitzar per a registrar dades sobre l’embaràs. Utilitzar EVALUATION.pregnancy_bf_status i EVALUATION.pregnancy. \r\n\r\nNo utilitzar per a registrar declaracions sobre riscos per la salut o problemes potencials. Utilitzar l’arquetip EVALUATION.health_risk.\r\n\r\nNo utilitzar per a registrar declaracions sobre reaccions adverses, al·lèrgies o intoleràncies. Utilitzar l’arquetip \r\n\r\nEVALUATION.adverse_reaction. \r\n\r\nNo utilitzar per registrar explícitament l’absència o (presència negativa) d’un problema o diagnòstic, per exemple, «Cap diabetis coneguda». Utilitzar l’arquetip EVALUATION.exclusion-problem_diagnosis per expressar una declaració positiva sobre l'exclusió d’un problema o diagnòstic.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3485,7 +3795,7 @@
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
-            "text" : "Diagnose Beschreibung",
+            "text" : "Diagnose beskrivelse",
             "description" : "Beschreibung des Problems oder der Diagnose.",
             "comment" : "Wird verwendet, um Hintergrund und Kontext, einschließlich Entwicklung, Episoden oder Verschlechterungen, Fortschritt und andere relevante Details über das Problem oder die Diagnose zu liefern."
           },
@@ -3499,7 +3809,7 @@
           "at0077.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0077.1",
-            "text" : "Erstdiagnosedatum",
+            "text" : "dato første diagnose",
             "description" : "Geschätzte oder exakte Zeit (bzw. Datum), zu der die Krankheitsanzeichen oder Symptome zum ersten mal beobachtet wurden.",
             "comment" : "Datumswerte, die als \"Alter zu Beginn\" erfasst/importiert werden, sollten anhand des Geburtsdatums der Person in ein Datum umgewandelt werden."
           },
@@ -3938,7 +4248,10 @@
             "text" : "Kommentar Tumordiagnose",
             "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
           }
-        }
+        },
+        "ca" : { },
+        "zh-cn" : { },
+        "fr" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4122,6 +4435,50 @@
         "email" : "3160100913@zju.edu.cn"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Jonas Bucher",
+        "organisation" : "Cistec AG",
+        "email" : "jonas.bucher@cistec.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4374,6 +4731,33 @@
       "email" : "dennis.valk@code24.nl, dennis@code24.nl"
     },
     "accreditation" : "Code24 BV",
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-pt"
+    },
+    "author" : {
+      "name" : "Diana Ferreira",
+      "email" : "dianaferreira_16@hotmail.com"
+    },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ca"
+    },
+    "author" : {
+      "name" : "Laura Moral Lopez",
+      "organisation" : "Sistema de Salut de Catalunya",
+      "email" : "lauramoral@catsalut.cat"
+    },
     "otherDetails" : { }
   } ]
 }
